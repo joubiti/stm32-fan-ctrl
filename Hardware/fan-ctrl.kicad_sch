@@ -11,6 +11,113 @@
 		(company "github.com/joubiti")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -1167,6 +1274,113 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4563,6 +4777,18 @@
 		(uuid 61d5ac64-270e-4902-892a-b5c8525ffed8)
 	)
 	(rectangle
+		(start 13.97 78.74)
+		(end 35.56 101.6)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 63345e70-33c8-4da7-893e-812c72c8fbeb)
+	)
+	(rectangle
 		(start 162.56 85.09)
 		(end 243.84 106.68)
 		(stroke
@@ -4609,6 +4835,18 @@
 			(type none)
 		)
 		(uuid b0dba13c-6e6b-4753-9156-29819d598bec)
+	)
+	(rectangle
+		(start 41.91 77.47)
+		(end 78.74 111.76)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid b75ea687-64b1-459a-af9e-55c9c73898d2)
 	)
 	(rectangle
 		(start 91.44 13.97)
@@ -4706,6 +4944,16 @@
 		)
 		(uuid "878a587d-aa96-4bfd-ada4-39f3be17fec4")
 	)
+	(text "Test Points"
+		(exclude_from_sim no)
+		(at 46.99 76.454 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "89618b39-b378-47e9-9c60-7ded126f5619")
+	)
 	(text "16 MHz Clock + NRST"
 		(exclude_from_sim no)
 		(at 32.258 125.222 0)
@@ -4756,6 +5004,16 @@
 		)
 		(uuid "cfddaf65-7d3c-4d24-9103-129f90ccd705")
 	)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 21.59 77.216 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d287e959-0743-41a1-95fe-1034033041b5")
+	)
 	(junction
 		(at 60.96 180.34)
 		(diameter 0)
@@ -4767,6 +5025,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "058ac8f9-ab12-45ad-ab61-d278f3b2ac93")
+	)
+	(junction
+		(at 24.13 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c619275-b8cd-4a0c-899f-d8ad240a5918")
 	)
 	(junction
 		(at 49.53 149.86)
@@ -4809,6 +5073,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6b0a3715-f96e-42bc-ab20-ab73a51d69ca")
+	)
+	(junction
+		(at 24.13 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8763301b-9dbb-44ec-b9e6-74fe3742f825")
 	)
 	(junction
 		(at 220.98 39.37)
@@ -4863,6 +5133,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d421082d-f831-4858-882b-bad7b9c9a190")
+	)
+	(junction
+		(at 29.21 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d90e14bd-aac9-412c-83dd-18967f5345df")
 	)
 	(junction
 		(at 219.71 120.65)
@@ -4939,6 +5215,10 @@
 		(uuid "33fae21b-7d59-43d6-a2e2-8f617da9bc15")
 	)
 	(no_connect
+		(at 144.78 153.67)
+		(uuid "444fb136-9695-4fc3-8e49-dca77660ad27")
+	)
+	(no_connect
 		(at 144.78 146.05)
 		(uuid "448ff2c5-0381-4d62-a76c-70944aba0670")
 	)
@@ -4969,10 +5249,6 @@
 	(no_connect
 		(at 105.41 119.38)
 		(uuid "788489e5-828c-4384-879c-f9c36281dc10")
-	)
-	(no_connect
-		(at 144.78 168.91)
-		(uuid "7c26f59a-f0e5-48a1-af38-401697ad787c")
 	)
 	(no_connect
 		(at 128.27 180.34)
@@ -5095,10 +5371,6 @@
 		(uuid "f55bc919-5668-4da3-8ce4-9cc7e3e990d1")
 	)
 	(no_connect
-		(at 144.78 148.59)
-		(uuid "fac72fcd-8ec3-4080-9078-12418cc1a0ef")
-	)
-	(no_connect
 		(at 130.81 119.38)
 		(uuid "fb3dc4f6-9712-4c4f-b517-f8fdda27f4f3")
 	)
@@ -5119,6 +5391,16 @@
 			(type default)
 		)
 		(uuid "00ef5a37-b093-434f-917a-91c28bfaebaa")
+	)
+	(wire
+		(pts
+			(xy 29.21 90.17) (xy 24.13 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0725c27a-8946-4de9-9132-4d8473b50140")
 	)
 	(wire
 		(pts
@@ -5182,16 +5464,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 69.85) (xy 40.64 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d1159f4-7adf-4fee-bec4-6f533aedc065")
-	)
-	(wire
-		(pts
 			(xy 30.48 161.29) (xy 30.48 163.83)
 		)
 		(stroke
@@ -5252,6 +5524,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 90.17) (xy 19.05 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a412c03-8dec-443b-98fc-573c842390d7")
+	)
+	(wire
+		(pts
 			(xy 64.77 69.85) (xy 54.61 69.85)
 		)
 		(stroke
@@ -5259,6 +5541,16 @@
 			(type default)
 		)
 		(uuid "1a5d10a8-b21a-4e30-96f8-c3c2a22dc039")
+	)
+	(wire
+		(pts
+			(xy 19.05 97.79) (xy 24.13 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c451c0a-ec2e-4d9a-886d-1621bbc0ead9")
 	)
 	(wire
 		(pts
@@ -5319,6 +5611,16 @@
 			(type default)
 		)
 		(uuid "27fb546e-2b2b-4203-805d-5f569444f71a")
+	)
+	(wire
+		(pts
+			(xy 93.98 143.51) (xy 86.36 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "297d8254-c2aa-4946-abb1-591d0079341f")
 	)
 	(wire
 		(pts
@@ -5512,6 +5814,16 @@
 	)
 	(wire
 		(pts
+			(xy 19.05 87.63) (xy 19.05 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55659241-e4eb-4a18-8bb0-69967bdbb352")
+	)
+	(wire
+		(pts
 			(xy 196.85 39.37) (xy 204.47 39.37)
 		)
 		(stroke
@@ -5519,6 +5831,16 @@
 			(type default)
 		)
 		(uuid "58a06165-a640-4578-9907-d27743e4c77c")
+	)
+	(wire
+		(pts
+			(xy 24.13 90.17) (xy 24.13 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "596f2849-d647-4161-8a50-d33245ceac6b")
 	)
 	(wire
 		(pts
@@ -5639,6 +5961,16 @@
 			(type default)
 		)
 		(uuid "70ef24c2-2cfd-4b74-92d2-bb71ae83bafd")
+	)
+	(wire
+		(pts
+			(xy 33.02 90.17) (xy 29.21 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71e061f0-1c88-4441-a85a-96bf5a1c3dbc")
 	)
 	(wire
 		(pts
@@ -5839,6 +6171,16 @@
 			(type default)
 		)
 		(uuid "ad9b30ea-3b41-4865-b370-f4adc85fc3fc")
+	)
+	(wire
+		(pts
+			(xy 24.13 97.79) (xy 29.21 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af9a4c56-76fe-4814-a3ff-5db3fbb735ee")
 	)
 	(wire
 		(pts
@@ -6062,6 +6404,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 87.63) (xy 29.21 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed4477a4-b1bc-4ae9-b5e8-6e2a9ad05286")
+	)
+	(wire
+		(pts
 			(xy 168.91 53.34) (xy 168.91 57.15)
 		)
 		(stroke
@@ -6089,6 +6441,16 @@
 			(type default)
 		)
 		(uuid "f87b7303-30fd-400a-aa8d-e05aed191e77")
+	)
+	(wire
+		(pts
+			(xy 86.36 143.51) (xy 86.36 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f88251b7-78e1-4d69-be62-be2413a3380b")
 	)
 	(wire
 		(pts
@@ -6264,6 +6626,50 @@
 			)
 		)
 	)
+	(global_label "UART1_RX"
+		(shape input)
+		(at 66.04 109.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1ea43c0a-aa88-4472-81d9-b202ed942b06")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.7415 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FAN_PWM_INPUT"
+		(shape input)
+		(at 66.04 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "20a15b44-4b83-4f27-9304-965d9df2bac2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.9357 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "BUCK_SW"
 		(shape input)
 		(at 243.84 25.4 0)
@@ -6396,6 +6802,28 @@
 			)
 		)
 	)
+	(global_label "MCU_PWM_OUTPUT"
+		(shape input)
+		(at 66.04 93.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "445956b5-953c-498b-a5e0-10a2f74b7ef0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.6982 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VREF+"
 		(shape input)
 		(at 29.21 48.26 180)
@@ -6484,9 +6912,9 @@
 			)
 		)
 	)
-	(global_label "VBAT"
+	(global_label "UART1_TX"
 		(shape input)
-		(at 24.13 69.85 180)
+		(at 66.04 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6494,9 +6922,9 @@
 			)
 			(justify right)
 		)
-		(uuid "67d54c06-8068-4bd8-ae43-a3e5af3c962c")
+		(uuid "64d720c5-7165-4396-a6a7-d52326d2a64a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.73 69.85 0)
+			(at 54.0439 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6585,6 +7013,28 @@
 		(uuid "81ee1185-6305-470c-ba29-23d423158896")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 86.2172 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FAN_PULSE_IN"
+		(shape input)
+		(at 66.04 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "857474fd-60a6-40b9-96cc-e9cf8202156a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.6895 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6706,6 +7156,28 @@
 	)
 	(global_label "MCU_PWM_OUTPUT"
 		(shape input)
+		(at 144.78 161.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a3576d1f-d3f6-4cb2-a29f-160627120877")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.1218 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MCU_PWM_OUTPUT"
+		(shape input)
 		(at 193.04 133.35 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6744,28 +7216,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape input)
-		(at 93.98 143.51 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "af89fdce-4652-405a-a2a7-47cf78e81273")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.58 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -6880,28 +7330,6 @@
 			)
 		)
 	)
-	(global_label "FAN_PULSE_IN"
-		(shape input)
-		(at 144.78 153.67 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d175db6a-6775-4dbc-a2ef-a8a140fac3f8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.1305 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "OSC_OUT"
 		(shape input)
 		(at 93.98 156.21 180)
@@ -6924,9 +7352,9 @@
 			)
 		)
 	)
-	(global_label "12V_IN"
+	(global_label "FAN_PULSE_IN"
 		(shape input)
-		(at 144.78 161.29 0)
+		(at 144.78 148.59 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6934,9 +7362,9 @@
 			)
 			(justify left)
 		)
-		(uuid "e553ef37-fd52-4e90-b5fd-27bb9dd2351e")
+		(uuid "ea41b6b1-68ba-423d-8b9f-2f43f6aa77f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.1757 161.29 0)
+			(at 161.1305 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6964,28 +7392,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MCU_PWM_OUTPUT"
-		(shape input)
-		(at 144.78 146.05 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f478f868-507c-4f17-b120-69c267d27e63")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.1218 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -7116,6 +7522,142 @@
 			(project "fan-ctrl"
 				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
 					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 66.04 104.14 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "033c1d6e-790e-494b-a4ce-872cc1f9f9ad")
+		(property "Reference" "TP7"
+			(at 71.12 104.1399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 71.12 105.4099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+			(at 66.04 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 66.04 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "538219ce-76c9-4aaa-8a08-b4036912543f")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 19.05 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08c360f6-451e-468b-9340-b1c985e96c09")
+		(property "Reference" "H2"
+			(at 21.59 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 21.59 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+			(at 19.05 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 19.05 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 19.05 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e25dc4fc-6116-4571-937d-e108d0423312")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -7360,7 +7902,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:R_0603"
 			(at 200.66 100.33 0)
 			(effects
 				(font
@@ -7397,6 +7939,74 @@
 			(project "fan-ctrl"
 				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 66.04 93.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "132bee64-b9b5-4e6a-95dd-ef6dfb5b6345")
+		(property "Reference" "TP4"
+			(at 71.12 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 71.12 95.2499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 66.04 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "65231464-2cbf-436a-b1e0-798b9a27349e")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -7493,7 +8103,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 40.64 149.86 0)
 			(effects
 				(font
@@ -7536,6 +8146,71 @@
 			(project ""
 				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
 					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 69.85 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1bae5fd8-5c4e-4441-92e6-ab53ae076b21")
+		(property "Reference" "#PWR039"
+			(at 69.85 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 69.342 79.502 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d23178d5-0b13-4c53-86b4-1b7e27c77825")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -7635,7 +8310,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:R_0603"
 			(at 259.08 22.86 0)
 			(effects
 				(font
@@ -7702,7 +8377,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:R_0402"
 			(at 207.01 133.35 0)
 			(effects
 				(font
@@ -7772,7 +8447,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:R_0603"
 			(at 259.08 31.75 0)
 			(effects
 				(font
@@ -7972,7 +8647,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 236.22 25.4 0)
 			(effects
 				(font
@@ -8042,7 +8717,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 49.53 158.75 0)
 			(effects
 				(font
@@ -8211,6 +8886,207 @@
 			(project "fan-ctrl"
 				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 58.42 83.82 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3dc60a9b-e1c9-4bcb-812c-d4483db755f4")
+		(property "Reference" "TP2"
+			(at 63.5 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 63.5 85.0899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+			(at 58.42 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 58.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0de4a75f-9060-4a76-8aeb-c973c4b310c1")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 46.99 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "40150169-52cc-4e58-9139-02a87e441059")
+		(property "Reference" "#PWR037"
+			(at 46.99 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 45.974 79.756 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 46.99 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5414c8f7-181c-404f-9cfc-d7b3e7c16781")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 66.04 109.22 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "408d9f50-d33f-4088-a0e7-ff3566d0a30d")
+		(property "Reference" "TP8"
+			(at 71.12 109.2199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 71.12 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+			(at 66.04 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 66.04 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a50c4d2-4e83-4ecd-8b1c-6086694c95d3")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -8507,7 +9383,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:R_0402"
 			(at 60.96 173.99 0)
 			(effects
 				(font
@@ -8577,7 +9453,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 35.56 52.07 0)
 			(effects
 				(font
@@ -8647,7 +9523,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:R_0402"
 			(at 152.4 90.17 0)
 			(effects
 				(font
@@ -8717,7 +9593,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 220.98 44.45 0)
 			(effects
 				(font
@@ -8843,6 +9719,72 @@
 			(project ""
 				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 58.42 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "560cdb2b-b497-4ece-9f46-0dfe0206e0b8")
+		(property "Reference" "#PWR038"
+			(at 58.42 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 57.15 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 58.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "efdda7fd-3cb2-4d33-a870-47c38c59f69a")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -9205,7 +10147,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:R_0603"
 			(at 219.71 118.11 0)
 			(effects
 				(font
@@ -9503,7 +10445,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:R_0603"
 			(at 259.08 43.18 0)
 			(effects
 				(font
@@ -9817,7 +10759,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 134.62 27.94 0)
 			(effects
 				(font
@@ -9887,7 +10829,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 54.61 27.94 0)
 			(effects
 				(font
@@ -9924,6 +10866,74 @@
 			(project "fan-ctrl"
 				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 66.04 99.06 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "822e2dbd-d8ce-41ff-a656-d4538c709bd0")
+		(property "Reference" "TP6"
+			(at 71.12 99.0599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 71.12 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+			(at 66.04 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "214978d9-1b80-47ac-9abd-fc02abf5669b")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -10012,7 +11022,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "10k"
 			(at 198.374 135.636 0)
 			(effects
 				(font
@@ -10021,7 +11031,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:R_0402"
 			(at 196.85 135.89 0)
 			(effects
 				(font
@@ -10344,6 +11354,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 66.04 88.9 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e74592b-5f9d-428f-b844-d56a870fa9b5")
+		(property "Reference" "TP5"
+			(at 71.12 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 71.12 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+			(at 66.04 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 66.04 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f3ecd4a-f57d-46fa-92b5-a8009522cb50")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 168.91 40.64 0)
 		(unit 1)
@@ -10371,7 +11449,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:R_0603"
 			(at 168.91 40.64 0)
 			(effects
 				(font
@@ -10578,7 +11656,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 30.48 158.75 0)
 			(effects
 				(font
@@ -10645,7 +11723,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 257.81 160.02 0)
 			(effects
 				(font
@@ -10854,7 +11932,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
 			(at 127 27.178 90)
 			(effects
 				(font
@@ -10990,7 +12068,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 67.31 27.94 0)
 			(effects
 				(font
@@ -11033,6 +12111,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 46.99 83.82 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bdffde4c-30f2-4ace-8b5b-7a7f8d6f00b2")
+		(property "Reference" "TP1"
+			(at 52.07 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 52.07 85.0899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+			(at 46.99 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a17c5f0-cbcf-4d9c-b2ff-7622f397a98b")
+		)
+		(instances
+			(project ""
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 49.53 182.88 180)
 		(unit 1)
@@ -11060,7 +12206,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 49.53 182.88 0)
 			(effects
 				(font
@@ -11186,7 +12332,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 40.64 69.85 0)
+		(at 86.36 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11194,7 +12340,7 @@
 		(dnp no)
 		(uuid "c5d3f811-c255-40a8-90fe-a53cd8c91999")
 		(property "Reference" "#PWR02"
-			(at 40.64 73.66 0)
+			(at 86.36 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11203,7 +12349,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 41.656 71.882 0)
+			(at 86.868 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11211,7 +12357,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.64 69.85 0)
+			(at 86.36 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11220,7 +12366,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 69.85 0)
+			(at 86.36 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11229,7 +12375,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 40.64 69.85 0)
+			(at 86.36 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11277,7 +12423,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 232.41 44.45 0)
 			(effects
 				(font
@@ -11314,6 +12460,74 @@
 			(project "fan-ctrl"
 				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 29.21 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c880084c-c48d-43de-b972-5bca2274b181")
+		(property "Reference" "H4"
+			(at 31.75 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 31.75 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+			(at 29.21 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 29.21 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97dfe732-c38e-4ac0-8e07-38b60cb60d28")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -11741,7 +12955,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
 			(at 109.22 24.13 0)
 			(effects
 				(font
@@ -11809,7 +13023,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 140.97 87.63 0)
 			(effects
 				(font
@@ -11861,6 +13075,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 33.02 90.17 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e47ba902-a6dc-4ce0-9efb-e082e285bf52")
+		(property "Reference" "#PWR040"
+			(at 39.37 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 36.83 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 33.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6d4f5de-4fa9-40af-bb3a-a3ff2f902bca")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 168.91 50.8 0)
 		(unit 1)
@@ -11888,7 +13169,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:R_0603"
 			(at 168.91 50.8 0)
 			(effects
 				(font
@@ -11956,7 +13237,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
 			(at 208.28 39.37 0)
 			(effects
 				(font
@@ -12092,7 +13373,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 87.63 90.17 0)
 			(effects
 				(font
@@ -12200,6 +13481,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 69.85 83.82 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea9e786a-4eba-42b2-8efd-a29922e3f572")
+		(property "Reference" "TP3"
+			(at 74.93 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 74.93 85.0899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+			(at 69.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7d3fcc4-9bbe-4eca-b95b-bafe450f4fba")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 212.09 90.17 0)
 		(unit 1)
@@ -12259,6 +13608,74 @@
 			(project "fan-ctrl"
 				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
 					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 29.21 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed89010e-84bb-49ad-abd8-16f47783fe78")
+		(property "Reference" "H3"
+			(at 31.75 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 31.75 85.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+			(at 29.21 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 29.21 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af3424dc-0673-4045-be0e-36bbf0eb28c0")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -12396,6 +13813,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 19.05 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3f62c59-e5a1-43a8-93a1-b8669012ebc7")
+		(property "Reference" "H1"
+			(at 21.59 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 21.59 85.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+			(at 19.05 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 19.05 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 19.05 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae706d2c-63e5-4801-bfe3-c843a85b0a96")
+		)
+		(instances
+			(project ""
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 41.91 27.94 0)
 		(unit 1)
@@ -12423,7 +13908,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 41.91 27.94 0)
 			(effects
 				(font
@@ -12709,7 +14194,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 127 90.17 0)
 			(effects
 				(font
@@ -12777,7 +14262,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:R_0402"
 			(at 270.51 160.02 0)
 			(effects
 				(font
