@@ -5039,16 +5039,16 @@
 		(uuid "0fac9e68-5187-4e52-b7c1-cfc651952b82")
 	)
 	(junction
-		(at 200.66 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "210aa61c-8925-4d9b-9a41-027ef8ac6b7d")
-	)
-	(junction
 		(at 87.63 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2583572a-1dbc-486a-83a9-c5abdb4aaee7")
+	)
+	(junction
+		(at 214.63 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2831eb5e-73bd-469a-aedc-add373f9146c")
 	)
 	(junction
 		(at 232.41 39.37)
@@ -5394,6 +5394,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 90.17) (xy 231.14 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0144b36d-4621-4421-a24b-0d63f51b1a1d")
+	)
+	(wire
+		(pts
 			(xy 29.21 90.17) (xy 24.13 90.17)
 		)
 		(stroke
@@ -5501,16 +5511,6 @@
 			(type default)
 		)
 		(uuid "14d3432a-da99-4361-b1d9-629f0de20bcf")
-	)
-	(wire
-		(pts
-			(xy 166.37 92.71) (xy 231.14 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18367602-d39c-425d-a601-490295f913c9")
 	)
 	(wire
 		(pts
@@ -5704,23 +5704,13 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 96.52) (xy 200.66 97.79)
+			(xy 209.55 90.17) (xy 214.63 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "37a1b066-cfc6-48f2-8293-722b250f07a1")
-	)
-	(wire
-		(pts
-			(xy 200.66 104.14) (xy 214.63 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3aad0147-4642-4941-9abc-3cb02a497ea5")
+		(uuid "3ab2ef1f-91a2-44e3-b0d8-cfcf6d79ff47")
 	)
 	(wire
 		(pts
@@ -5751,16 +5741,6 @@
 			(type default)
 		)
 		(uuid "406f6cfc-d3d7-4e07-ac27-4a3cb28cf055")
-	)
-	(wire
-		(pts
-			(xy 214.63 104.14) (xy 214.63 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41a2ee49-d392-4f38-bb4d-0688e7a4343e")
 	)
 	(wire
 		(pts
@@ -5954,16 +5934,6 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 90.17) (xy 231.14 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70ef24c2-2cfd-4b74-92d2-bb71ae83bafd")
-	)
-	(wire
-		(pts
 			(xy 33.02 90.17) (xy 29.21 90.17)
 		)
 		(stroke
@@ -6041,16 +6011,6 @@
 			(type default)
 		)
 		(uuid "84db5425-6904-4d2c-93d7-a0398219d95e")
-	)
-	(wire
-		(pts
-			(xy 214.63 95.25) (xy 231.14 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a9c16d6-8c8c-433c-8749-9660d73950d9")
 	)
 	(wire
 		(pts
@@ -6194,16 +6154,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 104.14) (xy 200.66 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0df66bf-b2af-4877-96d4-5d75077cc4e2")
-	)
-	(wire
-		(pts
 			(xy 259.08 25.4) (xy 259.08 29.21)
 		)
 		(stroke
@@ -6284,6 +6234,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 95.25) (xy 231.14 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d261e751-8617-4732-97da-8fc06368ee40")
+	)
+	(wire
+		(pts
 			(xy 40.64 154.94) (xy 40.64 163.83)
 		)
 		(stroke
@@ -6291,16 +6251,6 @@
 			(type default)
 		)
 		(uuid "d4d0da7c-17bc-4be0-ba5e-646c177484b0")
-	)
-	(wire
-		(pts
-			(xy 200.66 104.14) (xy 200.66 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5d0fbb4-e134-462c-853f-cc308537bab6")
 	)
 	(wire
 		(pts
@@ -6424,6 +6374,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 92.71) (xy 231.14 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3585dcb-fc6e-49b0-99a9-c1392fd47188")
+	)
+	(wire
+		(pts
 			(xy 44.45 149.86) (xy 49.53 149.86)
 		)
 		(stroke
@@ -6471,50 +6431,6 @@
 			(type default)
 		)
 		(uuid "fe5726cc-07ce-4366-9dd0-df94f556e098")
-	)
-	(global_label "FAN_PULSE_IN"
-		(shape input)
-		(at 194.31 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "01c8c331-f59d-41c6-8bbe-dd1742045566")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 177.9595 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "FAN_PWM_INPUT"
-		(shape input)
-		(at 231.14 97.79 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify right)
-		)
-		(uuid "05e73bf2-a7f3-4df9-9e50-fa22a5be3768")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 220.277 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
 	)
 	(global_label "FAN_PWM_INPUT"
 		(shape input)
@@ -7066,6 +6982,28 @@
 			)
 		)
 	)
+	(global_label "FAN_PULSE_IN"
+		(shape input)
+		(at 209.55 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "88122fe1-e424-4f95-9854-71da3d6f498f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 193.1995 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "OSC_IN"
 		(shape input)
 		(at 93.98 153.67 180)
@@ -7079,6 +7017,28 @@
 		(uuid "883aeba4-127c-4add-86bf-3f60fe430eff")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 84.2819 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FAN_PWM_INPUT"
+		(shape input)
+		(at 227.33 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right)
+		)
+		(uuid "8975829d-02c7-4b1d-8998-fedf576a1a84")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 216.467 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7463,71 +7423,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 200.66 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "015286ae-a060-4bb7-a5d8-7ab1d10604ee")
-		(property "Reference" "#PWR030"
-			(at 200.66 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 196.85 94.488 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 200.66 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "02ca43c2-433b-4d46-91ce-471d6dd53d73")
-		)
-		(instances
-			(project "fan-ctrl"
-				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
-					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 66.04 104.14 270)
 		(unit 1)
@@ -7556,7 +7451,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 66.04 109.22 0)
 			(effects
 				(font
@@ -7624,7 +7519,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
 			(at 19.05 95.25 0)
 			(effects
 				(font
@@ -7875,76 +7770,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 200.66 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0ffd2920-277e-47e1-8b27-2eab06643c66")
-		(property "Reference" "R9"
-			(at 203.2 99.0599 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 203.2 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:R_0603"
-			(at 200.66 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 200.66 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 200.66 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "685aadb3-c6ab-4587-9141-ff799b815ec3")
-		)
-		(pin "2"
-			(uuid "050633c1-1a4b-4700-b540-391d11d4edab")
-		)
-		(instances
-			(project "fan-ctrl"
-				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 66.04 93.98 270)
 		(unit 1)
@@ -7973,7 +7798,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 66.04 99.06 0)
 			(effects
 				(font
@@ -9053,7 +8878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 66.04 114.3 0)
 			(effects
 				(font
@@ -9225,7 +9050,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 166.37 92.71 0)
+		(at 214.63 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9234,7 +9059,7 @@
 		(fields_autoplaced yes)
 		(uuid "485de61f-9bb4-4b19-8264-8f7aeda404d7")
 		(property "Reference" "#PWR029"
-			(at 166.37 99.06 0)
+			(at 214.63 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9243,7 +9068,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 166.37 97.79 0)
+			(at 214.63 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9251,7 +9076,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 92.71 0)
+			(at 214.63 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9260,7 +9085,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 92.71 0)
+			(at 214.63 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9269,7 +9094,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 166.37 92.71 0)
+			(at 214.63 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11723,7 +11548,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 257.81 160.02 0)
 			(effects
 				(font
@@ -11769,6 +11594,71 @@
 			(project "fan-ctrl"
 				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 214.63 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "adf7d125-93b9-4b43-a89a-b861316f5adc")
+		(property "Reference" "#PWR041"
+			(at 214.63 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 210.82 84.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 214.63 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee3f2267-5bbf-477e-a1cc-35f8e11aeacd")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -12494,7 +12384,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
 			(at 29.21 95.25 0)
 			(effects
 				(font
@@ -13023,7 +12913,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 140.97 87.63 0)
 			(effects
 				(font
@@ -13550,7 +13440,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 212.09 90.17 0)
+		(at 231.14 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13558,7 +13448,7 @@
 		(dnp no)
 		(uuid "ed82e156-18b4-45eb-8700-1118b3d29469")
 		(property "Reference" "#PWR028"
-			(at 212.09 93.98 0)
+			(at 234.95 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13567,7 +13457,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 208.788 87.63 0)
+			(at 229.87 99.822 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13575,7 +13465,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 212.09 90.17 0)
+			(at 231.14 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13584,7 +13474,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 212.09 90.17 0)
+			(at 231.14 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13593,7 +13483,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 212.09 90.17 0)
+			(at 231.14 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13642,7 +13532,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
 			(at 29.21 85.09 0)
 			(effects
 				(font
@@ -13841,7 +13731,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
 			(at 19.05 85.09 0)
 			(effects
 				(font
@@ -13945,6 +13835,75 @@
 			(project "fan-ctrl"
 				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 214.63 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7472d33-b312-4afa-bbe7-afcbdc18d930")
+		(property "Reference" "R13"
+			(at 215.9 85.598 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 215.9 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0603"
+			(at 214.63 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 214.63 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 214.63 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7ac5827-940f-4a49-bc63-a1fbb46d3078")
+		)
+		(pin "2"
+			(uuid "436ab4f8-d09e-4cb8-977b-998d454d5ebe")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "R13")
 					(unit 1)
 				)
 			)
