@@ -4048,7 +4048,7 @@
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "54ee8435-0ed5-427e-a580-ae91c5d9df8a")
-		(at 144.2 88.475 90)
+		(at 145.5 88.5 90)
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C12"
@@ -5367,7 +5367,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "9k1"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "f29ef886-9448-4eea-ba09-600c769e3c81")
@@ -7140,7 +7140,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C10"
-			(at -3.3 -1.1 180)
+			(at -3.025 -0.2 180)
 			(layer "F.SilkS")
 			(uuid "034d29ba-012e-481a-9f84-51f00d95fdf0")
 			(effects
@@ -7786,7 +7786,6 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/2b19ac6c-61f0-4f48-b95b-a6ea087f574a")
 		(sheetname "/")
 		(sheetfile "fan-ctrl.kicad_sch")
 		(solder_mask_margin 0.038)
@@ -8129,7 +8128,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "4.7u"
 			(at 0 1.9 0)
 			(layer "F.Fab")
 			(uuid "4576b952-1a75-4e3b-b20c-9c4b6ef3093f")
@@ -8912,7 +8911,7 @@
 				)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "49k9"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "86a3a7f9-4ff8-403a-9583-7f6818a78214")
@@ -9051,7 +9050,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 19 "Net-(R1-Pad1)")
+			(net 8 "+5V")
 			(pintype "passive")
 			(uuid "8cb45c79-d8e2-414b-ac13-13990799e3a6")
 		)
@@ -9545,7 +9544,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
 		(layer "F.Cu")
 		(uuid "e7b2945a-f2cd-4436-8bcc-d7d809a1700d")
-		(at 137 88 180)
+		(at 138.5 88.5 180)
 		(descr "module CMS SOT223 4 pins")
 		(tags "CMS SOT")
 		(property "Reference" "U6"

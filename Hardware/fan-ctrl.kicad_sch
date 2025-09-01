@@ -6154,7 +6154,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 25.4) (xy 259.08 29.21)
+			(xy 259.08 20.32) (xy 259.08 29.21)
 		)
 		(stroke
 			(width 0)
@@ -8109,76 +8109,6 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 259.08 22.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2b19ac6c-61f0-4f48-b95b-a6ea087f574a")
-		(property "Reference" "R6"
-			(at 261.62 21.5899 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47k"
-			(at 261.62 24.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:R_0603"
-			(at 259.08 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 259.08 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 259.08 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d0146912-adfc-48cc-aba4-ff261303147c")
-		)
-		(pin "2"
-			(uuid "36a06cb0-d6e1-44ea-8273-de7fa07e166e")
-		)
-		(instances
-			(project "fan-ctrl"
-				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
 		(at 207.01 133.35 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8263,7 +8193,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "49k9"
 			(at 261.62 33.0199 0)
 			(effects
 				(font
@@ -10261,7 +10191,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "9k1"
 			(at 261.62 44.4499 0)
 			(effects
 				(font
@@ -13119,7 +13049,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "4.7u"
 			(at 208.28 36.83 90)
 			(effects
 				(font
