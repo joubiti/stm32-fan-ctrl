@@ -5093,12 +5093,6 @@
 		(uuid "97de6dd2-b76c-41f5-9fc2-dd270834a66c")
 	)
 	(junction
-		(at 168.91 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9cf2e133-8efa-49c5-b86b-bb42d8562863")
-	)
-	(junction
 		(at 134.62 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5339,6 +5333,10 @@
 		(uuid "d3422cfc-19aa-4370-9c06-6a3f313079f5")
 	)
 	(no_connect
+		(at 144.78 148.59)
+		(uuid "d592cf34-7403-4f24-bd97-47e28190e03c")
+	)
+	(no_connect
 		(at 93.98 133.35)
 		(uuid "d6a2c2a8-0760-4f67-ac3d-db3b2cd9e3fa")
 	)
@@ -5441,16 +5439,6 @@
 			(type default)
 		)
 		(uuid "098bfd82-44f5-409b-aa8e-783c9eb8f8f8")
-	)
-	(wire
-		(pts
-			(xy 168.91 45.72) (xy 168.91 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09c4909b-f563-4a0f-ae5e-5db9269d7787")
 	)
 	(wire
 		(pts
@@ -5611,6 +5599,16 @@
 			(type default)
 		)
 		(uuid "27fb546e-2b2b-4203-805d-5f569444f71a")
+	)
+	(wire
+		(pts
+			(xy 69.85 96.52) (xy 66.04 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "289a3ac6-22e7-4d5b-8750-300a3e57905e")
 	)
 	(wire
 		(pts
@@ -6144,6 +6142,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 96.52) (xy 66.04 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0600bb4-5917-4691-a09f-0e08cb3fb4b6")
+	)
+	(wire
+		(pts
 			(xy 134.62 25.4) (xy 144.78 25.4)
 		)
 		(stroke
@@ -6204,6 +6212,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 91.44) (xy 66.04 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c565d5a7-bd3e-49d3-b519-ddb3db16d068")
+	)
+	(wire
+		(pts
 			(xy 116.84 87.63) (xy 127 87.63)
 		)
 		(stroke
@@ -6214,6 +6232,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 91.44) (xy 66.04 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb8f76dc-0531-4ac0-82a5-9b573132085c")
+	)
+	(wire
+		(pts
 			(xy 209.55 133.35) (xy 212.09 133.35)
 		)
 		(stroke
@@ -6221,6 +6249,16 @@
 			(type default)
 		)
 		(uuid "cd6baec3-6b57-44c2-9b3d-6adc1214b8b5")
+	)
+	(wire
+		(pts
+			(xy 43.18 101.6) (xy 43.18 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdc18744-28c4-4a63-b65f-b1dfbcb3d463")
 	)
 	(wire
 		(pts
@@ -6361,16 +6399,6 @@
 			(type default)
 		)
 		(uuid "ed4477a4-b1bc-4ae9-b5e8-6e2a9ad05286")
-	)
-	(wire
-		(pts
-			(xy 168.91 53.34) (xy 168.91 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1a12caf-8ead-435b-b43e-13926b549f09")
 	)
 	(wire
 		(pts
@@ -6762,7 +6790,7 @@
 			)
 		)
 	)
-	(global_label "VSS"
+	(global_label "GND"
 		(shape input)
 		(at 93.98 151.13 180)
 		(fields_autoplaced yes)
@@ -6774,7 +6802,7 @@
 		)
 		(uuid "5bb5587a-249b-47b7-a02c-70ac21b647f4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 87.4872 151.13 0)
+			(at 87.1243 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7268,7 +7296,7 @@
 			)
 		)
 	)
-	(global_label "VSS"
+	(global_label "GND"
 		(shape input)
 		(at 52.07 50.8 90)
 		(fields_autoplaced yes)
@@ -7280,7 +7308,7 @@
 		)
 		(uuid "cd650430-1bc6-4441-92f2-e537738a6da9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.07 44.3072 90)
+			(at 52.07 43.9443 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7314,7 +7342,7 @@
 	)
 	(global_label "FAN_PULSE_IN"
 		(shape input)
-		(at 144.78 148.59 0)
+		(at 144.78 153.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7324,7 +7352,7 @@
 		)
 		(uuid "ea41b6b1-68ba-423d-8b9f-2f43f6aa77f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.1305 148.59 0)
+			(at 161.1305 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7451,7 +7479,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 66.04 109.22 0)
 			(effects
 				(font
@@ -7798,7 +7826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 66.04 99.06 0)
 			(effects
 				(font
@@ -8036,72 +8064,6 @@
 			(project "fan-ctrl"
 				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
 					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 168.91 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2aa26554-ac81-470b-b1c6-de89fc45021c")
-		(property "Reference" "#PWR019"
-			(at 168.91 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 168.91 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "518d5143-cae2-489f-aa1c-e3bff1900bda")
-		)
-		(instances
-			(project ""
-				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
-					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -8675,7 +8637,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
 			(at 58.42 88.9 0)
 			(effects
 				(font
@@ -8808,7 +8770,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 66.04 114.3 0)
 			(effects
 				(font
@@ -9540,6 +9502,74 @@
 			(project "fan-ctrl"
 				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 69.85 91.44 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b96c61b-4944-43d6-b348-57e697bbf78e")
+		(property "Reference" "TP10"
+			(at 74.93 91.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 74.93 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 69.85 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 69.85 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ae76664-f8fb-4903-a678-42ceef3f8824")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -10655,7 +10685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
 			(at 66.04 104.14 0)
 			(effects
 				(font
@@ -10960,6 +10990,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 43.18 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "90ce6d37-9f19-4813-89ba-d958c650e656")
+		(property "Reference" "TP11"
+			(at 44.45 98.044 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 44.4499 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 48.26 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 43.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c6ac727-1047-4ca0-913f-9d3ce3cb7379")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "easyeda2kicad:XDJK-0051-025")
 		(at 256.54 73.66 180)
 		(unit 1)
@@ -11137,7 +11234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
 			(at 66.04 93.98 0)
 			(effects
 				(font
@@ -11195,7 +11292,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120k"
+		(property "Value" "100k"
 			(at 171.45 41.9099 0)
 			(effects
 				(font
@@ -11932,6 +12029,74 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
+		(at 69.85 96.52 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bdb3251a-a196-404f-87d3-f272dacebdce")
+		(property "Reference" "TP9"
+			(at 74.93 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 74.93 97.7899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 69.85 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 69.85 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4389aa0f-f5a7-48eb-98fb-cb53bcf712d8")
+		)
+		(instances
+			(project "fan-ctrl"
+				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
 		(at 46.99 83.82 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11959,7 +12124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
 			(at 46.99 88.9 0)
 			(effects
 				(font
@@ -12767,7 +12932,7 @@
 				)
 			)
 		)
-		(property "Value" "500mA"
+		(property "Value" "800mA"
 			(at 104.14 21.59 90)
 			(effects
 				(font
@@ -12962,35 +13127,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 168.91 50.8 0)
+		(lib_id "power:GND")
+		(at 43.18 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e537b29f-04f1-4e2b-97e1-51e49501e6bc")
-		(property "Reference" "R5"
-			(at 171.45 49.5299 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "40k"
-			(at 171.45 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:R_0603"
-			(at 168.91 50.8 0)
+		(uuid "e588c2c0-58dd-4983-bb4b-4060f929e1e7")
+		(property "Reference" "#PWR030"
+			(at 43.18 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12998,8 +13145,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 168.91 50.8 0)
+		(property "Value" "GND"
+			(at 43.18 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13007,8 +13162,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 168.91 50.8 0)
+		(property "Datasheet" ""
+			(at 43.18 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 43.18 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13017,15 +13181,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "85dd529c-308e-4780-a191-b66f8ff13251")
-		)
-		(pin "2"
-			(uuid "103ac8c1-db7b-4cc5-a513-76ab20ec543b")
+			(uuid "143b58a4-e6e8-4aad-b9ef-d0cced3216b1")
 		)
 		(instances
 			(project "fan-ctrl"
 				(path "/3b32e9df-6978-4cdc-9438-caa67c4a1546"
-					(reference "R5")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -13184,7 +13345,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "22u"
 			(at 90.17 91.4462 0)
 			(effects
 				(font
@@ -13329,7 +13490,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
 			(at 69.85 88.9 0)
 			(effects
 				(font
@@ -14074,7 +14235,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "22u"
 			(at 129.54 91.4462 0)
 			(effects
 				(font
