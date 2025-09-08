@@ -1,0 +1,293 @@
+ARM GAS  /tmp/ccQK4RN3.s 			page 1
+
+
+   1              		.cpu cortex-m0plus
+   2              		.arch armv6s-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.file	"heartbeat.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.file 1 "Core/Src/heartbeat.c"
+  18              		.section	.text.heartbeat_set_period,"ax",%progbits
+  19              		.align	1
+  20              		.global	heartbeat_set_period
+  21              		.syntax unified
+  22              		.code	16
+  23              		.thumb_func
+  25              	heartbeat_set_period:
+  26              	.LVL0:
+  27              	.LFB311:
+   1:Core/Src/heartbeat.c **** #include "heartbeat.h"
+   2:Core/Src/heartbeat.c **** #include "stm32g0xx_hal.h"
+   3:Core/Src/heartbeat.c **** 
+   4:Core/Src/heartbeat.c **** #define HEARTBEAT_GPIO_PORT GPIOB
+   5:Core/Src/heartbeat.c **** #define HEARTBEAT_GPIO_PIN  GPIO_PIN_13
+   6:Core/Src/heartbeat.c **** 
+   7:Core/Src/heartbeat.c **** 
+   8:Core/Src/heartbeat.c **** void heartbeat_initialize(heartbeat_led_t* led, uint16_t period)
+   9:Core/Src/heartbeat.c **** {
+  10:Core/Src/heartbeat.c ****     heartbeat_set_period(led, period);
+  11:Core/Src/heartbeat.c **** }
+  12:Core/Src/heartbeat.c **** 
+  13:Core/Src/heartbeat.c **** void heartbeat_set_period(heartbeat_led_t* led, uint16_t period)
+  14:Core/Src/heartbeat.c **** {
+  28              		.loc 1 14 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  15:Core/Src/heartbeat.c ****     led->period_ms = period;
+  33              		.loc 1 15 5 view .LVU1
+  34              		.loc 1 15 20 is_stmt 0 view .LVU2
+  35 0000 0180     		strh	r1, [r0]
+  16:Core/Src/heartbeat.c **** }
+  36              		.loc 1 16 1 view .LVU3
+  37              		@ sp needed
+  38 0002 7047     		bx	lr
+  39              		.cfi_endproc
+  40              	.LFE311:
+  42              		.section	.text.heartbeat_initialize,"ax",%progbits
+  43              		.align	1
+ARM GAS  /tmp/ccQK4RN3.s 			page 2
+
+
+  44              		.global	heartbeat_initialize
+  45              		.syntax unified
+  46              		.code	16
+  47              		.thumb_func
+  49              	heartbeat_initialize:
+  50              	.LVL1:
+  51              	.LFB310:
+   9:Core/Src/heartbeat.c ****     heartbeat_set_period(led, period);
+  52              		.loc 1 9 1 is_stmt 1 view -0
+  53              		.cfi_startproc
+  54              		@ args = 0, pretend = 0, frame = 0
+  55              		@ frame_needed = 0, uses_anonymous_args = 0
+   9:Core/Src/heartbeat.c ****     heartbeat_set_period(led, period);
+  56              		.loc 1 9 1 is_stmt 0 view .LVU5
+  57 0000 10B5     		push	{r4, lr}
+  58              	.LCFI0:
+  59              		.cfi_def_cfa_offset 8
+  60              		.cfi_offset 4, -8
+  61              		.cfi_offset 14, -4
+  10:Core/Src/heartbeat.c **** }
+  62              		.loc 1 10 5 is_stmt 1 view .LVU6
+  63 0002 FFF7FEFF 		bl	heartbeat_set_period
+  64              	.LVL2:
+  11:Core/Src/heartbeat.c **** 
+  65              		.loc 1 11 1 is_stmt 0 view .LVU7
+  66              		@ sp needed
+  67 0006 10BD     		pop	{r4, pc}
+  68              		.cfi_endproc
+  69              	.LFE310:
+  71              		.section	.text.heartbeat_on,"ax",%progbits
+  72              		.align	1
+  73              		.global	heartbeat_on
+  74              		.syntax unified
+  75              		.code	16
+  76              		.thumb_func
+  78              	heartbeat_on:
+  79              	.LVL3:
+  80              	.LFB312:
+  17:Core/Src/heartbeat.c **** 
+  18:Core/Src/heartbeat.c **** void heartbeat_on(heartbeat_led_t* led)
+  19:Core/Src/heartbeat.c **** {
+  81              		.loc 1 19 1 is_stmt 1 view -0
+  82              		.cfi_startproc
+  83              		@ args = 0, pretend = 0, frame = 0
+  84              		@ frame_needed = 0, uses_anonymous_args = 0
+  85              		.loc 1 19 1 is_stmt 0 view .LVU9
+  86 0000 10B5     		push	{r4, lr}
+  87              	.LCFI1:
+  88              		.cfi_def_cfa_offset 8
+  89              		.cfi_offset 4, -8
+  90              		.cfi_offset 14, -4
+  20:Core/Src/heartbeat.c ****     HAL_GPIO_WritePin(HEARTBEAT_GPIO_PORT, HEARTBEAT_GPIO_PIN, 1);
+  91              		.loc 1 20 5 is_stmt 1 view .LVU10
+  92 0002 8021     		movs	r1, #128
+  93 0004 0122     		movs	r2, #1
+  94 0006 8901     		lsls	r1, r1, #6
+  95 0008 0148     		ldr	r0, .L4
+ARM GAS  /tmp/ccQK4RN3.s 			page 3
+
+
+  96              	.LVL4:
+  97              		.loc 1 20 5 is_stmt 0 view .LVU11
+  98 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
+  99              	.LVL5:
+  21:Core/Src/heartbeat.c **** }
+ 100              		.loc 1 21 1 view .LVU12
+ 101              		@ sp needed
+ 102 000e 10BD     		pop	{r4, pc}
+ 103              	.L5:
+ 104              		.align	2
+ 105              	.L4:
+ 106 0010 00040050 		.word	1342178304
+ 107              		.cfi_endproc
+ 108              	.LFE312:
+ 110              		.section	.text.heartbeat_off,"ax",%progbits
+ 111              		.align	1
+ 112              		.global	heartbeat_off
+ 113              		.syntax unified
+ 114              		.code	16
+ 115              		.thumb_func
+ 117              	heartbeat_off:
+ 118              	.LVL6:
+ 119              	.LFB313:
+  22:Core/Src/heartbeat.c **** 
+  23:Core/Src/heartbeat.c **** void heartbeat_off(heartbeat_led_t* led)
+  24:Core/Src/heartbeat.c **** {
+ 120              		.loc 1 24 1 is_stmt 1 view -0
+ 121              		.cfi_startproc
+ 122              		@ args = 0, pretend = 0, frame = 0
+ 123              		@ frame_needed = 0, uses_anonymous_args = 0
+ 124              		.loc 1 24 1 is_stmt 0 view .LVU14
+ 125 0000 10B5     		push	{r4, lr}
+ 126              	.LCFI2:
+ 127              		.cfi_def_cfa_offset 8
+ 128              		.cfi_offset 4, -8
+ 129              		.cfi_offset 14, -4
+  25:Core/Src/heartbeat.c ****     HAL_GPIO_WritePin(HEARTBEAT_GPIO_PORT, HEARTBEAT_GPIO_PIN, 0);
+ 130              		.loc 1 25 5 is_stmt 1 view .LVU15
+ 131 0002 8021     		movs	r1, #128
+ 132 0004 0022     		movs	r2, #0
+ 133 0006 8901     		lsls	r1, r1, #6
+ 134 0008 0148     		ldr	r0, .L7
+ 135              	.LVL7:
+ 136              		.loc 1 25 5 is_stmt 0 view .LVU16
+ 137 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 138              	.LVL8:
+  26:Core/Src/heartbeat.c **** }
+ 139              		.loc 1 26 1 view .LVU17
+ 140              		@ sp needed
+ 141 000e 10BD     		pop	{r4, pc}
+ 142              	.L8:
+ 143              		.align	2
+ 144              	.L7:
+ 145 0010 00040050 		.word	1342178304
+ 146              		.cfi_endproc
+ 147              	.LFE313:
+ 149              		.section	.text.heartbeat_toggle,"ax",%progbits
+ARM GAS  /tmp/ccQK4RN3.s 			page 4
+
+
+ 150              		.align	1
+ 151              		.global	heartbeat_toggle
+ 152              		.syntax unified
+ 153              		.code	16
+ 154              		.thumb_func
+ 156              	heartbeat_toggle:
+ 157              	.LVL9:
+ 158              	.LFB314:
+  27:Core/Src/heartbeat.c **** 
+  28:Core/Src/heartbeat.c **** void heartbeat_toggle(heartbeat_led_t* led, uint32_t current_tick)
+  29:Core/Src/heartbeat.c **** {
+ 159              		.loc 1 29 1 is_stmt 1 view -0
+ 160              		.cfi_startproc
+ 161              		@ args = 0, pretend = 0, frame = 0
+ 162              		@ frame_needed = 0, uses_anonymous_args = 0
+ 163              		.loc 1 29 1 is_stmt 0 view .LVU19
+ 164 0000 70B5     		push	{r4, r5, r6, lr}
+ 165              	.LCFI3:
+ 166              		.cfi_def_cfa_offset 16
+ 167              		.cfi_offset 4, -16
+ 168              		.cfi_offset 5, -12
+ 169              		.cfi_offset 6, -8
+ 170              		.cfi_offset 14, -4
+ 171 0002 0400     		movs	r4, r0
+ 172 0004 0D00     		movs	r5, r1
+  30:Core/Src/heartbeat.c ****     if(current_tick - led->last_tick >= led->period_ms)
+ 173              		.loc 1 30 5 is_stmt 1 view .LVU20
+ 174              		.loc 1 30 26 is_stmt 0 view .LVU21
+ 175 0006 4368     		ldr	r3, [r0, #4]
+ 176              		.loc 1 30 21 view .LVU22
+ 177 0008 CB1A     		subs	r3, r1, r3
+ 178              		.loc 1 30 44 view .LVU23
+ 179 000a 0288     		ldrh	r2, [r0]
+ 180              		.loc 1 30 7 view .LVU24
+ 181 000c 9342     		cmp	r3, r2
+ 182 000e 00D2     		bcs	.L11
+ 183              	.LVL10:
+ 184              	.L9:
+  31:Core/Src/heartbeat.c ****     {
+  32:Core/Src/heartbeat.c ****         HAL_GPIO_TogglePin(HEARTBEAT_GPIO_PORT, HEARTBEAT_GPIO_PIN);
+  33:Core/Src/heartbeat.c ****         led->last_tick = current_tick;
+  34:Core/Src/heartbeat.c ****     }
+  35:Core/Src/heartbeat.c **** }
+ 185              		.loc 1 35 1 view .LVU25
+ 186              		@ sp needed
+ 187              	.LVL11:
+ 188              	.LVL12:
+ 189              		.loc 1 35 1 view .LVU26
+ 190 0010 70BD     		pop	{r4, r5, r6, pc}
+ 191              	.LVL13:
+ 192              	.L11:
+  32:Core/Src/heartbeat.c ****         led->last_tick = current_tick;
+ 193              		.loc 1 32 9 is_stmt 1 view .LVU27
+ 194 0012 8021     		movs	r1, #128
+ 195              	.LVL14:
+  32:Core/Src/heartbeat.c ****         led->last_tick = current_tick;
+ 196              		.loc 1 32 9 is_stmt 0 view .LVU28
+ARM GAS  /tmp/ccQK4RN3.s 			page 5
+
+
+ 197 0014 8901     		lsls	r1, r1, #6
+ 198 0016 0248     		ldr	r0, .L12
+ 199              	.LVL15:
+  32:Core/Src/heartbeat.c ****         led->last_tick = current_tick;
+ 200              		.loc 1 32 9 view .LVU29
+ 201 0018 FFF7FEFF 		bl	HAL_GPIO_TogglePin
+ 202              	.LVL16:
+  33:Core/Src/heartbeat.c ****     }
+ 203              		.loc 1 33 9 is_stmt 1 view .LVU30
+  33:Core/Src/heartbeat.c ****     }
+ 204              		.loc 1 33 24 is_stmt 0 view .LVU31
+ 205 001c 6560     		str	r5, [r4, #4]
+ 206              		.loc 1 35 1 view .LVU32
+ 207 001e F7E7     		b	.L9
+ 208              	.L13:
+ 209              		.align	2
+ 210              	.L12:
+ 211 0020 00040050 		.word	1342178304
+ 212              		.cfi_endproc
+ 213              	.LFE314:
+ 215              		.text
+ 216              	.Letext0:
+ 217              		.file 2 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
+ 218              		.file 3 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
+ 219              		.file 4 "Core/Inc/heartbeat.h"
+ 220              		.file 5 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g070xx.h"
+ 221              		.file 6 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h"
+ 222              		.file 7 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h"
+ARM GAS  /tmp/ccQK4RN3.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 heartbeat.c
+     /tmp/ccQK4RN3.s:19     .text.heartbeat_set_period:00000000 $t
+     /tmp/ccQK4RN3.s:25     .text.heartbeat_set_period:00000000 heartbeat_set_period
+     /tmp/ccQK4RN3.s:43     .text.heartbeat_initialize:00000000 $t
+     /tmp/ccQK4RN3.s:49     .text.heartbeat_initialize:00000000 heartbeat_initialize
+     /tmp/ccQK4RN3.s:72     .text.heartbeat_on:00000000 $t
+     /tmp/ccQK4RN3.s:78     .text.heartbeat_on:00000000 heartbeat_on
+     /tmp/ccQK4RN3.s:106    .text.heartbeat_on:00000010 $d
+     /tmp/ccQK4RN3.s:111    .text.heartbeat_off:00000000 $t
+     /tmp/ccQK4RN3.s:117    .text.heartbeat_off:00000000 heartbeat_off
+     /tmp/ccQK4RN3.s:145    .text.heartbeat_off:00000010 $d
+     /tmp/ccQK4RN3.s:150    .text.heartbeat_toggle:00000000 $t
+     /tmp/ccQK4RN3.s:156    .text.heartbeat_toggle:00000000 heartbeat_toggle
+     /tmp/ccQK4RN3.s:211    .text.heartbeat_toggle:00000020 $d
+
+UNDEFINED SYMBOLS
+HAL_GPIO_WritePin
+HAL_GPIO_TogglePin
