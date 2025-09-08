@@ -32,6 +32,7 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "heartbeat.h"
+#include "logging.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

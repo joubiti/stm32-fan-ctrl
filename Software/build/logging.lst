@@ -1,0 +1,409 @@
+ARM GAS  /tmp/ccFWYjgl.s 			page 1
+
+
+   1              		.cpu cortex-m0plus
+   2              		.arch armv6s-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.file	"logging.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.file 1 "Core/Src/logging.c"
+  18              		.section	.text._logging_send_fmt_output,"ax",%progbits
+  19              		.align	1
+  20              		.syntax unified
+  21              		.code	16
+  22              		.thumb_func
+  24              	_logging_send_fmt_output:
+  25              	.LVL0:
+  26              	.LFB317:
+   1:Core/Src/logging.c **** #include "logging.h"
+   2:Core/Src/logging.c **** #include "stm32g0xx_hal.h"
+   3:Core/Src/logging.c **** 
+   4:Core/Src/logging.c **** #include <stdarg.h>
+   5:Core/Src/logging.c **** #include <stdio.h>
+   6:Core/Src/logging.c **** #include <string.h>
+   7:Core/Src/logging.c **** 
+   8:Core/Src/logging.c **** static void _logging_send_fmt_output(const char* fmt, va_list args);
+   9:Core/Src/logging.c **** 
+  10:Core/Src/logging.c **** typedef struct{
+  11:Core/Src/logging.c ****     UART_HandleTypeDef* huart;
+  12:Core/Src/logging.c ****     uint32_t msg_period;
+  13:Core/Src/logging.c ****     uint32_t last_tick;
+  14:Core/Src/logging.c **** }logging_subsystem_t;
+  15:Core/Src/logging.c **** 
+  16:Core/Src/logging.c **** // singleton
+  17:Core/Src/logging.c **** static logging_subsystem_t logging_subsystem;
+  18:Core/Src/logging.c **** 
+  19:Core/Src/logging.c **** void logging_subsystem_init(UART_HandleTypeDef* huart)
+  20:Core/Src/logging.c **** {
+  21:Core/Src/logging.c ****     logging_subsystem.huart = huart;
+  22:Core/Src/logging.c ****     // default value
+  23:Core/Src/logging.c ****     logging_subsystem.msg_period = 1000;
+  24:Core/Src/logging.c **** }
+  25:Core/Src/logging.c **** 
+  26:Core/Src/logging.c **** void logging_set_message_frequency(uint32_t period)
+  27:Core/Src/logging.c **** {
+  28:Core/Src/logging.c ****     logging_subsystem.msg_period = period;
+  29:Core/Src/logging.c **** }
+  30:Core/Src/logging.c **** 
+  31:Core/Src/logging.c **** 
+  32:Core/Src/logging.c **** void logging_send_output(const char* msg, ...)
+ARM GAS  /tmp/ccFWYjgl.s 			page 2
+
+
+  33:Core/Src/logging.c **** {
+  34:Core/Src/logging.c ****     va_list args;
+  35:Core/Src/logging.c ****     va_start(args, msg);
+  36:Core/Src/logging.c ****     _logging_send_fmt_output(msg, args);
+  37:Core/Src/logging.c ****     va_end(args);
+  38:Core/Src/logging.c **** }
+  39:Core/Src/logging.c **** 
+  40:Core/Src/logging.c **** void logging_send_periodic_msg(uint32_t current_tick, const char* msg, ...)
+  41:Core/Src/logging.c **** {
+  42:Core/Src/logging.c ****     if(current_tick - logging_subsystem.last_tick > logging_subsystem.msg_period)
+  43:Core/Src/logging.c ****     {
+  44:Core/Src/logging.c ****         va_list args;
+  45:Core/Src/logging.c ****         va_start(args, msg);
+  46:Core/Src/logging.c ****         _logging_send_fmt_output(msg, args);
+  47:Core/Src/logging.c ****         va_end(args);
+  48:Core/Src/logging.c ****         logging_subsystem.last_tick = current_tick;
+  49:Core/Src/logging.c ****     }
+  50:Core/Src/logging.c **** }
+  51:Core/Src/logging.c **** 
+  52:Core/Src/logging.c **** 
+  53:Core/Src/logging.c **** static void _logging_send_fmt_output(const char* fmt, va_list args)
+  54:Core/Src/logging.c **** {
+  27              		.loc 1 54 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 128
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		.loc 1 54 1 is_stmt 0 view .LVU1
+  32 0000 10B5     		push	{r4, lr}
+  33              	.LCFI0:
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 4, -8
+  36              		.cfi_offset 14, -4
+  37 0002 A0B0     		sub	sp, sp, #128
+  38              	.LCFI1:
+  39              		.cfi_def_cfa_offset 136
+  40 0004 0200     		movs	r2, r0
+  41 0006 0B00     		movs	r3, r1
+  42              	.LVL1:
+  55:Core/Src/logging.c ****     char buffer[128];
+  43              		.loc 1 55 5 is_stmt 1 view .LVU2
+  56:Core/Src/logging.c ****     vsnprintf(buffer, sizeof(buffer), fmt, args);
+  44              		.loc 1 56 5 view .LVU3
+  45 0008 8021     		movs	r1, #128
+  46 000a 6846     		mov	r0, sp
+  47              	.LVL2:
+  48              		.loc 1 56 5 is_stmt 0 view .LVU4
+  49 000c FFF7FEFF 		bl	vsnprintf
+  50              	.LVL3:
+  57:Core/Src/logging.c **** 
+  58:Core/Src/logging.c ****     HAL_UART_Transmit(logging_subsystem.huart, (const uint8_t*) buffer, strlen(buffer), 100);
+  51              		.loc 1 58 5 is_stmt 1 view .LVU5
+  52              		.loc 1 58 73 is_stmt 0 view .LVU6
+  53 0010 6846     		mov	r0, sp
+  54 0012 FFF7FEFF 		bl	strlen
+  55              	.LVL4:
+  56              		.loc 1 58 5 discriminator 1 view .LVU7
+  57 0016 82B2     		uxth	r2, r0
+ARM GAS  /tmp/ccFWYjgl.s 			page 3
+
+
+  58              		.loc 1 58 5 view .LVU8
+  59 0018 034B     		ldr	r3, .L2
+  60              		.loc 1 58 5 discriminator 1 view .LVU9
+  61 001a 1868     		ldr	r0, [r3]
+  62 001c 6423     		movs	r3, #100
+  63 001e 6946     		mov	r1, sp
+  64 0020 FFF7FEFF 		bl	HAL_UART_Transmit
+  65              	.LVL5:
+  59:Core/Src/logging.c **** }...
+  66              		.loc 1 59 1 view .LVU10
+  67 0024 20B0     		add	sp, sp, #128
+  68              		@ sp needed
+  69 0026 10BD     		pop	{r4, pc}
+  70              	.L3:
+  71              		.align	2
+  72              	.L2:
+  73 0028 00000000 		.word	logging_subsystem
+  74              		.cfi_endproc
+  75              	.LFE317:
+  77              		.section	.text.logging_subsystem_init,"ax",%progbits
+  78              		.align	1
+  79              		.global	logging_subsystem_init
+  80              		.syntax unified
+  81              		.code	16
+  82              		.thumb_func
+  84              	logging_subsystem_init:
+  85              	.LVL6:
+  86              	.LFB313:
+  20:Core/Src/logging.c **** {
+  87              		.loc 1 20 1 is_stmt 1 view -0
+  88              		.cfi_startproc
+  89              		@ args = 0, pretend = 0, frame = 0
+  90              		@ frame_needed = 0, uses_anonymous_args = 0
+  91              		@ link register save eliminated.
+  21:Core/Src/logging.c ****     logging_subsystem.huart = huart;
+  92              		.loc 1 21 5 view .LVU12
+  21:Core/Src/logging.c ****     logging_subsystem.huart = huart;
+  93              		.loc 1 21 29 is_stmt 0 view .LVU13
+  94 0000 024B     		ldr	r3, .L5
+  95 0002 1860     		str	r0, [r3]
+  23:Core/Src/logging.c ****     logging_subsystem.msg_period = 1000;
+  96              		.loc 1 23 5 is_stmt 1 view .LVU14
+  23:Core/Src/logging.c ****     logging_subsystem.msg_period = 1000;
+  97              		.loc 1 23 34 is_stmt 0 view .LVU15
+  98 0004 FA22     		movs	r2, #250
+  99 0006 9200     		lsls	r2, r2, #2
+ 100 0008 5A60     		str	r2, [r3, #4]
+  24:Core/Src/logging.c **** }
+ 101              		.loc 1 24 1 view .LVU16
+ 102              		@ sp needed
+ 103 000a 7047     		bx	lr
+ 104              	.L6:
+ 105              		.align	2
+ 106              	.L5:
+ 107 000c 00000000 		.word	logging_subsystem
+ 108              		.cfi_endproc
+ 109              	.LFE313:
+ARM GAS  /tmp/ccFWYjgl.s 			page 4
+
+
+ 111              		.section	.text.logging_set_message_frequency,"ax",%progbits
+ 112              		.align	1
+ 113              		.global	logging_set_message_frequency
+ 114              		.syntax unified
+ 115              		.code	16
+ 116              		.thumb_func
+ 118              	logging_set_message_frequency:
+ 119              	.LVL7:
+ 120              	.LFB314:
+  27:Core/Src/logging.c **** {
+ 121              		.loc 1 27 1 is_stmt 1 view -0
+ 122              		.cfi_startproc
+ 123              		@ args = 0, pretend = 0, frame = 0
+ 124              		@ frame_needed = 0, uses_anonymous_args = 0
+ 125              		@ link register save eliminated.
+  28:Core/Src/logging.c ****     logging_subsystem.msg_period = period;
+ 126              		.loc 1 28 5 view .LVU18
+  28:Core/Src/logging.c ****     logging_subsystem.msg_period = period;
+ 127              		.loc 1 28 34 is_stmt 0 view .LVU19
+ 128 0000 014B     		ldr	r3, .L8
+ 129 0002 5860     		str	r0, [r3, #4]
+  29:Core/Src/logging.c **** }
+ 130              		.loc 1 29 1 view .LVU20
+ 131              		@ sp needed
+ 132 0004 7047     		bx	lr
+ 133              	.L9:
+ 134 0006 C046     		.align	2
+ 135              	.L8:
+ 136 0008 00000000 		.word	logging_subsystem
+ 137              		.cfi_endproc
+ 138              	.LFE314:
+ 140              		.section	.text.logging_send_output,"ax",%progbits
+ 141              		.align	1
+ 142              		.global	logging_send_output
+ 143              		.syntax unified
+ 144              		.code	16
+ 145              		.thumb_func
+ 147              	logging_send_output:
+ 148              	.LVL8:
+ 149              	.LFB315:
+  33:Core/Src/logging.c **** {
+ 150              		.loc 1 33 1 is_stmt 1 view -0
+ 151              		.cfi_startproc
+ 152              		@ args = 4, pretend = 16, frame = 8
+ 153              		@ frame_needed = 0, uses_anonymous_args = 1
+  33:Core/Src/logging.c **** {
+ 154              		.loc 1 33 1 is_stmt 0 view .LVU22
+ 155 0000 0FB4     		push	{r0, r1, r2, r3}
+ 156              	.LCFI2:
+ 157              		.cfi_def_cfa_offset 16
+ 158 0002 00B5     		push	{lr}
+ 159              	.LCFI3:
+ 160              		.cfi_def_cfa_offset 20
+ 161              		.cfi_offset 14, -20
+ 162 0004 83B0     		sub	sp, sp, #12
+ 163              	.LCFI4:
+ 164              		.cfi_def_cfa_offset 32
+ARM GAS  /tmp/ccFWYjgl.s 			page 5
+
+
+ 165 0006 04A9     		add	r1, sp, #16
+ 166 0008 01C9     		ldmia	r1!, {r0}
+  34:Core/Src/logging.c ****     va_list args;
+ 167              		.loc 1 34 5 is_stmt 1 view .LVU23
+  35:Core/Src/logging.c ****     va_start(args, msg);
+ 168              		.loc 1 35 5 view .LVU24
+ 169 000a 0191     		str	r1, [sp, #4]
+  36:Core/Src/logging.c ****     _logging_send_fmt_output(msg, args);
+ 170              		.loc 1 36 5 view .LVU25
+ 171 000c FFF7FEFF 		bl	_logging_send_fmt_output
+ 172              	.LVL9:
+  37:Core/Src/logging.c ****     va_end(args);
+ 173              		.loc 1 37 5 view .LVU26
+  38:Core/Src/logging.c **** }
+ 174              		.loc 1 38 1 is_stmt 0 view .LVU27
+ 175 0010 03B0     		add	sp, sp, #12
+ 176              		@ sp needed
+ 177 0012 08BC     		pop	{r3}
+ 178 0014 04B0     		add	sp, sp, #16
+ 179 0016 1847     		bx	r3
+ 180              		.cfi_endproc
+ 181              	.LFE315:
+ 183              		.section	.text.logging_send_periodic_msg,"ax",%progbits
+ 184              		.align	1
+ 185              		.global	logging_send_periodic_msg
+ 186              		.syntax unified
+ 187              		.code	16
+ 188              		.thumb_func
+ 190              	logging_send_periodic_msg:
+ 191              	.LVL10:
+ 192              	.LFB316:
+  41:Core/Src/logging.c **** {
+ 193              		.loc 1 41 1 is_stmt 1 view -0
+ 194              		.cfi_startproc
+ 195              		@ args = 4, pretend = 12, frame = 8
+ 196              		@ frame_needed = 0, uses_anonymous_args = 1
+  41:Core/Src/logging.c **** {
+ 197              		.loc 1 41 1 is_stmt 0 view .LVU29
+ 198 0000 0EB4     		push	{r1, r2, r3}
+ 199              	.LCFI5:
+ 200              		.cfi_def_cfa_offset 12
+ 201 0002 10B5     		push	{r4, lr}
+ 202              	.LCFI6:
+ 203              		.cfi_def_cfa_offset 20
+ 204              		.cfi_offset 4, -20
+ 205              		.cfi_offset 14, -16
+ 206 0004 83B0     		sub	sp, sp, #12
+ 207              	.LCFI7:
+ 208              		.cfi_def_cfa_offset 32
+ 209 0006 0400     		movs	r4, r0
+  42:Core/Src/logging.c ****     if(current_tick - logging_subsystem.last_tick > logging_subsystem.msg_period)
+ 210              		.loc 1 42 5 is_stmt 1 view .LVU30
+  42:Core/Src/logging.c ****     if(current_tick - logging_subsystem.last_tick > logging_subsystem.msg_period)
+ 211              		.loc 1 42 40 is_stmt 0 view .LVU31
+ 212 0008 094A     		ldr	r2, .L14
+ 213 000a 9368     		ldr	r3, [r2, #8]
+  42:Core/Src/logging.c ****     if(current_tick - logging_subsystem.last_tick > logging_subsystem.msg_period)
+ARM GAS  /tmp/ccFWYjgl.s 			page 6
+
+
+ 214              		.loc 1 42 21 view .LVU32
+ 215 000c C31A     		subs	r3, r0, r3
+  42:Core/Src/logging.c ****     if(current_tick - logging_subsystem.last_tick > logging_subsystem.msg_period)
+ 216              		.loc 1 42 70 view .LVU33
+ 217 000e 5268     		ldr	r2, [r2, #4]
+  42:Core/Src/logging.c ****     if(current_tick - logging_subsystem.last_tick > logging_subsystem.msg_period)
+ 218              		.loc 1 42 7 view .LVU34
+ 219 0010 9342     		cmp	r3, r2
+ 220 0012 04D8     		bhi	.L13
+ 221              	.LVL11:
+ 222              	.L11:
+  50:Core/Src/logging.c **** }
+ 223              		.loc 1 50 1 view .LVU35
+ 224 0014 03B0     		add	sp, sp, #12
+ 225              		@ sp needed
+ 226              	.LVL12:
+  50:Core/Src/logging.c **** }
+ 227              		.loc 1 50 1 view .LVU36
+ 228 0016 10BC     		pop	{r4}
+ 229 0018 08BC     		pop	{r3}
+ 230 001a 03B0     		add	sp, sp, #12
+ 231 001c 1847     		bx	r3
+ 232              	.LVL13:
+ 233              	.L13:
+ 234              	.LBB2:
+  44:Core/Src/logging.c ****         va_list args;
+ 235              		.loc 1 44 9 is_stmt 1 view .LVU37
+  45:Core/Src/logging.c ****         va_start(args, msg);
+ 236              		.loc 1 45 9 view .LVU38
+ 237 001e 06A9     		add	r1, sp, #24
+ 238 0020 0191     		str	r1, [sp, #4]
+  46:Core/Src/logging.c ****         _logging_send_fmt_output(msg, args);
+ 239              		.loc 1 46 9 view .LVU39
+ 240 0022 0598     		ldr	r0, [sp, #20]
+ 241              	.LVL14:
+  46:Core/Src/logging.c ****         _logging_send_fmt_output(msg, args);
+ 242              		.loc 1 46 9 is_stmt 0 view .LVU40
+ 243 0024 FFF7FEFF 		bl	_logging_send_fmt_output
+ 244              	.LVL15:
+  47:Core/Src/logging.c ****         va_end(args);
+ 245              		.loc 1 47 9 is_stmt 1 view .LVU41
+  48:Core/Src/logging.c ****         logging_subsystem.last_tick = current_tick;
+ 246              		.loc 1 48 9 view .LVU42
+  48:Core/Src/logging.c ****         logging_subsystem.last_tick = current_tick;
+ 247              		.loc 1 48 37 is_stmt 0 view .LVU43
+ 248 0028 014B     		ldr	r3, .L14
+ 249 002a 9C60     		str	r4, [r3, #8]
+ 250              	.LBE2:
+  50:Core/Src/logging.c **** }
+ 251              		.loc 1 50 1 view .LVU44
+ 252 002c F2E7     		b	.L11
+ 253              	.L15:
+ 254 002e C046     		.align	2
+ 255              	.L14:
+ 256 0030 00000000 		.word	logging_subsystem
+ 257              		.cfi_endproc
+ 258              	.LFE316:
+ARM GAS  /tmp/ccFWYjgl.s 			page 7
+
+
+ 260              		.section	.bss.logging_subsystem,"aw",%nobits
+ 261              		.align	2
+ 264              	logging_subsystem:
+ 265 0000 00000000 		.space	12
+ 265      00000000 
+ 265      00000000 
+ 266              		.text
+ 267              	.Letext0:
+ 268              		.file 2 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
+ 269              		.file 3 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
+ 270              		.file 4 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g070xx.h"
+ 271              		.file 5 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/lib/gcc/a
+ 272              		.file 6 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h"
+ 273              		.file 7 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h"
+ 274              		.file 8 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h"
+ 275              		.file 9 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/lib/gcc/a
+ 276              		.file 10 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h"
+ 277              		.file 11 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none
+ 278              		.file 12 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none
+ 279              		.file 13 "<built-in>"
+ARM GAS  /tmp/ccFWYjgl.s 			page 8
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 logging.c
+     /tmp/ccFWYjgl.s:19     .text._logging_send_fmt_output:00000000 $t
+     /tmp/ccFWYjgl.s:24     .text._logging_send_fmt_output:00000000 _logging_send_fmt_output
+     /tmp/ccFWYjgl.s:73     .text._logging_send_fmt_output:00000028 $d
+     /tmp/ccFWYjgl.s:264    .bss.logging_subsystem:00000000 logging_subsystem
+     /tmp/ccFWYjgl.s:78     .text.logging_subsystem_init:00000000 $t
+     /tmp/ccFWYjgl.s:84     .text.logging_subsystem_init:00000000 logging_subsystem_init
+     /tmp/ccFWYjgl.s:107    .text.logging_subsystem_init:0000000c $d
+     /tmp/ccFWYjgl.s:112    .text.logging_set_message_frequency:00000000 $t
+     /tmp/ccFWYjgl.s:118    .text.logging_set_message_frequency:00000000 logging_set_message_frequency
+     /tmp/ccFWYjgl.s:136    .text.logging_set_message_frequency:00000008 $d
+     /tmp/ccFWYjgl.s:141    .text.logging_send_output:00000000 $t
+     /tmp/ccFWYjgl.s:147    .text.logging_send_output:00000000 logging_send_output
+     /tmp/ccFWYjgl.s:184    .text.logging_send_periodic_msg:00000000 $t
+     /tmp/ccFWYjgl.s:190    .text.logging_send_periodic_msg:00000000 logging_send_periodic_msg
+     /tmp/ccFWYjgl.s:256    .text.logging_send_periodic_msg:00000030 $d
+     /tmp/ccFWYjgl.s:261    .bss.logging_subsystem:00000000 $d
+
+UNDEFINED SYMBOLS
+vsnprintf
+strlen
+HAL_UART_Transmit

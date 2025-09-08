@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccWPfNLz.s 			page 1
+ARM GAS  /tmp/cc30W1xh.s 			page 1
 
 
    1              		.cpu cortex-m0plus
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
   30:Core/Src/stm32g0xx_hal_msp.c **** /* USER CODE END TD */
   31:Core/Src/stm32g0xx_hal_msp.c **** 
   32:Core/Src/stm32g0xx_hal_msp.c **** /* Private define ------------------------------------------------------------*/
-ARM GAS  /tmp/ccWPfNLz.s 			page 2
+ARM GAS  /tmp/cc30W1xh.s 			page 2
 
 
   33:Core/Src/stm32g0xx_hal_msp.c **** /* USER CODE BEGIN Define */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
   41 0006 0122     		movs	r2, #1
   42 0008 1143     		orrs	r1, r2
   43 000a 1964     		str	r1, [r3, #64]
-ARM GAS  /tmp/ccWPfNLz.s 			page 3
+ARM GAS  /tmp/cc30W1xh.s 			page 3
 
 
   44              		.loc 1 72 3 view .LVU4
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
   83:Core/Src/stm32g0xx_hal_msp.c ****   * @brief TIM_PWM MSP Initialization
   84:Core/Src/stm32g0xx_hal_msp.c ****   * This function configures the hardware resources used in this example
   85:Core/Src/stm32g0xx_hal_msp.c ****   * @param htim_pwm: TIM_PWM handle pointer
-ARM GAS  /tmp/ccWPfNLz.s 			page 4
+ARM GAS  /tmp/cc30W1xh.s 			page 4
 
 
   86:Core/Src/stm32g0xx_hal_msp.c ****   * @retval None
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  122              		.loc 1 96 5 view .LVU23
  123 001a 1B6C     		ldr	r3, [r3, #64]
  124 001c 0B40     		ands	r3, r1
-ARM GAS  /tmp/ccWPfNLz.s 			page 5
+ARM GAS  /tmp/cc30W1xh.s 			page 5
 
 
  125 001e 0193     		str	r3, [sp, #4]
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  169              	.LVL2:
  170              		.loc 1 113 20 view .LVU31
  171 000c FFF7FEFF 		bl	memset
-ARM GAS  /tmp/ccWPfNLz.s 			page 6
+ARM GAS  /tmp/cc30W1xh.s 			page 6
 
 
  172              	.LVL3:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  197 0024 DA63     		str	r2, [r3, #60]
  120:Core/Src/stm32g0xx_hal_msp.c **** 
  198              		.loc 1 120 5 view .LVU40
-ARM GAS  /tmp/ccWPfNLz.s 			page 7
+ARM GAS  /tmp/cc30W1xh.s 			page 7
 
 
  199 0026 DA6B     		ldr	r2, [r3, #60]
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  236              		.loc 1 131 5 is_stmt 1 view .LVU57
  237 004a 0448     		ldr	r0, .L12+8
  238 004c FFF7FEFF 		bl	HAL_GPIO_Init
-ARM GAS  /tmp/ccWPfNLz.s 			page 8
+ARM GAS  /tmp/cc30W1xh.s 			page 8
 
 
  239              	.LVL6:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  290 0016 01D0     		beq	.L16
  291              	.L14:
  145:Core/Src/stm32g0xx_hal_msp.c ****   {
-ARM GAS  /tmp/ccWPfNLz.s 			page 9
+ARM GAS  /tmp/cc30W1xh.s 			page 9
 
 
  146:Core/Src/stm32g0xx_hal_msp.c ****     /* USER CODE BEGIN TIM1_MspPostInit 0 */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  154:Core/Src/stm32g0xx_hal_msp.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
  318              		.loc 1 154 25 is_stmt 0 view .LVU76
  319 002e 01A9     		add	r1, sp, #4
-ARM GAS  /tmp/ccWPfNLz.s 			page 10
+ARM GAS  /tmp/cc30W1xh.s 			page 10
 
 
  320 0030 8023     		movs	r3, #128
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  361              		@ link register save eliminated.
  175:Core/Src/stm32g0xx_hal_msp.c ****   if(htim_pwm->Instance==TIM1)
  362              		.loc 1 175 3 view .LVU86
-ARM GAS  /tmp/ccWPfNLz.s 			page 11
+ARM GAS  /tmp/cc30W1xh.s 			page 11
 
 
  363              		.loc 1 175 14 is_stmt 0 view .LVU87
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  193:Core/Src/stm32g0xx_hal_msp.c ****   * @retval None
  194:Core/Src/stm32g0xx_hal_msp.c ****   */
  195:Core/Src/stm32g0xx_hal_msp.c **** void HAL_TIM_IC_MspDeInit(TIM_HandleTypeDef* htim_ic)
-ARM GAS  /tmp/ccWPfNLz.s 			page 12
+ARM GAS  /tmp/cc30W1xh.s 			page 12
 
 
  196:Core/Src/stm32g0xx_hal_msp.c **** {
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  433 0018 0348     		ldr	r0, .L27+8
  434              	.LVL17:
  208:Core/Src/stm32g0xx_hal_msp.c **** 
-ARM GAS  /tmp/ccWPfNLz.s 			page 13
+ARM GAS  /tmp/cc30W1xh.s 			page 13
 
 
  435              		.loc 1 208 5 is_stmt 0 view .LVU100
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  481              	.LVL21:
  226:Core/Src/stm32g0xx_hal_msp.c ****   RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
  482              		.loc 1 226 3 is_stmt 1 view .LVU107
-ARM GAS  /tmp/ccWPfNLz.s 			page 14
+ARM GAS  /tmp/cc30W1xh.s 			page 14
 
 
  483              		.loc 1 226 28 is_stmt 0 view .LVU108
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  500              	.LVL23:
  501              		.loc 1 263 1 view .LVU113
  502 0024 10BD     		pop	{r4, pc}
-ARM GAS  /tmp/ccWPfNLz.s 			page 15
+ARM GAS  /tmp/cc30W1xh.s 			page 15
 
 
  503              	.LVL24:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  542 004a 0422     		movs	r2, #4
  543 004c 1143     		orrs	r1, r2
  544 004e 5963     		str	r1, [r3, #52]
-ARM GAS  /tmp/ccWPfNLz.s 			page 16
+ARM GAS  /tmp/cc30W1xh.s 			page 16
 
 
  245:Core/Src/stm32g0xx_hal_msp.c ****     /**USART1 GPIO Configuration
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  584              	.L35:
  585 007a C046     		.align	2
  586              	.L34:
-ARM GAS  /tmp/ccWPfNLz.s 			page 17
+ARM GAS  /tmp/cc30W1xh.s 			page 17
 
 
  587 007c 00380140 		.word	1073821696
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  285:Core/Src/stm32g0xx_hal_msp.c ****     HAL_GPIO_DeInit(GPIOC, GPIO_PIN_4|GPIO_PIN_5);
  286:Core/Src/stm32g0xx_hal_msp.c **** 
  287:Core/Src/stm32g0xx_hal_msp.c ****     /* USER CODE BEGIN USART1_MspDeInit 1 */
-ARM GAS  /tmp/ccWPfNLz.s 			page 18
+ARM GAS  /tmp/cc30W1xh.s 			page 18
 
 
  288:Core/Src/stm32g0xx_hal_msp.c **** 
@@ -1072,35 +1072,35 @@ ARM GAS  /tmp/ccWPfNLz.s 			page 1
  663              		.file 11 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h"
  664              		.file 12 "Core/Inc/main.h"
  665              		.file 13 "<built-in>"
-ARM GAS  /tmp/ccWPfNLz.s 			page 19
+ARM GAS  /tmp/cc30W1xh.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32g0xx_hal_msp.c
-     /tmp/ccWPfNLz.s:19     .text.HAL_MspInit:00000000 $t
-     /tmp/ccWPfNLz.s:25     .text.HAL_MspInit:00000000 HAL_MspInit
-     /tmp/ccWPfNLz.s:76     .text.HAL_MspInit:0000002c $d
-     /tmp/ccWPfNLz.s:81     .text.HAL_TIM_PWM_MspInit:00000000 $t
-     /tmp/ccWPfNLz.s:87     .text.HAL_TIM_PWM_MspInit:00000000 HAL_TIM_PWM_MspInit
-     /tmp/ccWPfNLz.s:135    .text.HAL_TIM_PWM_MspInit:00000024 $d
-     /tmp/ccWPfNLz.s:141    .text.HAL_TIM_IC_MspInit:00000000 $t
-     /tmp/ccWPfNLz.s:147    .text.HAL_TIM_IC_MspInit:00000000 HAL_TIM_IC_MspInit
-     /tmp/ccWPfNLz.s:245    .text.HAL_TIM_IC_MspInit:00000054 $d
-     /tmp/ccWPfNLz.s:252    .text.HAL_TIM_MspPostInit:00000000 $t
-     /tmp/ccWPfNLz.s:258    .text.HAL_TIM_MspPostInit:00000000 HAL_TIM_MspPostInit
-     /tmp/ccWPfNLz.s:342    .text.HAL_TIM_MspPostInit:00000048 $d
-     /tmp/ccWPfNLz.s:348    .text.HAL_TIM_PWM_MspDeInit:00000000 $t
-     /tmp/ccWPfNLz.s:354    .text.HAL_TIM_PWM_MspDeInit:00000000 HAL_TIM_PWM_MspDeInit
-     /tmp/ccWPfNLz.s:385    .text.HAL_TIM_PWM_MspDeInit:00000018 $d
-     /tmp/ccWPfNLz.s:392    .text.HAL_TIM_IC_MspDeInit:00000000 $t
-     /tmp/ccWPfNLz.s:398    .text.HAL_TIM_IC_MspDeInit:00000000 HAL_TIM_IC_MspDeInit
-     /tmp/ccWPfNLz.s:443    .text.HAL_TIM_IC_MspDeInit:00000020 $d
-     /tmp/ccWPfNLz.s:450    .text.HAL_UART_MspInit:00000000 $t
-     /tmp/ccWPfNLz.s:456    .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
-     /tmp/ccWPfNLz.s:587    .text.HAL_UART_MspInit:0000007c $d
-     /tmp/ccWPfNLz.s:594    .text.HAL_UART_MspDeInit:00000000 $t
-     /tmp/ccWPfNLz.s:600    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
-     /tmp/ccWPfNLz.s:645    .text.HAL_UART_MspDeInit:00000020 $d
+     /tmp/cc30W1xh.s:19     .text.HAL_MspInit:00000000 $t
+     /tmp/cc30W1xh.s:25     .text.HAL_MspInit:00000000 HAL_MspInit
+     /tmp/cc30W1xh.s:76     .text.HAL_MspInit:0000002c $d
+     /tmp/cc30W1xh.s:81     .text.HAL_TIM_PWM_MspInit:00000000 $t
+     /tmp/cc30W1xh.s:87     .text.HAL_TIM_PWM_MspInit:00000000 HAL_TIM_PWM_MspInit
+     /tmp/cc30W1xh.s:135    .text.HAL_TIM_PWM_MspInit:00000024 $d
+     /tmp/cc30W1xh.s:141    .text.HAL_TIM_IC_MspInit:00000000 $t
+     /tmp/cc30W1xh.s:147    .text.HAL_TIM_IC_MspInit:00000000 HAL_TIM_IC_MspInit
+     /tmp/cc30W1xh.s:245    .text.HAL_TIM_IC_MspInit:00000054 $d
+     /tmp/cc30W1xh.s:252    .text.HAL_TIM_MspPostInit:00000000 $t
+     /tmp/cc30W1xh.s:258    .text.HAL_TIM_MspPostInit:00000000 HAL_TIM_MspPostInit
+     /tmp/cc30W1xh.s:342    .text.HAL_TIM_MspPostInit:00000048 $d
+     /tmp/cc30W1xh.s:348    .text.HAL_TIM_PWM_MspDeInit:00000000 $t
+     /tmp/cc30W1xh.s:354    .text.HAL_TIM_PWM_MspDeInit:00000000 HAL_TIM_PWM_MspDeInit
+     /tmp/cc30W1xh.s:385    .text.HAL_TIM_PWM_MspDeInit:00000018 $d
+     /tmp/cc30W1xh.s:392    .text.HAL_TIM_IC_MspDeInit:00000000 $t
+     /tmp/cc30W1xh.s:398    .text.HAL_TIM_IC_MspDeInit:00000000 HAL_TIM_IC_MspDeInit
+     /tmp/cc30W1xh.s:443    .text.HAL_TIM_IC_MspDeInit:00000020 $d
+     /tmp/cc30W1xh.s:450    .text.HAL_UART_MspInit:00000000 $t
+     /tmp/cc30W1xh.s:456    .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
+     /tmp/cc30W1xh.s:587    .text.HAL_UART_MspInit:0000007c $d
+     /tmp/cc30W1xh.s:594    .text.HAL_UART_MspDeInit:00000000 $t
+     /tmp/cc30W1xh.s:600    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
+     /tmp/cc30W1xh.s:645    .text.HAL_UART_MspDeInit:00000020 $d
 
 UNDEFINED SYMBOLS
 memset

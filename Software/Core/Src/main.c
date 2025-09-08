@@ -62,6 +62,7 @@ static void MX_USART1_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 static heartbeat_led_t heartbeat_led;
+static volatile uint8_t cnt = 3;
 /* USER CODE END 0 */
 
 /**
@@ -99,9 +100,12 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
 
+  /*****************   Initialize logging subsystem, mapped to UART1 **************/
 
+  logging_subsystem_init(&huart1);
+  logging_set_message_frequency(2000);
 
-  /*****************   Initialize heartbeat LED (1 Hz) ****************/
+  /*****************    Initialize heartbeat LED (1 Hz)           *****************/
 
   heartbeat_initialize(&heartbeat_led, 1000);
   heartbeat_off(&heartbeat_led);
@@ -123,9 +127,8 @@ int main(void)
 
 
 
-
-    
     heartbeat_toggle(&heartbeat_led, HAL_GetTick());
+    logging_send_periodic_msg(HAL_GetTick(), "Testing %d \n", cnt);
 
 
   }
