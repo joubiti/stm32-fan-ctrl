@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccMjoWcb.s 			page 1
+ARM GAS  /tmp/ccxLZdTu.s 			page 1
 
 
    1              		.cpu cortex-m0plus
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccMjoWcb.s 			page 1
   40              	.LFE311:
   42              		.section	.text.heartbeat_initialize,"ax",%progbits
   43              		.align	1
-ARM GAS  /tmp/ccMjoWcb.s 			page 2
+ARM GAS  /tmp/ccxLZdTu.s 			page 2
 
 
   44              		.global	heartbeat_initialize
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccMjoWcb.s 			page 1
   93 0004 0122     		movs	r2, #1
   94 0006 8901     		lsls	r1, r1, #6
   95 0008 0148     		ldr	r0, .L4
-ARM GAS  /tmp/ccMjoWcb.s 			page 3
+ARM GAS  /tmp/ccxLZdTu.s 			page 3
 
 
   96              	.LVL4:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccMjoWcb.s 			page 1
  146              		.cfi_endproc
  147              	.LFE313:
  149              		.section	.text.heartbeat_toggle,"ax",%progbits
-ARM GAS  /tmp/ccMjoWcb.s 			page 4
+ARM GAS  /tmp/ccxLZdTu.s 			page 4
 
 
  150              		.align	1
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccMjoWcb.s 			page 1
  195              	.LVL14:
   32:Core/Src/heartbeat.c ****         led->last_tick = current_tick;
  196              		.loc 1 32 9 is_stmt 0 view .LVU28
-ARM GAS  /tmp/ccMjoWcb.s 			page 5
+ARM GAS  /tmp/ccxLZdTu.s 			page 5
 
 
  197 0014 8901     		lsls	r1, r1, #6
@@ -269,24 +269,24 @@ ARM GAS  /tmp/ccMjoWcb.s 			page 1
  220              		.file 5 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g070xx.h"
  221              		.file 6 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h"
  222              		.file 7 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h"
-ARM GAS  /tmp/ccMjoWcb.s 			page 6
+ARM GAS  /tmp/ccxLZdTu.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 heartbeat.c
-     /tmp/ccMjoWcb.s:19     .text.heartbeat_set_period:00000000 $t
-     /tmp/ccMjoWcb.s:25     .text.heartbeat_set_period:00000000 heartbeat_set_period
-     /tmp/ccMjoWcb.s:43     .text.heartbeat_initialize:00000000 $t
-     /tmp/ccMjoWcb.s:49     .text.heartbeat_initialize:00000000 heartbeat_initialize
-     /tmp/ccMjoWcb.s:72     .text.heartbeat_on:00000000 $t
-     /tmp/ccMjoWcb.s:78     .text.heartbeat_on:00000000 heartbeat_on
-     /tmp/ccMjoWcb.s:106    .text.heartbeat_on:00000010 $d
-     /tmp/ccMjoWcb.s:111    .text.heartbeat_off:00000000 $t
-     /tmp/ccMjoWcb.s:117    .text.heartbeat_off:00000000 heartbeat_off
-     /tmp/ccMjoWcb.s:145    .text.heartbeat_off:00000010 $d
-     /tmp/ccMjoWcb.s:150    .text.heartbeat_toggle:00000000 $t
-     /tmp/ccMjoWcb.s:156    .text.heartbeat_toggle:00000000 heartbeat_toggle
-     /tmp/ccMjoWcb.s:211    .text.heartbeat_toggle:00000020 $d
+     /tmp/ccxLZdTu.s:19     .text.heartbeat_set_period:00000000 $t
+     /tmp/ccxLZdTu.s:25     .text.heartbeat_set_period:00000000 heartbeat_set_period
+     /tmp/ccxLZdTu.s:43     .text.heartbeat_initialize:00000000 $t
+     /tmp/ccxLZdTu.s:49     .text.heartbeat_initialize:00000000 heartbeat_initialize
+     /tmp/ccxLZdTu.s:72     .text.heartbeat_on:00000000 $t
+     /tmp/ccxLZdTu.s:78     .text.heartbeat_on:00000000 heartbeat_on
+     /tmp/ccxLZdTu.s:106    .text.heartbeat_on:00000010 $d
+     /tmp/ccxLZdTu.s:111    .text.heartbeat_off:00000000 $t
+     /tmp/ccxLZdTu.s:117    .text.heartbeat_off:00000000 heartbeat_off
+     /tmp/ccxLZdTu.s:145    .text.heartbeat_off:00000010 $d
+     /tmp/ccxLZdTu.s:150    .text.heartbeat_toggle:00000000 $t
+     /tmp/ccxLZdTu.s:156    .text.heartbeat_toggle:00000000 heartbeat_toggle
+     /tmp/ccxLZdTu.s:211    .text.heartbeat_toggle:00000020 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin
