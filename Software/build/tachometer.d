@@ -1,4 +1,4 @@
-build/main.o: Core/Src/main.c Core/Inc/main.h \
+build/tachometer.o: Core/Src/tachometer.c Core/Inc/tachometer.h \
  Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h \
  Core/Inc/stm32g0xx_hal_conf.h \
  Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h \
@@ -28,9 +28,8 @@ build/main.o: Core/Src/main.c Core/Inc/main.h \
  Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h \
  Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h \
  Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h \
- Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h \
- Core/Inc/heartbeat.h Core/Inc/logging.h Core/Inc/tachometer.h
-Core/Inc/main.h:
+ Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h
+Core/Inc/tachometer.h:
 Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:
 Core/Inc/stm32g0xx_hal_conf.h:
 Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:
@@ -62,6 +61,3 @@ Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h:
 Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h:
 Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h:
 Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:
-Core/Inc/heartbeat.h:
-Core/Inc/logging.h:
-Core/Inc/tachometer.h:

@@ -33,6 +33,7 @@ extern "C" {
 /* USER CODE BEGIN Includes */
 #include "heartbeat.h"
 #include "logging.h"
+#include "tachometer.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

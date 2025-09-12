@@ -1,0 +1,576 @@
+ARM GAS  /tmp/ccPqm9OT.s 			page 1
+
+
+   1              		.cpu cortex-m0plus
+   2              		.arch armv6s-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.file	"tachometer.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.file 1 "Core/Src/tachometer.c"
+  18              		.section	.text.HAL_TIM_IC_CaptureCallback,"ax",%progbits
+  19              		.align	1
+  20              		.global	HAL_TIM_IC_CaptureCallback
+  21              		.syntax unified
+  22              		.code	16
+  23              		.thumb_func
+  25              	HAL_TIM_IC_CaptureCallback:
+  26              	.LVL0:
+  27              	.LFB310:
+   1:Core/Src/tachometer.c **** /**
+   2:Core/Src/tachometer.c ****  * @file tachometer.c
+   3:Core/Src/tachometer.c ****  * @author your name (you@domain.com)
+   4:Core/Src/tachometer.c ****  * @brief 
+   5:Core/Src/tachometer.c ****  * @version 0.1
+   6:Core/Src/tachometer.c ****  * @date 2025-09-12
+   7:Core/Src/tachometer.c ****  * 
+   8:Core/Src/tachometer.c ****  * @copyright Copyright (c) 2025
+   9:Core/Src/tachometer.c ****  * 
+  10:Core/Src/tachometer.c ****  */
+  11:Core/Src/tachometer.c **** 
+  12:Core/Src/tachometer.c **** 
+  13:Core/Src/tachometer.c **** #include "tachometer.h"
+  14:Core/Src/tachometer.c **** 
+  15:Core/Src/tachometer.c **** // 1 MHz timer sampling period
+  16:Core/Src/tachometer.c **** 
+  17:Core/Src/tachometer.c **** static volatile uint32_t captured_value = 0;
+  18:Core/Src/tachometer.c **** static volatile uint32_t previous_captured_value = 0;
+  19:Core/Src/tachometer.c **** static volatile uint32_t current_period_us = 0;
+  20:Core/Src/tachometer.c **** 
+  21:Core/Src/tachometer.c **** 
+  22:Core/Src/tachometer.c **** void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim) {  // 1MHz -> 1 tick = 1 us
+  28              		.loc 1 22 58 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		.loc 1 22 58 is_stmt 0 view .LVU1
+  33 0000 10B5     		push	{r4, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 4, -8
+ARM GAS  /tmp/ccPqm9OT.s 			page 2
+
+
+  37              		.cfi_offset 14, -4
+  23:Core/Src/tachometer.c ****     if (htim->Channel == HAL_TIM_ACTIVE_CHANNEL_2) {
+  38              		.loc 1 23 5 is_stmt 1 view .LVU2
+  39              		.loc 1 23 13 is_stmt 0 view .LVU3
+  40 0002 037F     		ldrb	r3, [r0, #28]
+  41              		.loc 1 23 8 view .LVU4
+  42 0004 022B     		cmp	r3, #2
+  43 0006 00D0     		beq	.L3
+  44              	.LVL1:
+  45              	.L1:
+  24:Core/Src/tachometer.c ****         captured_value = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_2);
+  25:Core/Src/tachometer.c ****         current_period_us = (captured_value - previous_captured_value);
+  26:Core/Src/tachometer.c ****         previous_captured_value = captured_value;
+  27:Core/Src/tachometer.c ****     }
+  28:Core/Src/tachometer.c **** }
+  46              		.loc 1 28 1 view .LVU5
+  47              		@ sp needed
+  48 0008 10BD     		pop	{r4, pc}
+  49              	.LVL2:
+  50              	.L3:
+  24:Core/Src/tachometer.c ****         captured_value = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_2);
+  51              		.loc 1 24 9 is_stmt 1 view .LVU6
+  24:Core/Src/tachometer.c ****         captured_value = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_2);
+  52              		.loc 1 24 26 is_stmt 0 view .LVU7
+  53 000a 0421     		movs	r1, #4
+  54 000c FFF7FEFF 		bl	HAL_TIM_ReadCapturedValue
+  55              	.LVL3:
+  24:Core/Src/tachometer.c ****         captured_value = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_2);
+  56              		.loc 1 24 24 discriminator 1 view .LVU8
+  57 0010 054B     		ldr	r3, .L4
+  58 0012 1860     		str	r0, [r3]
+  25:Core/Src/tachometer.c ****         previous_captured_value = captured_value;
+  59              		.loc 1 25 9 is_stmt 1 view .LVU9
+  25:Core/Src/tachometer.c ****         previous_captured_value = captured_value;
+  60              		.loc 1 25 45 is_stmt 0 view .LVU10
+  61 0014 1A68     		ldr	r2, [r3]
+  62 0016 0549     		ldr	r1, .L4+4
+  63 0018 0868     		ldr	r0, [r1]
+  64 001a 121A     		subs	r2, r2, r0
+  25:Core/Src/tachometer.c ****         previous_captured_value = captured_value;
+  65              		.loc 1 25 27 view .LVU11
+  66 001c 0448     		ldr	r0, .L4+8
+  67 001e 0260     		str	r2, [r0]
+  26:Core/Src/tachometer.c ****     }
+  68              		.loc 1 26 9 is_stmt 1 view .LVU12
+  26:Core/Src/tachometer.c ****     }
+  69              		.loc 1 26 33 is_stmt 0 view .LVU13
+  70 0020 1B68     		ldr	r3, [r3]
+  71 0022 0B60     		str	r3, [r1]
+  72              		.loc 1 28 1 view .LVU14
+  73 0024 F0E7     		b	.L1
+  74              	.L5:
+  75 0026 C046     		.align	2
+  76              	.L4:
+  77 0028 00000000 		.word	captured_value
+  78 002c 00000000 		.word	previous_captured_value
+  79 0030 00000000 		.word	current_period_us
+ARM GAS  /tmp/ccPqm9OT.s 			page 3
+
+
+  80              		.cfi_endproc
+  81              	.LFE310:
+  83              		.section	.text.tachometer_init,"ax",%progbits
+  84              		.align	1
+  85              		.global	tachometer_init
+  86              		.syntax unified
+  87              		.code	16
+  88              		.thumb_func
+  90              	tachometer_init:
+  91              	.LVL4:
+  92              	.LFB311:
+  29:Core/Src/tachometer.c **** 
+  30:Core/Src/tachometer.c **** void tachometer_init(tachometer_t* tach, TIM_HandleTypeDef* htim, uint32_t period_ms)
+  31:Core/Src/tachometer.c **** {
+  93              		.loc 1 31 1 is_stmt 1 view -0
+  94              		.cfi_startproc
+  95              		@ args = 0, pretend = 0, frame = 0
+  96              		@ frame_needed = 0, uses_anonymous_args = 0
+  97              		.loc 1 31 1 is_stmt 0 view .LVU16
+  98 0000 10B5     		push	{r4, lr}
+  99              	.LCFI1:
+ 100              		.cfi_def_cfa_offset 8
+ 101              		.cfi_offset 4, -8
+ 102              		.cfi_offset 14, -4
+ 103 0002 0300     		movs	r3, r0
+ 104 0004 0800     		movs	r0, r1
+ 105              	.LVL5:
+  32:Core/Src/tachometer.c ****     tach->htim = htim;
+ 106              		.loc 1 32 5 is_stmt 1 view .LVU17
+ 107              		.loc 1 32 16 is_stmt 0 view .LVU18
+ 108 0006 1960     		str	r1, [r3]
+  33:Core/Src/tachometer.c ****     tach->current_rpm = 0;
+ 109              		.loc 1 33 5 is_stmt 1 view .LVU19
+ 110              		.loc 1 33 23 is_stmt 0 view .LVU20
+ 111 0008 0021     		movs	r1, #0
+ 112              	.LVL6:
+ 113              		.loc 1 33 23 view .LVU21
+ 114 000a 9960     		str	r1, [r3, #8]
+  34:Core/Src/tachometer.c ****     tach->period = period_ms;
+ 115              		.loc 1 34 5 is_stmt 1 view .LVU22
+ 116              		.loc 1 34 18 is_stmt 0 view .LVU23
+ 117 000c 5A60     		str	r2, [r3, #4]
+  35:Core/Src/tachometer.c ****     tach->last_execution = 0;
+ 118              		.loc 1 35 5 is_stmt 1 view .LVU24
+ 119              		.loc 1 35 26 is_stmt 0 view .LVU25
+ 120 000e D960     		str	r1, [r3, #12]
+  36:Core/Src/tachometer.c **** 
+  37:Core/Src/tachometer.c ****     HAL_TIM_IC_Start_IT(tach->htim, TIM_CHANNEL_2);
+ 121              		.loc 1 37 5 is_stmt 1 view .LVU26
+ 122 0010 0431     		adds	r1, r1, #4
+ 123 0012 FFF7FEFF 		bl	HAL_TIM_IC_Start_IT
+ 124              	.LVL7:
+  38:Core/Src/tachometer.c **** }
+ 125              		.loc 1 38 1 is_stmt 0 view .LVU27
+ 126              		@ sp needed
+ 127 0016 10BD     		pop	{r4, pc}
+ 128              		.cfi_endproc
+ARM GAS  /tmp/ccPqm9OT.s 			page 4
+
+
+ 129              	.LFE311:
+ 131              		.section	.text.tachometer_update_rpm,"ax",%progbits
+ 132              		.align	1
+ 133              		.global	tachometer_update_rpm
+ 134              		.syntax unified
+ 135              		.code	16
+ 136              		.thumb_func
+ 138              	tachometer_update_rpm:
+ 139              	.LVL8:
+ 140              	.LFB312:
+  39:Core/Src/tachometer.c **** 
+  40:Core/Src/tachometer.c **** 
+  41:Core/Src/tachometer.c **** void tachometer_update_rpm(tachometer_t* tach, uint32_t current_tick)
+  42:Core/Src/tachometer.c **** {
+ 141              		.loc 1 42 1 is_stmt 1 view -0
+ 142              		.cfi_startproc
+ 143              		@ args = 0, pretend = 0, frame = 0
+ 144              		@ frame_needed = 0, uses_anonymous_args = 0
+ 145              		.loc 1 42 1 is_stmt 0 view .LVU29
+ 146 0000 70B5     		push	{r4, r5, r6, lr}
+ 147              	.LCFI2:
+ 148              		.cfi_def_cfa_offset 16
+ 149              		.cfi_offset 4, -16
+ 150              		.cfi_offset 5, -12
+ 151              		.cfi_offset 6, -8
+ 152              		.cfi_offset 14, -4
+ 153 0002 0400     		movs	r4, r0
+ 154 0004 0D00     		movs	r5, r1
+  43:Core/Src/tachometer.c ****     if(current_tick - tach->last_execution >= tach->period)
+ 155              		.loc 1 43 5 is_stmt 1 view .LVU30
+ 156              		.loc 1 43 27 is_stmt 0 view .LVU31
+ 157 0006 C368     		ldr	r3, [r0, #12]
+ 158              		.loc 1 43 21 view .LVU32
+ 159 0008 CB1A     		subs	r3, r1, r3
+ 160              		.loc 1 43 51 view .LVU33
+ 161 000a 4268     		ldr	r2, [r0, #4]
+ 162              		.loc 1 43 7 view .LVU34
+ 163 000c 9342     		cmp	r3, r2
+ 164 000e 09D3     		bcc	.L7
+ 165              	.LBB7:
+  44:Core/Src/tachometer.c ****     {
+  45:Core/Src/tachometer.c ****         // rpm calculations
+  46:Core/Src/tachometer.c ****         uint32_t period_cpy;
+ 166              		.loc 1 46 9 is_stmt 1 view .LVU35
+  47:Core/Src/tachometer.c ****         __disable_irq();
+ 167              		.loc 1 47 9 view .LVU36
+ 168              	.LBB8:
+ 169              	.LBI8:
+ 170              		.file 2 "Drivers/CMSIS/Include/cmsis_gcc.h"
+   1:Drivers/CMSIS/Include/cmsis_gcc.h **** /**************************************************************************//**
+   2:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @file     cmsis_gcc.h
+   3:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @brief    CMSIS compiler GCC header file
+   4:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @version  V5.2.0
+   5:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @date     08. May 2019
+   6:Drivers/CMSIS/Include/cmsis_gcc.h ****  ******************************************************************************/
+   7:Drivers/CMSIS/Include/cmsis_gcc.h **** /*
+   8:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Copyright (c) 2009-2019 Arm Limited. All rights reserved.
+ARM GAS  /tmp/ccPqm9OT.s 			page 5
+
+
+   9:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
+  10:Drivers/CMSIS/Include/cmsis_gcc.h ****  * SPDX-License-Identifier: Apache-2.0
+  11:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
+  12:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Licensed under the Apache License, Version 2.0 (the License); you may
+  13:Drivers/CMSIS/Include/cmsis_gcc.h ****  * not use this file except in compliance with the License.
+  14:Drivers/CMSIS/Include/cmsis_gcc.h ****  * You may obtain a copy of the License at
+  15:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
+  16:Drivers/CMSIS/Include/cmsis_gcc.h ****  * www.apache.org/licenses/LICENSE-2.0
+  17:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
+  18:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Unless required by applicable law or agreed to in writing, software
+  19:Drivers/CMSIS/Include/cmsis_gcc.h ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
+  20:Drivers/CMSIS/Include/cmsis_gcc.h ****  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  21:Drivers/CMSIS/Include/cmsis_gcc.h ****  * See the License for the specific language governing permissions and
+  22:Drivers/CMSIS/Include/cmsis_gcc.h ****  * limitations under the License.
+  23:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+  24:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  25:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __CMSIS_GCC_H
+  26:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_H
+  27:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  28:Drivers/CMSIS/Include/cmsis_gcc.h **** /* ignore some GCC warnings */
+  29:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic push
+  30:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wsign-conversion"
+  31:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wconversion"
+  32:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wunused-parameter"
+  33:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  34:Drivers/CMSIS/Include/cmsis_gcc.h **** /* Fallback for __has_builtin */
+  35:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __has_builtin
+  36:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __has_builtin(x) (0)
+  37:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  38:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  39:Drivers/CMSIS/Include/cmsis_gcc.h **** /* CMSIS compiler specific defines */
+  40:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __ASM
+  41:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __ASM                                  __asm
+  42:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  43:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __INLINE
+  44:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __INLINE                               inline
+  45:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  46:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __STATIC_INLINE
+  47:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __STATIC_INLINE                        static inline
+  48:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  49:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __STATIC_FORCEINLINE                 
+  50:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+  51:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif                                           
+  52:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __NO_RETURN
+  53:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __NO_RETURN                            __attribute__((__noreturn__))
+  54:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  55:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __USED
+  56:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __USED                                 __attribute__((used))
+  57:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  58:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __WEAK
+  59:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __WEAK                                 __attribute__((weak))
+  60:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  61:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED
+  62:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED                               __attribute__((packed, aligned(1)))
+  63:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  64:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED_STRUCT
+  65:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_STRUCT                        struct __attribute__((packed, aligned(1)))
+ARM GAS  /tmp/ccPqm9OT.s 			page 6
+
+
+  66:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  67:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED_UNION
+  68:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_UNION                         union __attribute__((packed, aligned(1)))
+  69:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  70:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32        /* deprecated */
+  71:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+  72:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+  73:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+  74:Drivers/CMSIS/Include/cmsis_gcc.h ****   struct __attribute__((packed)) T_UINT32 { uint32_t v; };
+  75:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+  76:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32(x)                  (((struct T_UINT32 *)(x))->v)
+  77:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  78:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_WRITE
+  79:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+  80:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+  81:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+  82:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT16_WRITE { uint16_t v; };
+  83:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+  84:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT16_WRITE(addr, val)    (void)((((struct T_UINT16_WRITE *)(void *)(addr))-
+  85:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  86:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_READ
+  87:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+  88:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+  89:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+  90:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT16_READ { uint16_t v; };
+  91:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+  92:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT16_READ(addr)          (((const struct T_UINT16_READ *)(const void *)(add
+  93:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  94:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32_WRITE
+  95:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+  96:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+  97:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+  98:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT32_WRITE { uint32_t v; };
+  99:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+ 100:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32_WRITE(addr, val)    (void)((((struct T_UINT32_WRITE *)(void *)(addr))-
+ 101:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 102:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32_READ
+ 103:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+ 104:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+ 105:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+ 106:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT32_READ { uint32_t v; };
+ 107:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+ 108:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32_READ(addr)          (((const struct T_UINT32_READ *)(const void *)(add
+ 109:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 110:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __ALIGNED
+ 111:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __ALIGNED(x)                           __attribute__((aligned(x)))
+ 112:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 113:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __RESTRICT
+ 114:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __RESTRICT                             __restrict
+ 115:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 116:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __COMPILER_BARRIER
+ 117:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __COMPILER_BARRIER()                   __ASM volatile("":::"memory")
+ 118:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 119:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 120:Drivers/CMSIS/Include/cmsis_gcc.h **** /* #########################  Startup and Lowlevel Init  ######################## */
+ 121:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 122:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __PROGRAM_START
+ARM GAS  /tmp/ccPqm9OT.s 			page 7
+
+
+ 123:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 124:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 125:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Initializes data and bss sections
+ 126:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details This default implementations initialized all data and additional bss
+ 127:Drivers/CMSIS/Include/cmsis_gcc.h ****            sections relying on .copy.table and .zero.table specified properly
+ 128:Drivers/CMSIS/Include/cmsis_gcc.h ****            in the used linker script.
+ 129:Drivers/CMSIS/Include/cmsis_gcc.h ****   
+ 130:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 131:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE __NO_RETURN void __cmsis_start(void)
+ 132:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 133:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern void _start(void) __NO_RETURN;
+ 134:Drivers/CMSIS/Include/cmsis_gcc.h ****   
+ 135:Drivers/CMSIS/Include/cmsis_gcc.h ****   typedef struct {
+ 136:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t const* src;
+ 137:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t* dest;
+ 138:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t  wlen;
+ 139:Drivers/CMSIS/Include/cmsis_gcc.h ****   } __copy_table_t;
+ 140:Drivers/CMSIS/Include/cmsis_gcc.h ****   
+ 141:Drivers/CMSIS/Include/cmsis_gcc.h ****   typedef struct {
+ 142:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t* dest;
+ 143:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t  wlen;
+ 144:Drivers/CMSIS/Include/cmsis_gcc.h ****   } __zero_table_t;
+ 145:Drivers/CMSIS/Include/cmsis_gcc.h ****   
+ 146:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern const __copy_table_t __copy_table_start__;
+ 147:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern const __copy_table_t __copy_table_end__;
+ 148:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern const __zero_table_t __zero_table_start__;
+ 149:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern const __zero_table_t __zero_table_end__;
+ 150:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 151:Drivers/CMSIS/Include/cmsis_gcc.h ****   for (__copy_table_t const* pTable = &__copy_table_start__; pTable < &__copy_table_end__; ++pTable
+ 152:Drivers/CMSIS/Include/cmsis_gcc.h ****     for(uint32_t i=0u; i<pTable->wlen; ++i) {
+ 153:Drivers/CMSIS/Include/cmsis_gcc.h ****       pTable->dest[i] = pTable->src[i];
+ 154:Drivers/CMSIS/Include/cmsis_gcc.h ****     }
+ 155:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
+ 156:Drivers/CMSIS/Include/cmsis_gcc.h ****  
+ 157:Drivers/CMSIS/Include/cmsis_gcc.h ****   for (__zero_table_t const* pTable = &__zero_table_start__; pTable < &__zero_table_end__; ++pTable
+ 158:Drivers/CMSIS/Include/cmsis_gcc.h ****     for(uint32_t i=0u; i<pTable->wlen; ++i) {
+ 159:Drivers/CMSIS/Include/cmsis_gcc.h ****       pTable->dest[i] = 0u;
+ 160:Drivers/CMSIS/Include/cmsis_gcc.h ****     }
+ 161:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
+ 162:Drivers/CMSIS/Include/cmsis_gcc.h ****  
+ 163:Drivers/CMSIS/Include/cmsis_gcc.h ****   _start();
+ 164:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 165:Drivers/CMSIS/Include/cmsis_gcc.h ****   
+ 166:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __PROGRAM_START           __cmsis_start
+ 167:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 168:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 169:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __INITIAL_SP
+ 170:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __INITIAL_SP              __StackTop
+ 171:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 172:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 173:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __STACK_LIMIT
+ 174:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __STACK_LIMIT             __StackLimit
+ 175:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 176:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 177:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __VECTOR_TABLE
+ 178:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __VECTOR_TABLE            __Vectors
+ 179:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ARM GAS  /tmp/ccPqm9OT.s 			page 8
+
+
+ 180:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 181:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __VECTOR_TABLE_ATTRIBUTE
+ 182:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __VECTOR_TABLE_ATTRIBUTE  __attribute((used, section(".vectors")))
+ 183:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 184:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 185:Drivers/CMSIS/Include/cmsis_gcc.h **** /* ###########################  Core Function Access  ########################### */
+ 186:Drivers/CMSIS/Include/cmsis_gcc.h **** /** \ingroup  CMSIS_Core_FunctionInterface
+ 187:Drivers/CMSIS/Include/cmsis_gcc.h ****     \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
+ 188:Drivers/CMSIS/Include/cmsis_gcc.h ****   @{
+ 189:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 190:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 191:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 192:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Enable IRQ Interrupts
+ 193:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Enables IRQ interrupts by clearing the I-bit in the CPSR.
+ 194:Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
+ 195:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 196:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __enable_irq(void)
+ 197:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 198:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsie i" : : : "memory");
+ 199:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 200:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 201:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 202:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 203:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Disable IRQ Interrupts
+ 204:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Disables IRQ interrupts by setting the I-bit in the CPSR.
+ 205:Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
+ 206:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 207:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __disable_irq(void)
+ 171              		.loc 2 207 27 view .LVU37
+ 172              	.LBB9:
+ 208:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 209:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsid i" : : : "memory");
+ 173              		.loc 2 209 3 view .LVU38
+ 174              		.syntax divided
+ 175              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 176 0010 72B6     		cpsid i
+ 177              	@ 0 "" 2
+ 178              		.thumb
+ 179              		.syntax unified
+ 180              	.LBE9:
+ 181              	.LBE8:
+  48:Core/Src/tachometer.c ****         period_cpy = current_period_us;
+ 182              		.loc 1 48 9 view .LVU39
+ 183              		.loc 1 48 20 is_stmt 0 view .LVU40
+ 184 0012 054B     		ldr	r3, .L9
+ 185 0014 1968     		ldr	r1, [r3]
+ 186              	.LVL9:
+  49:Core/Src/tachometer.c ****         __enable_irq();
+ 187              		.loc 1 49 9 is_stmt 1 view .LVU41
+ 188              	.LBB10:
+ 189              	.LBI10:
+ 196:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 190              		.loc 2 196 27 view .LVU42
+ 191              	.LBB11:
+ 198:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 192              		.loc 2 198 3 view .LVU43
+ 193              		.syntax divided
+ARM GAS  /tmp/ccPqm9OT.s 			page 9
+
+
+ 194              	@ 198 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 195 0016 62B6     		cpsie i
+ 196              	@ 0 "" 2
+ 197              		.thumb
+ 198              		.syntax unified
+ 199              	.LBE11:
+ 200              	.LBE10:
+  50:Core/Src/tachometer.c **** 
+  51:Core/Src/tachometer.c ****         tach->current_rpm = (60UL * 1000000UL) / (2UL * period_cpy);
+ 201              		.loc 1 51 9 view .LVU44
+ 202              		.loc 1 51 55 is_stmt 0 view .LVU45
+ 203 0018 4900     		lsls	r1, r1, #1
+ 204              	.LVL10:
+ 205              		.loc 1 51 48 view .LVU46
+ 206 001a 0448     		ldr	r0, .L9+4
+ 207              	.LVL11:
+ 208              		.loc 1 51 48 view .LVU47
+ 209 001c FFF7FEFF 		bl	__aeabi_uidiv
+ 210              	.LVL12:
+ 211              		.loc 1 51 27 view .LVU48
+ 212 0020 A060     		str	r0, [r4, #8]
+  52:Core/Src/tachometer.c ****         tach->last_execution = current_tick;
+ 213              		.loc 1 52 9 is_stmt 1 view .LVU49
+ 214              		.loc 1 52 30 is_stmt 0 view .LVU50
+ 215 0022 E560     		str	r5, [r4, #12]
+ 216              	.LVL13:
+ 217              	.L7:
+ 218              		.loc 1 52 30 view .LVU51
+ 219              	.LBE7:
+  53:Core/Src/tachometer.c ****     }
+  54:Core/Src/tachometer.c **** }...
+ 220              		.loc 1 54 1 view .LVU52
+ 221              		@ sp needed
+ 222              	.LVL14:
+ 223              	.LVL15:
+ 224              		.loc 1 54 1 view .LVU53
+ 225 0024 70BD     		pop	{r4, r5, r6, pc}
+ 226              	.L10:
+ 227 0026 C046     		.align	2
+ 228              	.L9:
+ 229 0028 00000000 		.word	current_period_us
+ 230 002c 00879303 		.word	60000000
+ 231              		.cfi_endproc
+ 232              	.LFE312:
+ 234              		.section	.bss.current_period_us,"aw",%nobits
+ 235              		.align	2
+ 238              	current_period_us:
+ 239 0000 00000000 		.space	4
+ 240              		.section	.bss.previous_captured_value,"aw",%nobits
+ 241              		.align	2
+ 244              	previous_captured_value:
+ 245 0000 00000000 		.space	4
+ 246              		.section	.bss.captured_value,"aw",%nobits
+ 247              		.align	2
+ 250              	captured_value:
+ 251 0000 00000000 		.space	4
+ 252              		.text
+ARM GAS  /tmp/ccPqm9OT.s 			page 10
+
+
+ 253              	.Letext0:
+ 254              		.file 3 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
+ 255              		.file 4 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
+ 256              		.file 5 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g070xx.h"
+ 257              		.file 6 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h"
+ 258              		.file 7 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h"
+ 259              		.file 8 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h"
+ 260              		.file 9 "Core/Inc/tachometer.h"
+ 261              		.file 10 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h"
+ARM GAS  /tmp/ccPqm9OT.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 tachometer.c
+     /tmp/ccPqm9OT.s:19     .text.HAL_TIM_IC_CaptureCallback:00000000 $t
+     /tmp/ccPqm9OT.s:25     .text.HAL_TIM_IC_CaptureCallback:00000000 HAL_TIM_IC_CaptureCallback
+     /tmp/ccPqm9OT.s:77     .text.HAL_TIM_IC_CaptureCallback:00000028 $d
+     /tmp/ccPqm9OT.s:250    .bss.captured_value:00000000 captured_value
+     /tmp/ccPqm9OT.s:244    .bss.previous_captured_value:00000000 previous_captured_value
+     /tmp/ccPqm9OT.s:238    .bss.current_period_us:00000000 current_period_us
+     /tmp/ccPqm9OT.s:84     .text.tachometer_init:00000000 $t
+     /tmp/ccPqm9OT.s:90     .text.tachometer_init:00000000 tachometer_init
+     /tmp/ccPqm9OT.s:132    .text.tachometer_update_rpm:00000000 $t
+     /tmp/ccPqm9OT.s:138    .text.tachometer_update_rpm:00000000 tachometer_update_rpm
+     /tmp/ccPqm9OT.s:229    .text.tachometer_update_rpm:00000028 $d
+     /tmp/ccPqm9OT.s:235    .bss.current_period_us:00000000 $d
+     /tmp/ccPqm9OT.s:241    .bss.previous_captured_value:00000000 $d
+     /tmp/ccPqm9OT.s:247    .bss.captured_value:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_TIM_ReadCapturedValue
+HAL_TIM_IC_Start_IT
+__aeabi_uidiv

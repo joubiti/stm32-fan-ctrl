@@ -62,21 +62,9 @@ static void MX_TIM1_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 static heartbeat_led_t heartbeat_led;
+static tachometer_t fan_tachometer;
 static volatile uint8_t cnt = 3;
 
-
-
-volatile uint32_t captureValue = 0;
-volatile uint32_t previousCaptureValue = 0;
-volatile uint32_t frequency = 0;
-
-void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim) {
-    if (htim->Channel == HAL_TIM_ACTIVE_CHANNEL_1) {
-        captureValue = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_2);
-        frequency = HAL_RCC_GetPCLK1Freq() / (captureValue - previousCaptureValue);
-        previousCaptureValue = captureValue;
-    }
-}
 
 
 /* USER CODE END 0 */
@@ -123,12 +111,12 @@ int main(void)
 
   /*****************    Initialize heartbeat LED (1 Hz)           *****************/
 
-  heartbeat_initialize(&heartbeat_led, 30000);
+  heartbeat_initialize(&heartbeat_led, 1000);
   heartbeat_on(&heartbeat_led);
 
-  /*****************   Input Capture Timer for DC pulse sensor    **********************************************/
-  HAL_TIM_IC_Start_IT(&htim3, TIM_CHANNEL_2);
+  /*****************   Fan DC speed sensor (Tachometer)   **********************************************/
 
+  tachometer_init(&fan_tachometer, &htim3, 100);
 
 
 
@@ -143,7 +131,8 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
     heartbeat_toggle(&heartbeat_led, HAL_GetTick());
-    logging_send_periodic_msg(HAL_GetTick(), "Frequency is %d \n", frequency);
+    tachometer_update_rpm(&fan_tachometer, HAL_GetTick());
+    logging_send_periodic_msg(HAL_GetTick(), "Fan RPM: %d \n", fan_tachometer.current_rpm);
 
 
   }
@@ -284,9 +273,9 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 1 */
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 127;
+  htim3.Init.Prescaler = 63;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 99;
+  htim3.Init.Period = 0xFFFF;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_IC_Init(&htim3) != HAL_OK)
@@ -299,7 +288,7 @@ static void MX_TIM3_Init(void)
   {
     Error_Handler();
   }
-  sConfigIC.ICPolarity = TIM_INPUTCHANNELPOLARITY_BOTHEDGE;
+  sConfigIC.ICPolarity = TIM_INPUTCHANNELPOLARITY_RISING;
   sConfigIC.ICSelection = TIM_ICSELECTION_DIRECTTI;
   sConfigIC.ICPrescaler = TIM_ICPSC_DIV1;
   sConfigIC.ICFilter = 0;
