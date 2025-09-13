@@ -34,6 +34,7 @@ extern "C" {
 #include "heartbeat.h"
 #include "logging.h"
 #include "tachometer.h"
+#include "fan_speed_controller.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

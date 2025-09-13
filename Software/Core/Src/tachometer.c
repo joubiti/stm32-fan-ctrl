@@ -48,7 +48,8 @@ void tachometer_update_rpm(tachometer_t* tach, uint32_t current_tick)
         period_cpy = current_period_us;
         __enable_irq();
 
-        tach->current_rpm = (60UL * 1000000UL) / (2UL * period_cpy);
+        if(period_cpy > 0)
+            tach->current_rpm = (60 * 1000000) / (2 * period_cpy);
         tach->last_execution = current_tick;
     }
 }

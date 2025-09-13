@@ -63,7 +63,8 @@ static void MX_TIM1_Init(void);
 /* USER CODE BEGIN 0 */
 static heartbeat_led_t heartbeat_led;
 static tachometer_t fan_tachometer;
-static volatile uint8_t cnt = 3;
+static fan_controller_t fan_controller;
+
 
 
 
@@ -102,6 +103,11 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
+  
+  /***************** Fan Speed controller (PWM) **************************/
+
+  fan_speed_controller_init(&fan_controller, &htim1);
+  fan_set_rpm_percent(&fan_controller, 0);
 
 
   /*****************   Initialize logging subsystem, mapped to UART1 **************/
@@ -118,8 +124,6 @@ int main(void)
 
   tachometer_init(&fan_tachometer, &htim3, 100);
 
-
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -129,6 +133,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    fan_set_rpm_percent(&fan_controller, 0);
 
     heartbeat_toggle(&heartbeat_led, HAL_GetTick());
     tachometer_update_rpm(&fan_tachometer, HAL_GetTick());
@@ -202,9 +207,9 @@ static void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 1 */
   htim1.Instance = TIM1;
-  htim1.Init.Prescaler = 0;
+  htim1.Init.Prescaler = 63;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 65535;
+  htim1.Init.Period = 24999;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;

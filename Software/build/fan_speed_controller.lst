@@ -1,0 +1,192 @@
+ARM GAS  /tmp/cctzNA5C.s 			page 1
+
+
+   1              		.cpu cortex-m0plus
+   2              		.arch armv6s-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.file	"fan_speed_controller.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.file 1 "Core/Src/fan_speed_controller.c"
+  18              		.section	.text.fan_speed_controller_init,"ax",%progbits
+  19              		.align	1
+  20              		.global	fan_speed_controller_init
+  21              		.syntax unified
+  22              		.code	16
+  23              		.thumb_func
+  25              	fan_speed_controller_init:
+  26              	.LVL0:
+  27              	.LFB310:
+   1:Core/Src/fan_speed_controller.c **** /**
+   2:Core/Src/fan_speed_controller.c ****  * @file fan_speed_controller.c
+   3:Core/Src/fan_speed_controller.c ****  * @author your name (you@domain.com)
+   4:Core/Src/fan_speed_controller.c ****  * @brief 
+   5:Core/Src/fan_speed_controller.c ****  * @version 0.1
+   6:Core/Src/fan_speed_controller.c ****  * @date 2025-09-13
+   7:Core/Src/fan_speed_controller.c ****  * 
+   8:Core/Src/fan_speed_controller.c ****  * @copyright Copyright (c) 2025
+   9:Core/Src/fan_speed_controller.c ****  * 
+  10:Core/Src/fan_speed_controller.c ****  */
+  11:Core/Src/fan_speed_controller.c **** 
+  12:Core/Src/fan_speed_controller.c **** #include "fan_speed_controller.h"
+  13:Core/Src/fan_speed_controller.c **** 
+  14:Core/Src/fan_speed_controller.c **** #include "stdlib.h"
+  15:Core/Src/fan_speed_controller.c **** 
+  16:Core/Src/fan_speed_controller.c **** #define FAN_PWM_CHANNEL TIM_CHANNEL_1
+  17:Core/Src/fan_speed_controller.c **** 
+  18:Core/Src/fan_speed_controller.c **** /**
+  19:Core/Src/fan_speed_controller.c ****  * @brief Macro helper to get ARR register value from PWM duty cycle
+  20:Core/Src/fan_speed_controller.c ****  * 
+  21:Core/Src/fan_speed_controller.c ****  */
+  22:Core/Src/fan_speed_controller.c **** #define get_pwm_compare_value(x) (uint16_t)((x * 24999)/100)
+  23:Core/Src/fan_speed_controller.c **** 
+  24:Core/Src/fan_speed_controller.c **** 
+  25:Core/Src/fan_speed_controller.c **** void fan_speed_controller_init(fan_controller_t* fan, TIM_HandleTypeDef* htim)
+  26:Core/Src/fan_speed_controller.c **** {
+  28              		.loc 1 26 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		.loc 1 26 1 is_stmt 0 view .LVU1
+ARM GAS  /tmp/cctzNA5C.s 			page 2
+
+
+  33 0000 10B5     		push	{r4, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 4, -8
+  37              		.cfi_offset 14, -4
+  38 0002 0400     		movs	r4, r0
+  39 0004 0800     		movs	r0, r1
+  40              	.LVL1:
+  27:Core/Src/fan_speed_controller.c ****     fan->htim = htim;
+  41              		.loc 1 27 5 is_stmt 1 view .LVU2
+  42              		.loc 1 27 15 is_stmt 0 view .LVU3
+  43 0006 2160     		str	r1, [r4]
+  28:Core/Src/fan_speed_controller.c ****     fan->rpm_measured = 0;
+  44              		.loc 1 28 5 is_stmt 1 view .LVU4
+  45              		.loc 1 28 23 is_stmt 0 view .LVU5
+  46 0008 0023     		movs	r3, #0
+  47 000a E380     		strh	r3, [r4, #6]
+  29:Core/Src/fan_speed_controller.c ****     fan->rpm_requested = 0;
+  48              		.loc 1 29 5 is_stmt 1 view .LVU6
+  49              		.loc 1 29 24 is_stmt 0 view .LVU7
+  50 000c A380     		strh	r3, [r4, #4]
+  30:Core/Src/fan_speed_controller.c **** 
+  31:Core/Src/fan_speed_controller.c ****     // start PWM timer
+  32:Core/Src/fan_speed_controller.c ****     HAL_TIM_Base_Start(fan->htim);
+  51              		.loc 1 32 5 is_stmt 1 view .LVU8
+  52 000e FFF7FEFF 		bl	HAL_TIM_Base_Start
+  53              	.LVL2:
+  33:Core/Src/fan_speed_controller.c ****     HAL_TIM_PWM_Start(fan->htim, TIM_CHANNEL_1);
+  54              		.loc 1 33 5 view .LVU9
+  55 0012 2068     		ldr	r0, [r4]
+  56 0014 0021     		movs	r1, #0
+  57 0016 FFF7FEFF 		bl	HAL_TIM_PWM_Start
+  58              	.LVL3:
+  34:Core/Src/fan_speed_controller.c **** }
+  59              		.loc 1 34 1 is_stmt 0 view .LVU10
+  60              		@ sp needed
+  61              	.LVL4:
+  62              		.loc 1 34 1 view .LVU11
+  63 001a 10BD     		pop	{r4, pc}
+  64              		.cfi_endproc
+  65              	.LFE310:
+  67              		.section	.text.fan_set_rpm_percent,"ax",%progbits
+  68              		.align	1
+  69              		.global	fan_set_rpm_percent
+  70              		.syntax unified
+  71              		.code	16
+  72              		.thumb_func
+  74              	fan_set_rpm_percent:
+  75              	.LVL5:
+  76              	.LFB311:
+  35:Core/Src/fan_speed_controller.c **** 
+  36:Core/Src/fan_speed_controller.c **** 
+  37:Core/Src/fan_speed_controller.c **** void fan_set_rpm_percent(fan_controller_t* fan, uint8_t percent)
+  38:Core/Src/fan_speed_controller.c **** {
+  77              		.loc 1 38 1 is_stmt 1 view -0
+  78              		.cfi_startproc
+  79              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  /tmp/cctzNA5C.s 			page 3
+
+
+  80              		@ frame_needed = 0, uses_anonymous_args = 0
+  81              		.loc 1 38 1 is_stmt 0 view .LVU13
+  82 0000 10B5     		push	{r4, lr}
+  83              	.LCFI1:
+  84              		.cfi_def_cfa_offset 8
+  85              		.cfi_offset 4, -8
+  86              		.cfi_offset 14, -4
+  87 0002 0400     		movs	r4, r0
+  39:Core/Src/fan_speed_controller.c ****     uint8_t scaled_percent = 100 - percent;
+  88              		.loc 1 39 5 is_stmt 1 view .LVU14
+  89              		.loc 1 39 13 is_stmt 0 view .LVU15
+  90 0004 6423     		movs	r3, #100
+  91 0006 5B1A     		subs	r3, r3, r1
+  92 0008 DBB2     		uxtb	r3, r3
+  93              	.LVL6:
+  40:Core/Src/fan_speed_controller.c ****     __HAL_TIM_SET_COMPARE(fan->htim, FAN_PWM_CHANNEL, get_pwm_compare_value(scaled_percent));
+  94              		.loc 1 40 5 is_stmt 1 view .LVU16
+  95 000a 0548     		ldr	r0, .L3
+  96              	.LVL7:
+  97              		.loc 1 40 5 is_stmt 0 view .LVU17
+  98 000c 5843     		muls	r0, r3
+  99 000e 6421     		movs	r1, #100
+ 100              	.LVL8:
+ 101              		.loc 1 40 5 view .LVU18
+ 102 0010 FFF7FEFF 		bl	__aeabi_idiv
+ 103              	.LVL9:
+ 104              		.loc 1 40 5 view .LVU19
+ 105 0014 2368     		ldr	r3, [r4]
+ 106 0016 1B68     		ldr	r3, [r3]
+ 107 0018 0004     		lsls	r0, r0, #16
+ 108 001a 000C     		lsrs	r0, r0, #16
+ 109 001c 5863     		str	r0, [r3, #52]
+  41:Core/Src/fan_speed_controller.c **** }
+ 110              		.loc 1 41 1 view .LVU20
+ 111              		@ sp needed
+ 112              	.LVL10:
+ 113              		.loc 1 41 1 view .LVU21
+ 114 001e 10BD     		pop	{r4, pc}
+ 115              	.L4:
+ 116              		.align	2
+ 117              	.L3:
+ 118 0020 A7610000 		.word	24999
+ 119              		.cfi_endproc
+ 120              	.LFE311:
+ 122              		.text
+ 123              	.Letext0:
+ 124              		.file 2 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
+ 125              		.file 3 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
+ 126              		.file 4 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g070xx.h"
+ 127              		.file 5 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h"
+ 128              		.file 6 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h"
+ 129              		.file 7 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h"
+ 130              		.file 8 "Core/Inc/fan_speed_controller.h"
+ 131              		.file 9 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h"
+ARM GAS  /tmp/cctzNA5C.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 fan_speed_controller.c
+     /tmp/cctzNA5C.s:19     .text.fan_speed_controller_init:00000000 $t
+     /tmp/cctzNA5C.s:25     .text.fan_speed_controller_init:00000000 fan_speed_controller_init
+     /tmp/cctzNA5C.s:68     .text.fan_set_rpm_percent:00000000 $t
+     /tmp/cctzNA5C.s:74     .text.fan_set_rpm_percent:00000000 fan_set_rpm_percent
+     /tmp/cctzNA5C.s:118    .text.fan_set_rpm_percent:00000020 $d
+
+UNDEFINED SYMBOLS
+HAL_TIM_Base_Start
+HAL_TIM_PWM_Start
+__aeabi_idiv

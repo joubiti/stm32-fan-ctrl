@@ -11,6 +11,10 @@
         "ball.h": "c",
         "stdlib.h": "c",
         "pipe.h": "c",
-        "stm32g0xx_hal.h": "c"
+        "stm32g0xx_hal.h": "c",
+        "fan_speed_controller.h": "c",
+        "cmath": "c",
+        "cinttypes": "c",
+        "cstdlib": "c"
     }
 }
