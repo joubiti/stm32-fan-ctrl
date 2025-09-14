@@ -64,6 +64,32 @@ Archive member included to satisfy reference by file (symbol)
                               build/fan_speed_controller.o (__aeabi_idiv)
 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
                               /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+                              build/pid_controller.o (__aeabi_fcmplt)
+/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_fixunssfsi.o)
+                              build/main.o (__aeabi_f2uiz)
+/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(addsf3.o)
+                              build/pid_controller.o (__aeabi_fadd)
+/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(divsf3.o)
+                              build/pid_controller.o (__aeabi_fdiv)
+/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(eqsf2.o)
+                              /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o) (__eqsf2)
+/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(gesf2.o)
+                              /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o) (__gesf2)
+/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(lesf2.o)
+                              /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o) (__lesf2)
+/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(mulsf3.o)
+                              build/pid_controller.o (__aeabi_fmul)
+/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(subsf3.o)
+                              build/low_pass_filter.o (__aeabi_fsub)
+/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(fixsfsi.o)
+                              /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_fixunssfsi.o) (__aeabi_f2iz)
+/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatsisf.o)
+                              build/pid_controller.o (__aeabi_i2f)
+/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatunsisf.o)
+                              build/main.o (__aeabi_ui2f)
+/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+                              /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(addsf3.o) (__clzsi2)
 
 Discarded input sections
 
@@ -89,6 +115,7 @@ Discarded input sections
  .text          0x00000000        0x0 build/main.o
  .data          0x00000000        0x0 build/main.o
  .bss           0x00000000        0x0 build/main.o
+ .bss.command   0x00000000        0x1 build/main.o
  .text          0x00000000        0x0 build/heartbeat.o
  .data          0x00000000        0x0 build/heartbeat.o
  .bss           0x00000000        0x0 build/heartbeat.o
@@ -105,6 +132,12 @@ Discarded input sections
  .text          0x00000000        0x0 build/fan_speed_controller.o
  .data          0x00000000        0x0 build/fan_speed_controller.o
  .bss           0x00000000        0x0 build/fan_speed_controller.o
+ .text          0x00000000        0x0 build/pid_controller.o
+ .data          0x00000000        0x0 build/pid_controller.o
+ .bss           0x00000000        0x0 build/pid_controller.o
+ .text          0x00000000        0x0 build/low_pass_filter.o
+ .data          0x00000000        0x0 build/low_pass_filter.o
+ .bss           0x00000000        0x0 build/low_pass_filter.o
  .text          0x00000000        0x0 build/stm32g0xx_it.o
  .data          0x00000000        0x0 build/stm32g0xx_it.o
  .bss           0x00000000        0x0 build/stm32g0xx_it.o
@@ -1258,6 +1291,43 @@ Discarded input sections
  .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
  .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .text          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_fixunssfsi.o)
+ .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_fixunssfsi.o)
+ .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_fixunssfsi.o)
+ .text          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(addsf3.o)
+ .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(addsf3.o)
+ .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(addsf3.o)
+ .text          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(divsf3.o)
+ .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(divsf3.o)
+ .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(divsf3.o)
+ .text          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(eqsf2.o)
+ .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(eqsf2.o)
+ .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(eqsf2.o)
+ .text          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(gesf2.o)
+ .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(gesf2.o)
+ .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(gesf2.o)
+ .text          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(lesf2.o)
+ .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(lesf2.o)
+ .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(lesf2.o)
+ .text          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(mulsf3.o)
+ .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(mulsf3.o)
+ .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(mulsf3.o)
+ .text          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(subsf3.o)
+ .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(subsf3.o)
+ .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(subsf3.o)
+ .text          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(fixsfsi.o)
+ .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(fixsfsi.o)
+ .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(fixsfsi.o)
+ .text          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatsisf.o)
+ .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatsisf.o)
+ .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatsisf.o)
+ .text          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatunsisf.o)
+ .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatunsisf.o)
+ .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatunsisf.o)
+ .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
  .text          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtend.o
  .data          0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtend.o
  .bss           0x00000000        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtend.o
@@ -1285,6 +1355,8 @@ LOAD build/heartbeat.o
 LOAD build/logging.o
 LOAD build/tachometer.o
 LOAD build/fan_speed_controller.o
+LOAD build/pid_controller.o
+LOAD build/low_pass_filter.o
 LOAD build/stm32g0xx_it.o
 LOAD build/stm32g0xx_hal_msp.o
 LOAD build/stm32g0xx_hal_tim.o
@@ -1332,7 +1404,7 @@ LOAD /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-
                 0x08000000                g_pfnVectors
                 0x080000b8                        . = ALIGN (0x4)
 
-.text           0x080000b8     0x3504
+.text           0x080000b8     0x47f8
                 0x080000b8                        . = ALIGN (0x4)
  *(.text)
  .text          0x080000b8        0xe /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-strlen.o)
@@ -1351,477 +1423,537 @@ LOAD /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-
  .text          0x080003c4        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
                 0x080003c4                __aeabi_ldiv0
                 0x080003c4                __aeabi_idiv0
+ .text          0x080003c8       0x74 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+                0x080003c8                __aeabi_cfrcmple
+                0x080003d0                __aeabi_cfcmple
+                0x080003d0                __aeabi_cfcmpeq
+                0x080003e0                __aeabi_fcmpeq
+                0x080003ec                __aeabi_fcmplt
+                0x08000400                __aeabi_fcmple
+                0x08000414                __aeabi_fcmpgt
+                0x08000428                __aeabi_fcmpge
+ .text          0x0800043c       0x3c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+                0x0800043c                __clzsi2
  *(.text*)
  .text.deregister_tm_clones
-                0x080003c8       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x08000478       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
  .text.register_tm_clones
-                0x080003e8       0x28 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x08000498       0x28 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
  .text.__do_global_dtors_aux
-                0x08000410       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x080004c0       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
  .text.frame_dummy
-                0x0800043c       0x24 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x080004ec       0x24 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
  .text.MX_GPIO_Init
-                0x08000460       0x80 build/main.o
+                0x08000510       0x80 build/main.o
  .text.Error_Handler
-                0x080004e0        0x4 build/main.o
-                0x080004e0                Error_Handler
+                0x08000590        0x4 build/main.o
+                0x08000590                Error_Handler
  .text.MX_TIM3_Init
-                0x080004e4       0x80 build/main.o
+                0x08000594       0x80 build/main.o
  .text.MX_USART1_UART_Init
-                0x08000564       0x68 build/main.o
+                0x08000614       0x68 build/main.o
  .text.MX_TIM1_Init
-                0x080005cc       0xcc build/main.o
+                0x0800067c       0xcc build/main.o
  .text.SystemClock_Config
-                0x08000698       0x78 build/main.o
-                0x08000698                SystemClock_Config
- .text.main     0x08000710       0xa4 build/main.o
-                0x08000710                main
+                0x08000748       0x78 build/main.o
+                0x08000748                SystemClock_Config
+ .text.main     0x080007c0      0x118 build/main.o
+                0x080007c0                main
  .text.heartbeat_set_period
-                0x080007b4        0x4 build/heartbeat.o
-                0x080007b4                heartbeat_set_period
+                0x080008d8        0x4 build/heartbeat.o
+                0x080008d8                heartbeat_set_period
  .text.heartbeat_initialize
-                0x080007b8        0x8 build/heartbeat.o
-                0x080007b8                heartbeat_initialize
+                0x080008dc        0x8 build/heartbeat.o
+                0x080008dc                heartbeat_initialize
  .text.heartbeat_on
-                0x080007c0       0x14 build/heartbeat.o
-                0x080007c0                heartbeat_on
+                0x080008e4       0x14 build/heartbeat.o
+                0x080008e4                heartbeat_on
  .text.heartbeat_toggle
-                0x080007d4       0x24 build/heartbeat.o
-                0x080007d4                heartbeat_toggle
+                0x080008f8       0x24 build/heartbeat.o
+                0x080008f8                heartbeat_toggle
  .text._logging_send_fmt_output
-                0x080007f8       0x2c build/logging.o
+                0x0800091c       0x2c build/logging.o
  .text.logging_subsystem_init
-                0x08000824       0x10 build/logging.o
-                0x08000824                logging_subsystem_init
+                0x08000948       0x10 build/logging.o
+                0x08000948                logging_subsystem_init
  .text.logging_set_message_frequency
-                0x08000834        0xc build/logging.o
-                0x08000834                logging_set_message_frequency
+                0x08000958        0xc build/logging.o
+                0x08000958                logging_set_message_frequency
  .text.logging_send_periodic_msg
-                0x08000840       0x34 build/logging.o
-                0x08000840                logging_send_periodic_msg
+                0x08000964       0x34 build/logging.o
+                0x08000964                logging_send_periodic_msg
  .text.HAL_TIM_IC_CaptureCallback
-                0x08000874       0x34 build/tachometer.o
-                0x08000874                HAL_TIM_IC_CaptureCallback
+                0x08000998       0x34 build/tachometer.o
+                0x08000998                HAL_TIM_IC_CaptureCallback
  .text.tachometer_init
-                0x080008a8       0x18 build/tachometer.o
-                0x080008a8                tachometer_init
+                0x080009cc       0x18 build/tachometer.o
+                0x080009cc                tachometer_init
  .text.tachometer_update_rpm
-                0x080008c0       0x34 build/tachometer.o
-                0x080008c0                tachometer_update_rpm
+                0x080009e4       0x38 build/tachometer.o
+                0x080009e4                tachometer_update_rpm
  .text.fan_speed_controller_init
-                0x080008f4       0x1c build/fan_speed_controller.o
-                0x080008f4                fan_speed_controller_init
+                0x08000a1c       0x1c build/fan_speed_controller.o
+                0x08000a1c                fan_speed_controller_init
  .text.fan_set_rpm_percent
-                0x08000910       0x24 build/fan_speed_controller.o
-                0x08000910                fan_set_rpm_percent
+                0x08000a38       0x2c build/fan_speed_controller.o
+                0x08000a38                fan_set_rpm_percent
+ .text.pid_controller_init
+                0x08000a64       0x28 build/pid_controller.o
+                0x08000a64                pid_controller_init
+ .text.pid_controller_step
+                0x08000a8c       0xd0 build/pid_controller.o
+                0x08000a8c                pid_controller_step
+ .text.low_pass_filter_init
+                0x08000b5c        0xe build/low_pass_filter.o
+                0x08000b5c                low_pass_filter_init
+ .text.low_pass_filter_update
+                0x08000b6a       0x40 build/low_pass_filter.o
+                0x08000b6a                low_pass_filter_update
  .text.NMI_Handler
-                0x08000934        0x2 build/stm32g0xx_it.o
-                0x08000934                NMI_Handler
+                0x08000baa        0x2 build/stm32g0xx_it.o
+                0x08000baa                NMI_Handler
  .text.HardFault_Handler
-                0x08000936        0x2 build/stm32g0xx_it.o
-                0x08000936                HardFault_Handler
+                0x08000bac        0x2 build/stm32g0xx_it.o
+                0x08000bac                HardFault_Handler
  .text.SVC_Handler
-                0x08000938        0x2 build/stm32g0xx_it.o
-                0x08000938                SVC_Handler
+                0x08000bae        0x2 build/stm32g0xx_it.o
+                0x08000bae                SVC_Handler
  .text.PendSV_Handler
-                0x0800093a        0x2 build/stm32g0xx_it.o
-                0x0800093a                PendSV_Handler
+                0x08000bb0        0x2 build/stm32g0xx_it.o
+                0x08000bb0                PendSV_Handler
  .text.SysTick_Handler
-                0x0800093c        0x8 build/stm32g0xx_it.o
-                0x0800093c                SysTick_Handler
+                0x08000bb2        0x8 build/stm32g0xx_it.o
+                0x08000bb2                SysTick_Handler
+ *fill*         0x08000bba        0x2 
  .text.TIM3_IRQHandler
-                0x08000944       0x10 build/stm32g0xx_it.o
-                0x08000944                TIM3_IRQHandler
+                0x08000bbc       0x10 build/stm32g0xx_it.o
+                0x08000bbc                TIM3_IRQHandler
  .text.HAL_MspInit
-                0x08000954       0x30 build/stm32g0xx_hal_msp.o
-                0x08000954                HAL_MspInit
+                0x08000bcc       0x30 build/stm32g0xx_hal_msp.o
+                0x08000bcc                HAL_MspInit
  .text.HAL_TIM_PWM_MspInit
-                0x08000984       0x2c build/stm32g0xx_hal_msp.o
-                0x08000984                HAL_TIM_PWM_MspInit
+                0x08000bfc       0x2c build/stm32g0xx_hal_msp.o
+                0x08000bfc                HAL_TIM_PWM_MspInit
  .text.HAL_TIM_IC_MspInit
-                0x080009b0       0x70 build/stm32g0xx_hal_msp.o
-                0x080009b0                HAL_TIM_IC_MspInit
+                0x08000c28       0x70 build/stm32g0xx_hal_msp.o
+                0x08000c28                HAL_TIM_IC_MspInit
  .text.HAL_TIM_MspPostInit
-                0x08000a20       0x50 build/stm32g0xx_hal_msp.o
-                0x08000a20                HAL_TIM_MspPostInit
+                0x08000c98       0x50 build/stm32g0xx_hal_msp.o
+                0x08000c98                HAL_TIM_MspPostInit
  .text.HAL_UART_MspInit
-                0x08000a70       0x88 build/stm32g0xx_hal_msp.o
-                0x08000a70                HAL_UART_MspInit
+                0x08000ce8       0x88 build/stm32g0xx_hal_msp.o
+                0x08000ce8                HAL_UART_MspInit
  .text.TIM_OC1_SetConfig
-                0x08000af8       0x90 build/stm32g0xx_hal_tim.o
+                0x08000d70       0x90 build/stm32g0xx_hal_tim.o
  .text.TIM_OC3_SetConfig
-                0x08000b88       0x90 build/stm32g0xx_hal_tim.o
+                0x08000e00       0x90 build/stm32g0xx_hal_tim.o
  .text.TIM_OC4_SetConfig
-                0x08000c18       0x74 build/stm32g0xx_hal_tim.o
+                0x08000e90       0x74 build/stm32g0xx_hal_tim.o
  .text.TIM_OC5_SetConfig
-                0x08000c8c       0x6c build/stm32g0xx_hal_tim.o
+                0x08000f04       0x6c build/stm32g0xx_hal_tim.o
  .text.TIM_OC6_SetConfig
-                0x08000cf8       0x74 build/stm32g0xx_hal_tim.o
+                0x08000f70       0x74 build/stm32g0xx_hal_tim.o
  .text.TIM_TI2_SetConfig
-                0x08000d6c       0x38 build/stm32g0xx_hal_tim.o
+                0x08000fe4       0x38 build/stm32g0xx_hal_tim.o
  .text.TIM_TI3_SetConfig
-                0x08000da4       0x40 build/stm32g0xx_hal_tim.o
+                0x0800101c       0x40 build/stm32g0xx_hal_tim.o
  .text.TIM_TI4_SetConfig
-                0x08000de4       0x44 build/stm32g0xx_hal_tim.o
+                0x0800105c       0x44 build/stm32g0xx_hal_tim.o
  .text.HAL_TIM_Base_Start
-                0x08000e28       0x68 build/stm32g0xx_hal_tim.o
-                0x08000e28                HAL_TIM_Base_Start
+                0x080010a0       0x68 build/stm32g0xx_hal_tim.o
+                0x080010a0                HAL_TIM_Base_Start
  .text.HAL_TIM_ReadCapturedValue
-                0x08000e90       0x32 build/stm32g0xx_hal_tim.o
-                0x08000e90                HAL_TIM_ReadCapturedValue
+                0x08001108       0x32 build/stm32g0xx_hal_tim.o
+                0x08001108                HAL_TIM_ReadCapturedValue
  .text.HAL_TIM_PeriodElapsedCallback
-                0x08000ec2        0x2 build/stm32g0xx_hal_tim.o
-                0x08000ec2                HAL_TIM_PeriodElapsedCallback
+                0x0800113a        0x2 build/stm32g0xx_hal_tim.o
+                0x0800113a                HAL_TIM_PeriodElapsedCallback
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x08000ec4        0x2 build/stm32g0xx_hal_tim.o
-                0x08000ec4                HAL_TIM_OC_DelayElapsedCallback
+                0x0800113c        0x2 build/stm32g0xx_hal_tim.o
+                0x0800113c                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x08000ec6        0x2 build/stm32g0xx_hal_tim.o
-                0x08000ec6                HAL_TIM_PWM_PulseFinishedCallback
+                0x0800113e        0x2 build/stm32g0xx_hal_tim.o
+                0x0800113e                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x08000ec8        0x2 build/stm32g0xx_hal_tim.o
-                0x08000ec8                HAL_TIM_TriggerCallback
- *fill*         0x08000eca        0x2 
+                0x08001140        0x2 build/stm32g0xx_hal_tim.o
+                0x08001140                HAL_TIM_TriggerCallback
+ *fill*         0x08001142        0x2 
  .text.HAL_TIM_IRQHandler
-                0x08000ecc      0x160 build/stm32g0xx_hal_tim.o
-                0x08000ecc                HAL_TIM_IRQHandler
+                0x08001144      0x160 build/stm32g0xx_hal_tim.o
+                0x08001144                HAL_TIM_IRQHandler
  .text.TIM_Base_SetConfig
-                0x0800102c       0xa0 build/stm32g0xx_hal_tim.o
-                0x0800102c                TIM_Base_SetConfig
+                0x080012a4       0xa0 build/stm32g0xx_hal_tim.o
+                0x080012a4                TIM_Base_SetConfig
  .text.HAL_TIM_PWM_Init
-                0x080010cc       0x60 build/stm32g0xx_hal_tim.o
-                0x080010cc                HAL_TIM_PWM_Init
+                0x08001344       0x60 build/stm32g0xx_hal_tim.o
+                0x08001344                HAL_TIM_PWM_Init
  .text.HAL_TIM_IC_Init
-                0x0800112c       0x60 build/stm32g0xx_hal_tim.o
-                0x0800112c                HAL_TIM_IC_Init
+                0x080013a4       0x60 build/stm32g0xx_hal_tim.o
+                0x080013a4                HAL_TIM_IC_Init
  .text.TIM_OC2_SetConfig
-                0x0800118c       0x84 build/stm32g0xx_hal_tim.o
-                0x0800118c                TIM_OC2_SetConfig
+                0x08001404       0x84 build/stm32g0xx_hal_tim.o
+                0x08001404                TIM_OC2_SetConfig
  .text.HAL_TIM_PWM_ConfigChannel
-                0x08001210      0x144 build/stm32g0xx_hal_tim.o
-                0x08001210                HAL_TIM_PWM_ConfigChannel
+                0x08001488      0x144 build/stm32g0xx_hal_tim.o
+                0x08001488                HAL_TIM_PWM_ConfigChannel
  .text.TIM_TI1_SetConfig
-                0x08001354       0x54 build/stm32g0xx_hal_tim.o
-                0x08001354                TIM_TI1_SetConfig
+                0x080015cc       0x54 build/stm32g0xx_hal_tim.o
+                0x080015cc                TIM_TI1_SetConfig
  .text.HAL_TIM_IC_ConfigChannel
-                0x080013a8       0xcc build/stm32g0xx_hal_tim.o
-                0x080013a8                HAL_TIM_IC_ConfigChannel
+                0x08001620       0xcc build/stm32g0xx_hal_tim.o
+                0x08001620                HAL_TIM_IC_ConfigChannel
  .text.TIM_CCxChannelCmd
-                0x08001474       0x1a build/stm32g0xx_hal_tim.o
-                0x08001474                TIM_CCxChannelCmd
- *fill*         0x0800148e        0x2 
+                0x080016ec       0x1a build/stm32g0xx_hal_tim.o
+                0x080016ec                TIM_CCxChannelCmd
+ *fill*         0x08001706        0x2 
  .text.HAL_TIM_PWM_Start
-                0x08001490      0x134 build/stm32g0xx_hal_tim.o
-                0x08001490                HAL_TIM_PWM_Start
+                0x08001708      0x134 build/stm32g0xx_hal_tim.o
+                0x08001708                HAL_TIM_PWM_Start
  .text.HAL_TIM_IC_Start_IT
-                0x080015c4      0x170 build/stm32g0xx_hal_tim.o
-                0x080015c4                HAL_TIM_IC_Start_IT
+                0x0800183c      0x170 build/stm32g0xx_hal_tim.o
+                0x0800183c                HAL_TIM_IC_Start_IT
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08001734       0x78 build/stm32g0xx_hal_tim_ex.o
-                0x08001734                HAL_TIMEx_MasterConfigSynchronization
+                0x080019ac       0x78 build/stm32g0xx_hal_tim_ex.o
+                0x080019ac                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_ConfigBreakDeadTime
-                0x080017ac       0xc4 build/stm32g0xx_hal_tim_ex.o
-                0x080017ac                HAL_TIMEx_ConfigBreakDeadTime
+                0x08001a24       0xc4 build/stm32g0xx_hal_tim_ex.o
+                0x08001a24                HAL_TIMEx_ConfigBreakDeadTime
  .text.HAL_TIMEx_CommutCallback
-                0x08001870        0x2 build/stm32g0xx_hal_tim_ex.o
-                0x08001870                HAL_TIMEx_CommutCallback
+                0x08001ae8        0x2 build/stm32g0xx_hal_tim_ex.o
+                0x08001ae8                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x08001872        0x2 build/stm32g0xx_hal_tim_ex.o
-                0x08001872                HAL_TIMEx_BreakCallback
+                0x08001aea        0x2 build/stm32g0xx_hal_tim_ex.o
+                0x08001aea                HAL_TIMEx_BreakCallback
  .text.HAL_TIMEx_Break2Callback
-                0x08001874        0x2 build/stm32g0xx_hal_tim_ex.o
-                0x08001874                HAL_TIMEx_Break2Callback
- *fill*         0x08001876        0x2 
+                0x08001aec        0x2 build/stm32g0xx_hal_tim_ex.o
+                0x08001aec                HAL_TIMEx_Break2Callback
+ *fill*         0x08001aee        0x2 
  .text.HAL_RCC_OscConfig
-                0x08001878      0x4a4 build/stm32g0xx_hal_rcc.o
-                0x08001878                HAL_RCC_OscConfig
+                0x08001af0      0x4a4 build/stm32g0xx_hal_rcc.o
+                0x08001af0                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08001d1c       0xb4 build/stm32g0xx_hal_rcc.o
-                0x08001d1c                HAL_RCC_GetSysClockFreq
+                0x08001f94       0xb4 build/stm32g0xx_hal_rcc.o
+                0x08001f94                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x08001dd0      0x18c build/stm32g0xx_hal_rcc.o
-                0x08001dd0                HAL_RCC_ClockConfig
+                0x08002048      0x18c build/stm32g0xx_hal_rcc.o
+                0x08002048                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x08001f5c        0xc build/stm32g0xx_hal_rcc.o
-                0x08001f5c                HAL_RCC_GetHCLKFreq
+                0x080021d4        0xc build/stm32g0xx_hal_rcc.o
+                0x080021d4                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08001f68       0x28 build/stm32g0xx_hal_rcc.o
-                0x08001f68                HAL_RCC_GetPCLK1Freq
+                0x080021e0       0x28 build/stm32g0xx_hal_rcc.o
+                0x080021e0                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x08001f90      0x190 build/stm32g0xx_hal_rcc_ex.o
-                0x08001f90                HAL_RCCEx_PeriphCLKConfig
+                0x08002208      0x190 build/stm32g0xx_hal_rcc_ex.o
+                0x08002208                HAL_RCCEx_PeriphCLKConfig
  .text.HAL_GPIO_Init
-                0x08002120      0x174 build/stm32g0xx_hal_gpio.o
-                0x08002120                HAL_GPIO_Init
+                0x08002398      0x174 build/stm32g0xx_hal_gpio.o
+                0x08002398                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x08002294        0xc build/stm32g0xx_hal_gpio.o
-                0x08002294                HAL_GPIO_WritePin
+                0x0800250c        0xc build/stm32g0xx_hal_gpio.o
+                0x0800250c                HAL_GPIO_WritePin
  .text.HAL_GPIO_TogglePin
-                0x080022a0       0x10 build/stm32g0xx_hal_gpio.o
-                0x080022a0                HAL_GPIO_TogglePin
+                0x08002518       0x10 build/stm32g0xx_hal_gpio.o
+                0x08002518                HAL_GPIO_TogglePin
  .text.HAL_PWREx_ControlVoltageScaling
-                0x080022b0       0x54 build/stm32g0xx_hal_pwr_ex.o
-                0x080022b0                HAL_PWREx_ControlVoltageScaling
+                0x08002528       0x54 build/stm32g0xx_hal_pwr_ex.o
+                0x08002528                HAL_PWREx_ControlVoltageScaling
  .text.__NVIC_SetPriority
-                0x08002304       0x60 build/stm32g0xx_hal_cortex.o
+                0x0800257c       0x60 build/stm32g0xx_hal_cortex.o
  .text.SysTick_Config
-                0x08002364       0x38 build/stm32g0xx_hal_cortex.o
+                0x080025dc       0x38 build/stm32g0xx_hal_cortex.o
  .text.HAL_NVIC_SetPriority
-                0x0800239c        0x8 build/stm32g0xx_hal_cortex.o
-                0x0800239c                HAL_NVIC_SetPriority
+                0x08002614        0x8 build/stm32g0xx_hal_cortex.o
+                0x08002614                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x080023a4       0x18 build/stm32g0xx_hal_cortex.o
-                0x080023a4                HAL_NVIC_EnableIRQ
+                0x0800261c       0x18 build/stm32g0xx_hal_cortex.o
+                0x0800261c                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x080023bc        0x8 build/stm32g0xx_hal_cortex.o
-                0x080023bc                HAL_SYSTICK_Config
+                0x08002634        0x8 build/stm32g0xx_hal_cortex.o
+                0x08002634                HAL_SYSTICK_Config
  .text.HAL_InitTick
-                0x080023c4       0x58 build/stm32g0xx_hal.o
-                0x080023c4                HAL_InitTick
+                0x0800263c       0x58 build/stm32g0xx_hal.o
+                0x0800263c                HAL_InitTick
  .text.HAL_Init
-                0x0800241c       0x28 build/stm32g0xx_hal.o
-                0x0800241c                HAL_Init
+                0x08002694       0x28 build/stm32g0xx_hal.o
+                0x08002694                HAL_Init
  .text.HAL_IncTick
-                0x08002444       0x18 build/stm32g0xx_hal.o
-                0x08002444                HAL_IncTick
+                0x080026bc       0x18 build/stm32g0xx_hal.o
+                0x080026bc                HAL_IncTick
  .text.HAL_GetTick
-                0x0800245c        0xc build/stm32g0xx_hal.o
-                0x0800245c                HAL_GetTick
+                0x080026d4        0xc build/stm32g0xx_hal.o
+                0x080026d4                HAL_GetTick
  .text.UART_EndRxTransfer
-                0x08002468       0x64 build/stm32g0xx_hal_uart.o
+                0x080026e0       0x64 build/stm32g0xx_hal_uart.o
  .text.UART_SetConfig
-                0x080024cc      0x1ec build/stm32g0xx_hal_uart.o
-                0x080024cc                UART_SetConfig
+                0x08002744      0x1ec build/stm32g0xx_hal_uart.o
+                0x08002744                UART_SetConfig
  .text.UART_AdvFeatureConfig
-                0x080026b8       0xe0 build/stm32g0xx_hal_uart.o
-                0x080026b8                UART_AdvFeatureConfig
+                0x08002930       0xe0 build/stm32g0xx_hal_uart.o
+                0x08002930                UART_AdvFeatureConfig
  .text.UART_WaitOnFlagUntilTimeout
-                0x08002798       0x9e build/stm32g0xx_hal_uart.o
-                0x08002798                UART_WaitOnFlagUntilTimeout
+                0x08002a10       0x9e build/stm32g0xx_hal_uart.o
+                0x08002a10                UART_WaitOnFlagUntilTimeout
  .text.HAL_UART_Transmit
-                0x08002836       0xfa build/stm32g0xx_hal_uart.o
-                0x08002836                HAL_UART_Transmit
+                0x08002aae       0xfa build/stm32g0xx_hal_uart.o
+                0x08002aae                HAL_UART_Transmit
  .text.UART_CheckIdleState
-                0x08002930       0xd4 build/stm32g0xx_hal_uart.o
-                0x08002930                UART_CheckIdleState
+                0x08002ba8       0xd4 build/stm32g0xx_hal_uart.o
+                0x08002ba8                UART_CheckIdleState
  .text.HAL_UART_Init
-                0x08002a04       0x70 build/stm32g0xx_hal_uart.o
-                0x08002a04                HAL_UART_Init
+                0x08002c7c       0x70 build/stm32g0xx_hal_uart.o
+                0x08002c7c                HAL_UART_Init
  .text.UARTEx_SetNbDataToProcess
-                0x08002a74       0x50 build/stm32g0xx_hal_uart_ex.o
+                0x08002cec       0x50 build/stm32g0xx_hal_uart_ex.o
  .text.HAL_UARTEx_DisableFifoMode
-                0x08002ac4       0x40 build/stm32g0xx_hal_uart_ex.o
-                0x08002ac4                HAL_UARTEx_DisableFifoMode
+                0x08002d3c       0x40 build/stm32g0xx_hal_uart_ex.o
+                0x08002d3c                HAL_UARTEx_DisableFifoMode
  .text.HAL_UARTEx_SetTxFifoThreshold
-                0x08002b04       0x4a build/stm32g0xx_hal_uart_ex.o
-                0x08002b04                HAL_UARTEx_SetTxFifoThreshold
- *fill*         0x08002b4e        0x2 
+                0x08002d7c       0x4a build/stm32g0xx_hal_uart_ex.o
+                0x08002d7c                HAL_UARTEx_SetTxFifoThreshold
+ *fill*         0x08002dc6        0x2 
  .text.HAL_UARTEx_SetRxFifoThreshold
-                0x08002b50       0x50 build/stm32g0xx_hal_uart_ex.o
-                0x08002b50                HAL_UARTEx_SetRxFifoThreshold
+                0x08002dc8       0x50 build/stm32g0xx_hal_uart_ex.o
+                0x08002dc8                HAL_UARTEx_SetRxFifoThreshold
  .text.SystemInit
-                0x08002ba0        0x2 build/system_stm32g0xx.o
-                0x08002ba0                SystemInit
- *fill*         0x08002ba2        0x2 
- .text._sbrk    0x08002ba4       0x48 build/sysmem.o
-                0x08002ba4                _sbrk
+                0x08002e18        0x2 build/system_stm32g0xx.o
+                0x08002e18                SystemInit
+ *fill*         0x08002e1a        0x2 
+ .text._sbrk    0x08002e1c       0x48 build/sysmem.o
+                0x08002e1c                _sbrk
  .text.Reset_Handler
-                0x08002bec       0x50 build/startup_stm32g070xx.o
-                0x08002bec                Reset_Handler
+                0x08002e64       0x50 build/startup_stm32g070xx.o
+                0x08002e64                Reset_Handler
  .text.Default_Handler
-                0x08002c3c        0x2 build/startup_stm32g070xx.o
-                0x08002c3c                TIM1_CC_IRQHandler
-                0x08002c3c                TIM6_IRQHandler
-                0x08002c3c                I2C1_IRQHandler
-                0x08002c3c                RTC_TAMP_IRQHandler
-                0x08002c3c                SPI1_IRQHandler
-                0x08002c3c                USART3_4_IRQHandler
-                0x08002c3c                EXTI2_3_IRQHandler
-                0x08002c3c                ADC1_IRQHandler
-                0x08002c3c                I2C2_IRQHandler
-                0x08002c3c                TIM17_IRQHandler
-                0x08002c3c                TIM16_IRQHandler
-                0x08002c3c                EXTI4_15_IRQHandler
-                0x08002c3c                RCC_IRQHandler
-                0x08002c3c                DMA1_Channel1_IRQHandler
-                0x08002c3c                Default_Handler
-                0x08002c3c                TIM14_IRQHandler
-                0x08002c3c                TIM7_IRQHandler
-                0x08002c3c                TIM15_IRQHandler
-                0x08002c3c                EXTI0_1_IRQHandler
-                0x08002c3c                SPI2_IRQHandler
-                0x08002c3c                WWDG_IRQHandler
-                0x08002c3c                DMA1_Ch4_7_DMAMUX1_OVR_IRQHandler
-                0x08002c3c                DMA1_Channel2_3_IRQHandler
-                0x08002c3c                USART2_IRQHandler
-                0x08002c3c                FLASH_IRQHandler
-                0x08002c3c                USART1_IRQHandler
-                0x08002c3c                TIM1_BRK_UP_TRG_COM_IRQHandler
+                0x08002eb4        0x2 build/startup_stm32g070xx.o
+                0x08002eb4                TIM1_CC_IRQHandler
+                0x08002eb4                TIM6_IRQHandler
+                0x08002eb4                I2C1_IRQHandler
+                0x08002eb4                RTC_TAMP_IRQHandler
+                0x08002eb4                SPI1_IRQHandler
+                0x08002eb4                USART3_4_IRQHandler
+                0x08002eb4                EXTI2_3_IRQHandler
+                0x08002eb4                ADC1_IRQHandler
+                0x08002eb4                I2C2_IRQHandler
+                0x08002eb4                TIM17_IRQHandler
+                0x08002eb4                TIM16_IRQHandler
+                0x08002eb4                EXTI4_15_IRQHandler
+                0x08002eb4                RCC_IRQHandler
+                0x08002eb4                DMA1_Channel1_IRQHandler
+                0x08002eb4                Default_Handler
+                0x08002eb4                TIM14_IRQHandler
+                0x08002eb4                TIM7_IRQHandler
+                0x08002eb4                TIM15_IRQHandler
+                0x08002eb4                EXTI0_1_IRQHandler
+                0x08002eb4                SPI2_IRQHandler
+                0x08002eb4                WWDG_IRQHandler
+                0x08002eb4                DMA1_Ch4_7_DMAMUX1_OVR_IRQHandler
+                0x08002eb4                DMA1_Channel2_3_IRQHandler
+                0x08002eb4                USART2_IRQHandler
+                0x08002eb4                FLASH_IRQHandler
+                0x08002eb4                USART1_IRQHandler
+                0x08002eb4                TIM1_BRK_UP_TRG_COM_IRQHandler
  .text._vsnprintf_r
-                0x08002c3e       0x58 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-vsnprintf.o)
-                0x08002c3e                _vsnprintf_r
-                0x08002c3e                _vsniprintf_r
- *fill*         0x08002c96        0x2 
+                0x08002eb6       0x58 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-vsnprintf.o)
+                0x08002eb6                _vsnprintf_r
+                0x08002eb6                _vsniprintf_r
+ *fill*         0x08002f0e        0x2 
  .text.vsnprintf
-                0x08002c98       0x18 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-vsnprintf.o)
-                0x08002c98                vsnprintf
-                0x08002c98                vsniprintf
- .text.memset   0x08002cb0       0x10 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memset.o)
-                0x08002cb0                memset
- .text.__errno  0x08002cc0        0xc /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-errno.o)
-                0x08002cc0                __errno
+                0x08002f10       0x18 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-vsnprintf.o)
+                0x08002f10                vsnprintf
+                0x08002f10                vsniprintf
+ .text.memset   0x08002f28       0x10 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memset.o)
+                0x08002f28                memset
+ .text.__errno  0x08002f38        0xc /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-errno.o)
+                0x08002f38                __errno
  .text.__libc_init_array
-                0x08002ccc       0x48 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-init.o)
-                0x08002ccc                __libc_init_array
+                0x08002f44       0x48 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-init.o)
+                0x08002f44                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x08002d14        0x2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-lock.o)
-                0x08002d14                __retarget_lock_acquire_recursive
+                0x08002f8c        0x2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x08002f8c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08002d16        0x2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-lock.o)
-                0x08002d16                __retarget_lock_release_recursive
- .text._free_r  0x08002d18       0x94 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-freer.o)
-                0x08002d18                _free_r
+                0x08002f8e        0x2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x08002f8e                __retarget_lock_release_recursive
+ .text._free_r  0x08002f90       0x94 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-freer.o)
+                0x08002f90                _free_r
  .text.sbrk_aligned
-                0x08002dac       0x44 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
+                0x08003024       0x44 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x08002df0      0x100 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
-                0x08002df0                _malloc_r
+                0x08003068      0x100 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
+                0x08003068                _malloc_r
  .text.__malloc_lock
-                0x08002ef0       0x10 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mlock.o)
-                0x08002ef0                __malloc_lock
+                0x08003168       0x10 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mlock.o)
+                0x08003168                __malloc_lock
  .text.__malloc_unlock
-                0x08002f00       0x10 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mlock.o)
-                0x08002f00                __malloc_unlock
+                0x08003178       0x10 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mlock.o)
+                0x08003178                __malloc_unlock
  .text.__ssputs_r
-                0x08002f10       0xc8 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-svfprintf.o)
-                0x08002f10                __ssputs_r
+                0x08003188       0xc8 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-svfprintf.o)
+                0x08003188                __ssputs_r
  .text._svfprintf_r
-                0x08002fd8      0x1f4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-svfprintf.o)
-                0x08002fd8                _svfprintf_r
-                0x08002fd8                _svfiprintf_r
+                0x08003250      0x1f4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-svfprintf.o)
+                0x08003250                _svfprintf_r
+                0x08003250                _svfiprintf_r
  .text._printf_common
-                0x080031cc       0xde /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-vfprintf_i.o)
-                0x080031cc                _printf_common
- *fill*         0x080032aa        0x2 
+                0x08003444       0xde /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08003444                _printf_common
+ *fill*         0x08003522        0x2 
  .text._printf_i
-                0x080032ac      0x218 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-vfprintf_i.o)
-                0x080032ac                _printf_i
- .text.memmove  0x080034c4       0x24 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memmove.o)
-                0x080034c4                memmove
- .text._sbrk_r  0x080034e8       0x24 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-sbrkr.o)
-                0x080034e8                _sbrk_r
- .text.memchr   0x0800350c       0x16 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memchr-stub.o)
-                0x0800350c                memchr
- .text.memcpy   0x08003522       0x12 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
-                0x08003522                memcpy
+                0x08003524      0x218 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08003524                _printf_i
+ .text.memmove  0x0800373c       0x24 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memmove.o)
+                0x0800373c                memmove
+ .text._sbrk_r  0x08003760       0x24 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-sbrkr.o)
+                0x08003760                _sbrk_r
+ .text.memchr   0x08003784       0x16 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memchr-stub.o)
+                0x08003784                memchr
+ .text.memcpy   0x0800379a       0x12 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+                0x0800379a                memcpy
  .text._realloc_r
-                0x08003534       0x60 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-reallocr.o)
-                0x08003534                _realloc_r
+                0x080037ac       0x60 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-reallocr.o)
+                0x080037ac                _realloc_r
  .text._malloc_usable_size_r
-                0x08003594       0x10 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-msizer.o)
-                0x08003594                _malloc_usable_size_r
+                0x0800380c       0x10 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-msizer.o)
+                0x0800380c                _malloc_usable_size_r
+ .text.__fixunssfsi
+                0x0800381c       0x30 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_fixunssfsi.o)
+                0x0800381c                __aeabi_f2uiz
+                0x0800381c                __fixunssfsi
+ .text.__aeabi_fadd
+                0x0800384c      0x41c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(addsf3.o)
+                0x0800384c                __aeabi_fadd
+ .text.__aeabi_fdiv
+                0x08003c68      0x22c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(divsf3.o)
+                0x08003c68                __aeabi_fdiv
+ .text.__eqsf2  0x08003e94       0x50 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(eqsf2.o)
+                0x08003e94                __nesf2
+                0x08003e94                __eqsf2
+ .text.__gesf2  0x08003ee4       0x90 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(gesf2.o)
+                0x08003ee4                __gtsf2
+                0x08003ee4                __gesf2
+ .text.__lesf2  0x08003f74       0x90 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(lesf2.o)
+                0x08003f74                __lesf2
+                0x08003f74                __ltsf2
+ .text.__aeabi_fmul
+                0x08004004      0x2a4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(mulsf3.o)
+                0x08004004                __aeabi_fmul
+ .text.__aeabi_fsub
+                0x080042a8      0x484 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(subsf3.o)
+                0x080042a8                __aeabi_fsub
+ .text.__aeabi_f2iz
+                0x0800472c       0x40 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(fixsfsi.o)
+                0x0800472c                __aeabi_f2iz
+ .text.__aeabi_i2f
+                0x0800476c       0xa0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatsisf.o)
+                0x0800476c                __aeabi_i2f
+ .text.__aeabi_ui2f
+                0x0800480c       0x8c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatunsisf.o)
+                0x0800480c                __aeabi_ui2f
  *(.glue_7)
- .glue_7        0x080035a4        0x0 linker stubs
+ .glue_7        0x08004898        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080035a4        0x0 linker stubs
+ .glue_7t       0x08004898        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x080035a4        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
+ .eh_frame      0x08004898        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
  *(.init)
- .init          0x080035a4        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crti.o
-                0x080035a4                _init
- .init          0x080035a8        0x8 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtn.o
+ .init          0x08004898        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crti.o
+                0x08004898                _init
+ .init          0x0800489c        0x8 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtn.o
  *(.fini)
- .fini          0x080035b0        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crti.o
-                0x080035b0                _fini
- .fini          0x080035b4        0x8 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtn.o
-                0x080035bc                        . = ALIGN (0x4)
-                0x080035bc                        _etext = .
+ .fini          0x080048a4        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crti.o
+                0x080048a4                _fini
+ .fini          0x080048a8        0x8 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtn.o
+                0x080048b0                        . = ALIGN (0x4)
+                0x080048b0                        _etext = .
 
-.vfp11_veneer   0x080035bc        0x0
- .vfp11_veneer  0x080035bc        0x0 linker stubs
+.vfp11_veneer   0x080048b0        0x0
+ .vfp11_veneer  0x080048b0        0x0 linker stubs
 
-.v4_bx          0x080035bc        0x0
- .v4_bx         0x080035bc        0x0 linker stubs
+.v4_bx          0x080048b0        0x0
+ .v4_bx         0x080048b0        0x0 linker stubs
 
-.iplt           0x080035bc        0x0
- .iplt          0x080035bc        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x080048b0        0x0
+ .iplt          0x080048b0        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x080035bc      0x230
-                0x080035bc                        . = ALIGN (0x4)
+.rodata         0x080048b0      0x2ac
+                0x080048b0                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.main.str1.4
-                0x080035bc        0xe build/main.o
- *fill*         0x080035ca        0x2 
+                0x080048b0        0xe build/main.o
+ *fill*         0x080048be        0x2 
  .rodata.HAL_TIM_PWM_ConfigChannel
-                0x080035cc       0x54 build/stm32g0xx_hal_tim.o
+                0x080048c0       0x54 build/stm32g0xx_hal_tim.o
  .rodata.HAL_TIM_PWM_Start
-                0x08003620       0x88 build/stm32g0xx_hal_tim.o
+                0x08004914       0x88 build/stm32g0xx_hal_tim.o
  .rodata.HAL_TIM_IC_Start_IT
-                0x080036a8       0x88 build/stm32g0xx_hal_tim.o
+                0x0800499c       0x88 build/stm32g0xx_hal_tim.o
  .rodata.UARTPrescTable
-                0x08003730       0x18 build/stm32g0xx_hal_uart.o
-                0x08003730                UARTPrescTable
+                0x08004a24       0x18 build/stm32g0xx_hal_uart.o
+                0x08004a24                UARTPrescTable
  .rodata.denominator.0
-                0x08003748        0x8 build/stm32g0xx_hal_uart_ex.o
+                0x08004a3c        0x8 build/stm32g0xx_hal_uart_ex.o
  .rodata.numerator.1
-                0x08003750        0x8 build/stm32g0xx_hal_uart_ex.o
+                0x08004a44        0x8 build/stm32g0xx_hal_uart_ex.o
  .rodata.APBPrescTable
-                0x08003758       0x20 build/system_stm32g0xx.o
-                0x08003758                APBPrescTable
+                0x08004a4c       0x20 build/system_stm32g0xx.o
+                0x08004a4c                APBPrescTable
  .rodata.AHBPrescTable
-                0x08003778       0x40 build/system_stm32g0xx.o
-                0x08003778                AHBPrescTable
+                0x08004a6c       0x40 build/system_stm32g0xx.o
+                0x08004a6c                AHBPrescTable
  .rodata._svfprintf_r.str1.1
-                0x080037b8       0x33 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-svfprintf.o)
+                0x08004aac       0x33 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-svfprintf.o)
                                  0x11 (size before relaxing)
  .rodata._printf_i.str1.1
-                0x080037eb       0x22 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-vfprintf_i.o)
-                0x08003810                        . = ALIGN (0x4)
- *fill*         0x080037eb        0x1 
+                0x08004adf       0x22 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-vfprintf_i.o)
+ *fill*         0x08004adf        0x1 
+ .rodata.__aeabi_fdiv
+                0x08004ae0       0x7c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(divsf3.o)
+                0x08004b5c                        . = ALIGN (0x4)
 
-.ARM.extab      0x080037ec        0x0
-                0x080037ec                        . = ALIGN (0x4)
+.ARM.extab      0x08004b5c        0x0
+                0x08004b5c                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x080037ec                        . = ALIGN (0x4)
+                0x08004b5c                        . = ALIGN (0x4)
 
-.ARM            0x080037ec        0x0
-                0x080037ec                        . = ALIGN (0x4)
-                0x080037ec                        __exidx_start = .
+.ARM            0x08004b5c        0x0
+                0x08004b5c                        . = ALIGN (0x4)
+                0x08004b5c                        __exidx_start = .
  *(.ARM.exidx*)
-                0x080037ec                        __exidx_end = .
-                0x080037ec                        . = ALIGN (0x4)
+                0x08004b5c                        __exidx_end = .
+                0x08004b5c                        . = ALIGN (0x4)
 
-.preinit_array  0x080037ec        0x0
-                0x080037ec                        . = ALIGN (0x4)
-                0x080037ec                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08004b5c        0x0
+                0x08004b5c                        . = ALIGN (0x4)
+                0x08004b5c                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x080037ec                        PROVIDE (__preinit_array_end = .)
-                0x080037ec                        . = ALIGN (0x4)
+                0x08004b5c                        PROVIDE (__preinit_array_end = .)
+                0x08004b5c                        . = ALIGN (0x4)
 
-.init_array     0x080037ec        0x4
-                0x080037ec                        . = ALIGN (0x4)
-                0x080037ec                        PROVIDE (__init_array_start = .)
+.init_array     0x08004b5c        0x4
+                0x08004b5c                        . = ALIGN (0x4)
+                0x08004b5c                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x080037ec        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x080037f0                        PROVIDE (__init_array_end = .)
-                0x080037f0                        . = ALIGN (0x4)
+ .init_array    0x08004b5c        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x08004b60                        PROVIDE (__init_array_end = .)
+                0x08004b60                        . = ALIGN (0x4)
 
-.fini_array     0x080037f0        0x4
-                0x080037f0                        . = ALIGN (0x4)
+.fini_array     0x08004b60        0x4
+                0x08004b60                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080037f0        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
+ .fini_array    0x08004b60        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x080037f4                        . = ALIGN (0x4)
-                0x080037f4                        _sidata = LOADADDR (.data)
+                0x08004b64                        . = ALIGN (0x4)
+                0x08004b64                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x080037f4        0x0
- .rel.iplt      0x080037f4        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x08004b64        0x0
+ .rel.iplt      0x08004b64        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.data           0x20000000       0x5c load address 0x080037f4
+.data           0x20000000       0x5c load address 0x08004b64
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -1848,17 +1980,17 @@ LOAD /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-
                 0x2000005c                        _edata = .
 
 .tm_clone_table
-                0x2000005c        0x0 load address 0x08003850
+                0x2000005c        0x0 load address 0x08004bc0
  .tm_clone_table
                 0x2000005c        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x2000005c        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x2000005c        0x0 load address 0x08003850
+.igot.plt       0x2000005c        0x0 load address 0x08004bc0
  .igot.plt      0x2000005c        0x0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
                 0x2000005c                        . = ALIGN (0x4)
 
-.bss            0x2000005c      0x2d0 load address 0x08003850
+.bss            0x2000005c      0x300 load address 0x08004bc0
                 0x2000005c                        _sbss = .
                 0x2000005c                        __bss_start__ = _sbss
  *(.bss)
@@ -1867,60 +1999,63 @@ LOAD /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-
                 0x2000005c        0x1 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
  *fill*         0x2000005d        0x3 
  .bss.object.0  0x20000060       0x18 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
+ .bss.rpm_filter
+                0x20000078       0x10 build/main.o
+ .bss.pid       0x20000088       0x20 build/main.o
  .bss.fan_controller
-                0x20000078        0x8 build/main.o
+                0x200000a8        0x8 build/main.o
  .bss.fan_tachometer
-                0x20000080       0x10 build/main.o
+                0x200000b0       0x10 build/main.o
  .bss.heartbeat_led
-                0x20000090        0x8 build/main.o
- .bss.huart1    0x20000098       0x94 build/main.o
-                0x20000098                huart1
- .bss.htim3     0x2000012c       0x4c build/main.o
-                0x2000012c                htim3
- .bss.htim1     0x20000178       0x4c build/main.o
-                0x20000178                htim1
+                0x200000c0        0x8 build/main.o
+ .bss.huart1    0x200000c8       0x94 build/main.o
+                0x200000c8                huart1
+ .bss.htim3     0x2000015c       0x4c build/main.o
+                0x2000015c                htim3
+ .bss.htim1     0x200001a8       0x4c build/main.o
+                0x200001a8                htim1
  .bss.logging_subsystem
-                0x200001c4        0xc build/logging.o
+                0x200001f4        0xc build/logging.o
  .bss.current_period_us
-                0x200001d0        0x4 build/tachometer.o
+                0x20000200        0x4 build/tachometer.o
  .bss.previous_captured_value
-                0x200001d4        0x4 build/tachometer.o
+                0x20000204        0x4 build/tachometer.o
  .bss.captured_value
-                0x200001d8        0x4 build/tachometer.o
- .bss.uwTick    0x200001dc        0x4 build/stm32g0xx_hal.o
-                0x200001dc                uwTick
+                0x20000208        0x4 build/tachometer.o
+ .bss.uwTick    0x2000020c        0x4 build/stm32g0xx_hal.o
+                0x2000020c                uwTick
  .bss.__sbrk_heap_end
-                0x200001e0        0x4 build/sysmem.o
- .bss.__sf      0x200001e4      0x138 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-findfp.o)
-                0x200001e4                __sf
- .bss.errno     0x2000031c        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-reent.o)
-                0x2000031c                errno
+                0x20000210        0x4 build/sysmem.o
+ .bss.__sf      0x20000214      0x138 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-findfp.o)
+                0x20000214                __sf
+ .bss.errno     0x2000034c        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-reent.o)
+                0x2000034c                errno
  .bss.__lock___malloc_recursive_mutex
-                0x20000320        0x1 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-lock.o)
-                0x20000320                __lock___malloc_recursive_mutex
- *fill*         0x20000321        0x3 
+                0x20000350        0x1 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x20000350                __lock___malloc_recursive_mutex
+ *fill*         0x20000351        0x3 
  .bss.__malloc_sbrk_start
-                0x20000324        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
-                0x20000324                __malloc_sbrk_start
+                0x20000354        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
+                0x20000354                __malloc_sbrk_start
  .bss.__malloc_free_list
-                0x20000328        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
-                0x20000328                __malloc_free_list
+                0x20000358        0x4 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
+                0x20000358                __malloc_free_list
  *(COMMON)
-                0x2000032c                        . = ALIGN (0x4)
-                0x2000032c                        _ebss = .
-                0x2000032c                        __bss_end__ = _ebss
+                0x2000035c                        . = ALIGN (0x4)
+                0x2000035c                        _ebss = .
+                0x2000035c                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x2000032c      0x604 load address 0x08003850
-                0x20000330                        . = ALIGN (0x8)
- *fill*         0x2000032c        0x4 
+                0x2000035c      0x604 load address 0x08004bc0
+                0x20000360                        . = ALIGN (0x8)
+ *fill*         0x2000035c        0x4 
                 [!provide]                        PROVIDE (end = .)
-                0x20000330                        PROVIDE (_end = .)
-                0x20000530                        . = (. + _Min_Heap_Size)
- *fill*         0x20000330      0x200 
-                0x20000930                        . = (. + _Min_Stack_Size)
- *fill*         0x20000530      0x400 
-                0x20000930                        . = ALIGN (0x8)
+                0x20000360                        PROVIDE (_end = .)
+                0x20000560                        . = (. + _Min_Heap_Size)
+ *fill*         0x20000360      0x200 
+                0x20000960                        . = (. + _Min_Stack_Size)
+ *fill*         0x20000560      0x400 
+                0x20000960                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -1949,87 +2084,117 @@ LOAD /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-
  .ARM.attributes
                 0x000000fa       0x2c build/fan_speed_controller.o
  .ARM.attributes
-                0x00000126       0x2c build/stm32g0xx_it.o
+                0x00000126       0x2c build/pid_controller.o
  .ARM.attributes
-                0x00000152       0x2c build/stm32g0xx_hal_msp.o
+                0x00000152       0x2c build/low_pass_filter.o
  .ARM.attributes
-                0x0000017e       0x2c build/stm32g0xx_hal_tim.o
+                0x0000017e       0x2c build/stm32g0xx_it.o
  .ARM.attributes
-                0x000001aa       0x2c build/stm32g0xx_hal_tim_ex.o
+                0x000001aa       0x2c build/stm32g0xx_hal_msp.o
  .ARM.attributes
-                0x000001d6       0x2c build/stm32g0xx_hal_rcc.o
+                0x000001d6       0x2c build/stm32g0xx_hal_tim.o
  .ARM.attributes
-                0x00000202       0x2c build/stm32g0xx_hal_rcc_ex.o
+                0x00000202       0x2c build/stm32g0xx_hal_tim_ex.o
  .ARM.attributes
-                0x0000022e       0x2c build/stm32g0xx_hal_gpio.o
+                0x0000022e       0x2c build/stm32g0xx_hal_rcc.o
  .ARM.attributes
-                0x0000025a       0x2c build/stm32g0xx_hal_pwr_ex.o
+                0x0000025a       0x2c build/stm32g0xx_hal_rcc_ex.o
  .ARM.attributes
-                0x00000286       0x2c build/stm32g0xx_hal_cortex.o
+                0x00000286       0x2c build/stm32g0xx_hal_gpio.o
  .ARM.attributes
-                0x000002b2       0x2c build/stm32g0xx_hal.o
+                0x000002b2       0x2c build/stm32g0xx_hal_pwr_ex.o
  .ARM.attributes
-                0x000002de       0x2c build/stm32g0xx_hal_uart.o
+                0x000002de       0x2c build/stm32g0xx_hal_cortex.o
  .ARM.attributes
-                0x0000030a       0x2c build/stm32g0xx_hal_uart_ex.o
+                0x0000030a       0x2c build/stm32g0xx_hal.o
  .ARM.attributes
-                0x00000336       0x2c build/system_stm32g0xx.o
+                0x00000336       0x2c build/stm32g0xx_hal_uart.o
  .ARM.attributes
-                0x00000362       0x2c build/sysmem.o
+                0x00000362       0x2c build/stm32g0xx_hal_uart_ex.o
  .ARM.attributes
-                0x0000038e       0x22 build/startup_stm32g070xx.o
+                0x0000038e       0x2c build/system_stm32g0xx.o
  .ARM.attributes
-                0x000003b0       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-findfp.o)
+                0x000003ba       0x2c build/sysmem.o
  .ARM.attributes
-                0x000003dc       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-vsnprintf.o)
+                0x000003e6       0x22 build/startup_stm32g070xx.o
  .ARM.attributes
-                0x00000408       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memset.o)
+                0x00000408       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-findfp.o)
  .ARM.attributes
-                0x00000434       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-reent.o)
+                0x00000434       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-vsnprintf.o)
  .ARM.attributes
-                0x00000460       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-impure.o)
+                0x00000460       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memset.o)
  .ARM.attributes
-                0x0000048c       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-errno.o)
+                0x0000048c       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-reent.o)
  .ARM.attributes
-                0x000004b8       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-init.o)
+                0x000004b8       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-impure.o)
  .ARM.attributes
-                0x000004e4       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x000004e4       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-errno.o)
  .ARM.attributes
-                0x00000510       0x1c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-strlen.o)
+                0x00000510       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-init.o)
  .ARM.attributes
-                0x0000052c       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-freer.o)
+                0x0000053c       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-lock.o)
  .ARM.attributes
-                0x00000558       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
+                0x00000568       0x1c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-strlen.o)
  .ARM.attributes
-                0x00000584       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mlock.o)
+                0x00000584       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-freer.o)
  .ARM.attributes
-                0x000005b0       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-svfprintf.o)
+                0x000005b0       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
  .ARM.attributes
-                0x000005dc       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x000005dc       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mlock.o)
  .ARM.attributes
-                0x00000608       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memmove.o)
+                0x00000608       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-svfprintf.o)
  .ARM.attributes
-                0x00000634       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-sbrkr.o)
+                0x00000634       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-vfprintf_i.o)
  .ARM.attributes
-                0x00000660       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memchr-stub.o)
+                0x00000660       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memmove.o)
  .ARM.attributes
-                0x0000068c       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+                0x0000068c       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-sbrkr.o)
  .ARM.attributes
-                0x000006b8       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-reallocr.o)
+                0x000006b8       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memchr-stub.o)
  .ARM.attributes
-                0x000006e4       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-msizer.o)
+                0x000006e4       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
  .ARM.attributes
-                0x00000710       0x1e /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+                0x00000710       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-reallocr.o)
  .ARM.attributes
-                0x0000072e       0x1e /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                0x0000073c       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-msizer.o)
  .ARM.attributes
-                0x0000074c       0x1e /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+                0x00000768       0x1e /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
  .ARM.attributes
-                0x0000076a       0x1e /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x00000786       0x1e /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
  .ARM.attributes
-                0x00000788       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtend.o
+                0x000007a4       0x1e /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
  .ARM.attributes
-                0x000007b4       0x1e /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtn.o
+                0x000007c2       0x1e /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000007e0       0x1e /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .ARM.attributes
+                0x000007fe       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_fixunssfsi.o)
+ .ARM.attributes
+                0x0000082a       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(addsf3.o)
+ .ARM.attributes
+                0x00000856       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(divsf3.o)
+ .ARM.attributes
+                0x00000882       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(eqsf2.o)
+ .ARM.attributes
+                0x000008ae       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(gesf2.o)
+ .ARM.attributes
+                0x000008da       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(lesf2.o)
+ .ARM.attributes
+                0x00000906       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(mulsf3.o)
+ .ARM.attributes
+                0x00000932       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(subsf3.o)
+ .ARM.attributes
+                0x0000095e       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(fixsfsi.o)
+ .ARM.attributes
+                0x0000098a       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatsisf.o)
+ .ARM.attributes
+                0x000009b6       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatunsisf.o)
+ .ARM.attributes
+                0x000009e2       0x1e /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .ARM.attributes
+                0x00000a00       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtend.o
+ .ARM.attributes
+                0x00000a2c       0x1e /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtn.o
 
 .comment        0x00000000       0x46
  .comment       0x00000000       0x46 build/main.o
@@ -2038,6 +2203,8 @@ LOAD /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-
  .comment       0x00000046       0x47 build/logging.o
  .comment       0x00000046       0x47 build/tachometer.o
  .comment       0x00000046       0x47 build/fan_speed_controller.o
+ .comment       0x00000046       0x47 build/pid_controller.o
+ .comment       0x00000046       0x47 build/low_pass_filter.o
  .comment       0x00000046       0x47 build/stm32g0xx_it.o
  .comment       0x00000046       0x47 build/stm32g0xx_hal_msp.o
  .comment       0x00000046       0x47 build/stm32g0xx_hal_tim.o
@@ -2053,72 +2220,78 @@ LOAD /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-
  .comment       0x00000046       0x47 build/system_stm32g0xx.o
  .comment       0x00000046       0x47 build/sysmem.o
 
-.debug_info     0x00000000    0x18023
- .debug_info    0x00000000     0x1de2 build/main.o
- .debug_info    0x00001de2      0x3f8 build/heartbeat.o
- .debug_info    0x000021da      0xb4e build/logging.o
- .debug_info    0x00002d28      0xaa7 build/tachometer.o
- .debug_info    0x000037cf      0x9e4 build/fan_speed_controller.o
- .debug_info    0x000041b3      0x908 build/stm32g0xx_it.o
- .debug_info    0x00004abb     0x154e build/stm32g0xx_hal_msp.o
- .debug_info    0x00006009     0x43e0 build/stm32g0xx_hal_tim.o
- .debug_info    0x0000a3e9     0x21fb build/stm32g0xx_hal_tim_ex.o
- .debug_info    0x0000c5e4      0xe84 build/stm32g0xx_hal_rcc.o
- .debug_info    0x0000d468      0x9bb build/stm32g0xx_hal_rcc_ex.o
- .debug_info    0x0000de23      0x688 build/stm32g0xx_hal_gpio.o
- .debug_info    0x0000e4ab      0x5b8 build/stm32g0xx_hal_pwr_ex.o
- .debug_info    0x0000ea63      0xb69 build/stm32g0xx_hal_cortex.o
- .debug_info    0x0000f5cc      0xadc build/stm32g0xx_hal.o
- .debug_info    0x000100a8     0x6607 build/stm32g0xx_hal_uart.o
- .debug_info    0x000166af     0x13dc build/stm32g0xx_hal_uart_ex.o
- .debug_info    0x00017a8b      0x3d4 build/system_stm32g0xx.o
- .debug_info    0x00017e5f      0x194 build/sysmem.o
- .debug_info    0x00017ff3       0x30 build/startup_stm32g070xx.o
+.debug_info     0x00000000    0x18857
+ .debug_info    0x00000000     0x207d build/main.o
+ .debug_info    0x0000207d      0x3f8 build/heartbeat.o
+ .debug_info    0x00002475      0xb4e build/logging.o
+ .debug_info    0x00002fc3      0xabb build/tachometer.o
+ .debug_info    0x00003a7e      0x9e4 build/fan_speed_controller.o
+ .debug_info    0x00004462      0x37e build/pid_controller.o
+ .debug_info    0x000047e0      0x1f9 build/low_pass_filter.o
+ .debug_info    0x000049d9      0x90f build/stm32g0xx_it.o
+ .debug_info    0x000052e8     0x1555 build/stm32g0xx_hal_msp.o
+ .debug_info    0x0000683d     0x43e0 build/stm32g0xx_hal_tim.o
+ .debug_info    0x0000ac1d     0x21fb build/stm32g0xx_hal_tim_ex.o
+ .debug_info    0x0000ce18      0xe84 build/stm32g0xx_hal_rcc.o
+ .debug_info    0x0000dc9c      0x9bb build/stm32g0xx_hal_rcc_ex.o
+ .debug_info    0x0000e657      0x688 build/stm32g0xx_hal_gpio.o
+ .debug_info    0x0000ecdf      0x5b8 build/stm32g0xx_hal_pwr_ex.o
+ .debug_info    0x0000f297      0xb69 build/stm32g0xx_hal_cortex.o
+ .debug_info    0x0000fe00      0xadc build/stm32g0xx_hal.o
+ .debug_info    0x000108dc     0x6607 build/stm32g0xx_hal_uart.o
+ .debug_info    0x00016ee3     0x13dc build/stm32g0xx_hal_uart_ex.o
+ .debug_info    0x000182bf      0x3d4 build/system_stm32g0xx.o
+ .debug_info    0x00018693      0x194 build/sysmem.o
+ .debug_info    0x00018827       0x30 build/startup_stm32g070xx.o
 
-.debug_abbrev   0x00000000     0x2e57
- .debug_abbrev  0x00000000      0x2e1 build/main.o
- .debug_abbrev  0x000002e1      0x1c0 build/heartbeat.o
- .debug_abbrev  0x000004a1      0x26d build/logging.o
- .debug_abbrev  0x0000070e      0x209 build/tachometer.o
- .debug_abbrev  0x00000917      0x1e9 build/fan_speed_controller.o
- .debug_abbrev  0x00000b00      0x1b9 build/stm32g0xx_it.o
- .debug_abbrev  0x00000cb9      0x28d build/stm32g0xx_hal_msp.o
- .debug_abbrev  0x00000f46      0x2df build/stm32g0xx_hal_tim.o
- .debug_abbrev  0x00001225      0x2d4 build/stm32g0xx_hal_tim_ex.o
- .debug_abbrev  0x000014f9      0x30c build/stm32g0xx_hal_rcc.o
- .debug_abbrev  0x00001805      0x29e build/stm32g0xx_hal_rcc_ex.o
- .debug_abbrev  0x00001aa3      0x237 build/stm32g0xx_hal_gpio.o
- .debug_abbrev  0x00001cda      0x216 build/stm32g0xx_hal_pwr_ex.o
- .debug_abbrev  0x00001ef0      0x32e build/stm32g0xx_hal_cortex.o
- .debug_abbrev  0x0000221e      0x2db build/stm32g0xx_hal.o
- .debug_abbrev  0x000024f9      0x39b build/stm32g0xx_hal_uart.o
- .debug_abbrev  0x00002894      0x376 build/stm32g0xx_hal_uart_ex.o
- .debug_abbrev  0x00002c0a      0x145 build/system_stm32g0xx.o
- .debug_abbrev  0x00002d4f       0xeb build/sysmem.o
- .debug_abbrev  0x00002e3a       0x1d build/startup_stm32g070xx.o
+.debug_abbrev   0x00000000     0x30b5
+ .debug_abbrev  0x00000000      0x31d build/main.o
+ .debug_abbrev  0x0000031d      0x1c0 build/heartbeat.o
+ .debug_abbrev  0x000004dd      0x26d build/logging.o
+ .debug_abbrev  0x0000074a      0x21d build/tachometer.o
+ .debug_abbrev  0x00000967      0x1e9 build/fan_speed_controller.o
+ .debug_abbrev  0x00000b50      0x132 build/pid_controller.o
+ .debug_abbrev  0x00000c82       0xdc build/low_pass_filter.o
+ .debug_abbrev  0x00000d5e      0x1b9 build/stm32g0xx_it.o
+ .debug_abbrev  0x00000f17      0x28d build/stm32g0xx_hal_msp.o
+ .debug_abbrev  0x000011a4      0x2df build/stm32g0xx_hal_tim.o
+ .debug_abbrev  0x00001483      0x2d4 build/stm32g0xx_hal_tim_ex.o
+ .debug_abbrev  0x00001757      0x30c build/stm32g0xx_hal_rcc.o
+ .debug_abbrev  0x00001a63      0x29e build/stm32g0xx_hal_rcc_ex.o
+ .debug_abbrev  0x00001d01      0x237 build/stm32g0xx_hal_gpio.o
+ .debug_abbrev  0x00001f38      0x216 build/stm32g0xx_hal_pwr_ex.o
+ .debug_abbrev  0x0000214e      0x32e build/stm32g0xx_hal_cortex.o
+ .debug_abbrev  0x0000247c      0x2db build/stm32g0xx_hal.o
+ .debug_abbrev  0x00002757      0x39b build/stm32g0xx_hal_uart.o
+ .debug_abbrev  0x00002af2      0x376 build/stm32g0xx_hal_uart_ex.o
+ .debug_abbrev  0x00002e68      0x145 build/system_stm32g0xx.o
+ .debug_abbrev  0x00002fad       0xeb build/sysmem.o
+ .debug_abbrev  0x00003098       0x1d build/startup_stm32g070xx.o
 
-.debug_loc      0x00000000    0x123dc
- .debug_loc     0x00000000       0xf3 build/main.o
- .debug_loc     0x000000f3      0x1d0 build/heartbeat.o
- .debug_loc     0x000002c3      0x13c build/logging.o
- .debug_loc     0x000003ff      0x1ce build/tachometer.o
- .debug_loc     0x000005cd      0x11b build/fan_speed_controller.o
- .debug_loc     0x000006e8       0x40 build/stm32g0xx_it.o
- .debug_loc     0x00000728      0x270 build/stm32g0xx_hal_msp.o
- .debug_loc     0x00000998     0x691d build/stm32g0xx_hal_tim.o
- .debug_loc     0x000072b5     0x308a build/stm32g0xx_hal_tim_ex.o
- .debug_loc     0x0000a33f      0x8c7 build/stm32g0xx_hal_rcc.o
- .debug_loc     0x0000ac06      0x873 build/stm32g0xx_hal_rcc_ex.o
- .debug_loc     0x0000b479      0x49e build/stm32g0xx_hal_gpio.o
- .debug_loc     0x0000b917      0x2e3 build/stm32g0xx_hal_pwr_ex.o
- .debug_loc     0x0000bbfa      0x3ff build/stm32g0xx_hal_cortex.o
- .debug_loc     0x0000bff9      0x282 build/stm32g0xx_hal.o
- .debug_loc     0x0000c27b     0x50a1 build/stm32g0xx_hal_uart.o
- .debug_loc     0x0001131c      0xf38 build/stm32g0xx_hal_uart_ex.o
- .debug_loc     0x00012254       0xc9 build/system_stm32g0xx.o
- .debug_loc     0x0001231d       0xbf build/sysmem.o
+.debug_loc      0x00000000    0x1273b
+ .debug_loc     0x00000000      0x114 build/main.o
+ .debug_loc     0x00000114      0x1d0 build/heartbeat.o
+ .debug_loc     0x000002e4      0x13c build/logging.o
+ .debug_loc     0x00000420      0x1e3 build/tachometer.o
+ .debug_loc     0x00000603      0x112 build/fan_speed_controller.o
+ .debug_loc     0x00000715      0x27b build/pid_controller.o
+ .debug_loc     0x00000990       0xb7 build/low_pass_filter.o
+ .debug_loc     0x00000a47       0x40 build/stm32g0xx_it.o
+ .debug_loc     0x00000a87      0x270 build/stm32g0xx_hal_msp.o
+ .debug_loc     0x00000cf7     0x691d build/stm32g0xx_hal_tim.o
+ .debug_loc     0x00007614     0x308a build/stm32g0xx_hal_tim_ex.o
+ .debug_loc     0x0000a69e      0x8c7 build/stm32g0xx_hal_rcc.o
+ .debug_loc     0x0000af65      0x873 build/stm32g0xx_hal_rcc_ex.o
+ .debug_loc     0x0000b7d8      0x49e build/stm32g0xx_hal_gpio.o
+ .debug_loc     0x0000bc76      0x2e3 build/stm32g0xx_hal_pwr_ex.o
+ .debug_loc     0x0000bf59      0x3ff build/stm32g0xx_hal_cortex.o
+ .debug_loc     0x0000c358      0x282 build/stm32g0xx_hal.o
+ .debug_loc     0x0000c5da     0x50a1 build/stm32g0xx_hal_uart.o
+ .debug_loc     0x0001167b      0xf38 build/stm32g0xx_hal_uart_ex.o
+ .debug_loc     0x000125b3       0xc9 build/system_stm32g0xx.o
+ .debug_loc     0x0001267c       0xbf build/sysmem.o
 
-.debug_aranges  0x00000000      0xe28
+.debug_aranges  0x00000000      0xe78
  .debug_aranges
                 0x00000000       0x50 build/main.o
  .debug_aranges
@@ -2130,157 +2303,184 @@ LOAD /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-
  .debug_aranges
                 0x00000100       0x28 build/fan_speed_controller.o
  .debug_aranges
-                0x00000128       0x48 build/stm32g0xx_it.o
+                0x00000128       0x28 build/pid_controller.o
  .debug_aranges
-                0x00000170       0x58 build/stm32g0xx_hal_msp.o
+                0x00000150       0x28 build/low_pass_filter.o
  .debug_aranges
-                0x000001c8      0x3e0 build/stm32g0xx_hal_tim.o
+                0x00000178       0x48 build/stm32g0xx_it.o
  .debug_aranges
-                0x000005a8      0x198 build/stm32g0xx_hal_tim_ex.o
+                0x000001c0       0x58 build/stm32g0xx_hal_msp.o
  .debug_aranges
-                0x00000740       0x98 build/stm32g0xx_hal_rcc.o
+                0x00000218      0x3e0 build/stm32g0xx_hal_tim.o
  .debug_aranges
-                0x000007d8       0x40 build/stm32g0xx_hal_rcc_ex.o
+                0x000005f8      0x198 build/stm32g0xx_hal_tim_ex.o
  .debug_aranges
-                0x00000818       0x60 build/stm32g0xx_hal_gpio.o
+                0x00000790       0x98 build/stm32g0xx_hal_rcc.o
  .debug_aranges
-                0x00000878       0x98 build/stm32g0xx_hal_pwr_ex.o
+                0x00000828       0x40 build/stm32g0xx_hal_rcc_ex.o
  .debug_aranges
-                0x00000910       0xc0 build/stm32g0xx_hal_cortex.o
+                0x00000868       0x60 build/stm32g0xx_hal_gpio.o
  .debug_aranges
-                0x000009d0       0xf8 build/stm32g0xx_hal.o
+                0x000008c8       0x98 build/stm32g0xx_hal_pwr_ex.o
  .debug_aranges
-                0x00000ac8      0x248 build/stm32g0xx_hal_uart.o
+                0x00000960       0xc0 build/stm32g0xx_hal_cortex.o
  .debug_aranges
-                0x00000d10       0xa8 build/stm32g0xx_hal_uart_ex.o
+                0x00000a20       0xf8 build/stm32g0xx_hal.o
  .debug_aranges
-                0x00000db8       0x28 build/system_stm32g0xx.o
+                0x00000b18      0x248 build/stm32g0xx_hal_uart.o
  .debug_aranges
-                0x00000de0       0x20 build/sysmem.o
+                0x00000d60       0xa8 build/stm32g0xx_hal_uart_ex.o
  .debug_aranges
-                0x00000e00       0x28 build/startup_stm32g070xx.o
+                0x00000e08       0x28 build/system_stm32g0xx.o
+ .debug_aranges
+                0x00000e30       0x20 build/sysmem.o
+ .debug_aranges
+                0x00000e50       0x28 build/startup_stm32g070xx.o
 
-.debug_ranges   0x00000000      0xec0
- .debug_ranges  0x00000000       0x40 build/main.o
- .debug_ranges  0x00000040       0x30 build/heartbeat.o
- .debug_ranges  0x00000070       0x30 build/logging.o
- .debug_ranges  0x000000a0       0x20 build/tachometer.o
- .debug_ranges  0x000000c0       0x18 build/fan_speed_controller.o
- .debug_ranges  0x000000d8       0x38 build/stm32g0xx_it.o
- .debug_ranges  0x00000110       0x48 build/stm32g0xx_hal_msp.o
- .debug_ranges  0x00000158      0x3d0 build/stm32g0xx_hal_tim.o
- .debug_ranges  0x00000528      0x188 build/stm32g0xx_hal_tim_ex.o
- .debug_ranges  0x000006b0       0xa8 build/stm32g0xx_hal_rcc.o
- .debug_ranges  0x00000758       0x48 build/stm32g0xx_hal_rcc_ex.o
- .debug_ranges  0x000007a0       0x50 build/stm32g0xx_hal_gpio.o
- .debug_ranges  0x000007f0       0x88 build/stm32g0xx_hal_pwr_ex.o
- .debug_ranges  0x00000878       0xc8 build/stm32g0xx_hal_cortex.o
- .debug_ranges  0x00000940       0xe8 build/stm32g0xx_hal.o
- .debug_ranges  0x00000a28      0x358 build/stm32g0xx_hal_uart.o
- .debug_ranges  0x00000d80       0xf8 build/stm32g0xx_hal_uart_ex.o
- .debug_ranges  0x00000e78       0x18 build/system_stm32g0xx.o
- .debug_ranges  0x00000e90       0x10 build/sysmem.o
- .debug_ranges  0x00000ea0       0x20 build/startup_stm32g070xx.o
+.debug_ranges   0x00000000      0xf08
+ .debug_ranges  0x00000000       0x58 build/main.o
+ .debug_ranges  0x00000058       0x30 build/heartbeat.o
+ .debug_ranges  0x00000088       0x30 build/logging.o
+ .debug_ranges  0x000000b8       0x20 build/tachometer.o
+ .debug_ranges  0x000000d8       0x18 build/fan_speed_controller.o
+ .debug_ranges  0x000000f0       0x18 build/pid_controller.o
+ .debug_ranges  0x00000108       0x18 build/low_pass_filter.o
+ .debug_ranges  0x00000120       0x38 build/stm32g0xx_it.o
+ .debug_ranges  0x00000158       0x48 build/stm32g0xx_hal_msp.o
+ .debug_ranges  0x000001a0      0x3d0 build/stm32g0xx_hal_tim.o
+ .debug_ranges  0x00000570      0x188 build/stm32g0xx_hal_tim_ex.o
+ .debug_ranges  0x000006f8       0xa8 build/stm32g0xx_hal_rcc.o
+ .debug_ranges  0x000007a0       0x48 build/stm32g0xx_hal_rcc_ex.o
+ .debug_ranges  0x000007e8       0x50 build/stm32g0xx_hal_gpio.o
+ .debug_ranges  0x00000838       0x88 build/stm32g0xx_hal_pwr_ex.o
+ .debug_ranges  0x000008c0       0xc8 build/stm32g0xx_hal_cortex.o
+ .debug_ranges  0x00000988       0xe8 build/stm32g0xx_hal.o
+ .debug_ranges  0x00000a70      0x358 build/stm32g0xx_hal_uart.o
+ .debug_ranges  0x00000dc8       0xf8 build/stm32g0xx_hal_uart_ex.o
+ .debug_ranges  0x00000ec0       0x18 build/system_stm32g0xx.o
+ .debug_ranges  0x00000ed8       0x10 build/sysmem.o
+ .debug_ranges  0x00000ee8       0x20 build/startup_stm32g070xx.o
 
-.debug_line     0x00000000    0x112a8
- .debug_line    0x00000000      0x75c build/main.o
- .debug_line    0x0000075c      0x274 build/heartbeat.o
- .debug_line    0x000009d0      0x3c4 build/logging.o
- .debug_line    0x00000d94      0x31d build/tachometer.o
- .debug_line    0x000010b1      0x26f build/fan_speed_controller.o
- .debug_line    0x00001320      0x287 build/stm32g0xx_it.o
- .debug_line    0x000015a7      0x4a1 build/stm32g0xx_hal_msp.o
- .debug_line    0x00001a48     0x4c1a build/stm32g0xx_hal_tim.o
- .debug_line    0x00006662     0x1e00 build/stm32g0xx_hal_tim_ex.o
- .debug_line    0x00008462      0xea3 build/stm32g0xx_hal_rcc.o
- .debug_line    0x00009305      0x83d build/stm32g0xx_hal_rcc_ex.o
- .debug_line    0x00009b42      0x723 build/stm32g0xx_hal_gpio.o
- .debug_line    0x0000a265      0x586 build/stm32g0xx_hal_pwr_ex.o
- .debug_line    0x0000a7eb      0x6f5 build/stm32g0xx_hal_cortex.o
- .debug_line    0x0000aee0      0x613 build/stm32g0xx_hal.o
- .debug_line    0x0000b4f3     0x4ce9 build/stm32g0xx_hal_uart.o
- .debug_line    0x000101dc      0xb77 build/stm32g0xx_hal_uart_ex.o
- .debug_line    0x00010d53      0x2b9 build/system_stm32g0xx.o
- .debug_line    0x0001100c      0x228 build/sysmem.o
- .debug_line    0x00011234       0x74 build/startup_stm32g070xx.o
+.debug_line     0x00000000    0x1178c
+ .debug_line    0x00000000      0x7ba build/main.o
+ .debug_line    0x000007ba      0x274 build/heartbeat.o
+ .debug_line    0x00000a2e      0x3c4 build/logging.o
+ .debug_line    0x00000df2      0x32b build/tachometer.o
+ .debug_line    0x0000111d      0x27b build/fan_speed_controller.o
+ .debug_line    0x00001398      0x290 build/pid_controller.o
+ .debug_line    0x00001628      0x1dc build/low_pass_filter.o
+ .debug_line    0x00001804      0x287 build/stm32g0xx_it.o
+ .debug_line    0x00001a8b      0x4a1 build/stm32g0xx_hal_msp.o
+ .debug_line    0x00001f2c     0x4c1a build/stm32g0xx_hal_tim.o
+ .debug_line    0x00006b46     0x1e00 build/stm32g0xx_hal_tim_ex.o
+ .debug_line    0x00008946      0xea3 build/stm32g0xx_hal_rcc.o
+ .debug_line    0x000097e9      0x83d build/stm32g0xx_hal_rcc_ex.o
+ .debug_line    0x0000a026      0x723 build/stm32g0xx_hal_gpio.o
+ .debug_line    0x0000a749      0x586 build/stm32g0xx_hal_pwr_ex.o
+ .debug_line    0x0000accf      0x6f5 build/stm32g0xx_hal_cortex.o
+ .debug_line    0x0000b3c4      0x613 build/stm32g0xx_hal.o
+ .debug_line    0x0000b9d7     0x4ce9 build/stm32g0xx_hal_uart.o
+ .debug_line    0x000106c0      0xb77 build/stm32g0xx_hal_uart_ex.o
+ .debug_line    0x00011237      0x2b9 build/system_stm32g0xx.o
+ .debug_line    0x000114f0      0x228 build/sysmem.o
+ .debug_line    0x00011718       0x74 build/startup_stm32g070xx.o
 
-.debug_str      0x00000000     0x4436
- .debug_str     0x00000000     0x4436 build/main.o
-                               0x1230 (size before relaxing)
- .debug_str     0x00004436      0x2ca build/heartbeat.o
- .debug_str     0x00004436      0x848 build/logging.o
- .debug_str     0x00004436      0x8eb build/tachometer.o
- .debug_str     0x00004436      0x88a build/fan_speed_controller.o
- .debug_str     0x00004436      0x807 build/stm32g0xx_it.o
- .debug_str     0x00004436      0xf1f build/stm32g0xx_hal_msp.o
- .debug_str     0x00004436     0x17fd build/stm32g0xx_hal_tim.o
- .debug_str     0x00004436     0x1189 build/stm32g0xx_hal_tim_ex.o
- .debug_str     0x00004436      0x770 build/stm32g0xx_hal_rcc.o
- .debug_str     0x00004436      0x5ca build/stm32g0xx_hal_rcc_ex.o
- .debug_str     0x00004436      0x3fd build/stm32g0xx_hal_gpio.o
- .debug_str     0x00004436      0x4e8 build/stm32g0xx_hal_pwr_ex.o
- .debug_str     0x00004436      0x759 build/stm32g0xx_hal_cortex.o
- .debug_str     0x00004436      0x84c build/stm32g0xx_hal.o
- .debug_str     0x00004436     0x114a build/stm32g0xx_hal_uart.o
- .debug_str     0x00004436      0xb4f build/stm32g0xx_hal_uart_ex.o
- .debug_str     0x00004436      0x2e8 build/system_stm32g0xx.o
- .debug_str     0x00004436      0x203 build/sysmem.o
- .debug_str     0x00004436       0x71 build/startup_stm32g070xx.o
+.debug_str      0x00000000     0x45ab
+ .debug_str     0x00000000     0x45ab build/main.o
+                               0x130b (size before relaxing)
+ .debug_str     0x000045ab      0x2ca build/heartbeat.o
+ .debug_str     0x000045ab      0x848 build/logging.o
+ .debug_str     0x000045ab      0x8eb build/tachometer.o
+ .debug_str     0x000045ab      0x88a build/fan_speed_controller.o
+ .debug_str     0x000045ab      0x29f build/pid_controller.o
+ .debug_str     0x000045ab      0x25a build/low_pass_filter.o
+ .debug_str     0x000045ab      0x80d build/stm32g0xx_it.o
+ .debug_str     0x000045ab      0xf25 build/stm32g0xx_hal_msp.o
+ .debug_str     0x000045ab     0x17fd build/stm32g0xx_hal_tim.o
+ .debug_str     0x000045ab     0x1189 build/stm32g0xx_hal_tim_ex.o
+ .debug_str     0x000045ab      0x770 build/stm32g0xx_hal_rcc.o
+ .debug_str     0x000045ab      0x5ca build/stm32g0xx_hal_rcc_ex.o
+ .debug_str     0x000045ab      0x3fd build/stm32g0xx_hal_gpio.o
+ .debug_str     0x000045ab      0x4e8 build/stm32g0xx_hal_pwr_ex.o
+ .debug_str     0x000045ab      0x759 build/stm32g0xx_hal_cortex.o
+ .debug_str     0x000045ab      0x84c build/stm32g0xx_hal.o
+ .debug_str     0x000045ab     0x114a build/stm32g0xx_hal_uart.o
+ .debug_str     0x000045ab      0xb4f build/stm32g0xx_hal_uart_ex.o
+ .debug_str     0x000045ab      0x2e8 build/system_stm32g0xx.o
+ .debug_str     0x000045ab      0x203 build/sysmem.o
+ .debug_str     0x000045ab       0x71 build/startup_stm32g070xx.o
 
-.debug_frame    0x00000000     0x29ac
- .debug_frame   0x00000000       0xbc build/main.o
- .debug_frame   0x000000bc       0x84 build/heartbeat.o
- .debug_frame   0x00000140       0x88 build/logging.o
- .debug_frame   0x000001c8       0x5c build/tachometer.o
- .debug_frame   0x00000224       0x40 build/fan_speed_controller.o
- .debug_frame   0x00000264       0x80 build/stm32g0xx_it.o
- .debug_frame   0x000002e4       0xcc build/stm32g0xx_hal_msp.o
- .debug_frame   0x000003b0      0xb18 build/stm32g0xx_hal_tim.o
- .debug_frame   0x00000ec8      0x4c0 build/stm32g0xx_hal_tim_ex.o
- .debug_frame   0x00001388      0x16c build/stm32g0xx_hal_rcc.o
- .debug_frame   0x000014f4       0x90 build/stm32g0xx_hal_rcc_ex.o
- .debug_frame   0x00001584       0xd0 build/stm32g0xx_hal_gpio.o
- .debug_frame   0x00001654      0x120 build/stm32g0xx_hal_pwr_ex.o
- .debug_frame   0x00001774      0x194 build/stm32g0xx_hal_cortex.o
- .debug_frame   0x00001908      0x1fc build/stm32g0xx_hal.o
- .debug_frame   0x00001b04      0x6e0 build/stm32g0xx_hal_uart.o
- .debug_frame   0x000021e4      0x1e8 build/stm32g0xx_hal_uart_ex.o
- .debug_frame   0x000023cc       0x38 build/system_stm32g0xx.o
- .debug_frame   0x00002404       0x28 build/sysmem.o
- .debug_frame   0x0000242c      0x138 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-findfp.o)
- .debug_frame   0x00002564       0x4c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-vsnprintf.o)
- .debug_frame   0x000025b0       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memset.o)
- .debug_frame   0x000025d0       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-reent.o)
- .debug_frame   0x000025fc       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-errno.o)
- .debug_frame   0x0000261c       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-init.o)
- .debug_frame   0x00002648       0xb0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-lock.o)
- .debug_frame   0x000026f8       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-freer.o)
- .debug_frame   0x00002724       0x50 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
- .debug_frame   0x00002774       0x40 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mlock.o)
- .debug_frame   0x000027b4       0x74 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-svfprintf.o)
- .debug_frame   0x00002828       0x54 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_frame   0x0000287c       0x28 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memmove.o)
- .debug_frame   0x000028a4       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-sbrkr.o)
- .debug_frame   0x000028d0       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memchr-stub.o)
- .debug_frame   0x000028f0       0x28 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
- .debug_frame   0x00002918       0x34 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-reallocr.o)
- .debug_frame   0x0000294c       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-msizer.o)
- .debug_frame   0x0000296c       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_frame   0x0000298c       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+.debug_frame    0x00000000     0x2c40
+ .debug_frame   0x00000000       0xc0 build/main.o
+ .debug_frame   0x000000c0       0x84 build/heartbeat.o
+ .debug_frame   0x00000144       0x88 build/logging.o
+ .debug_frame   0x000001cc       0x5c build/tachometer.o
+ .debug_frame   0x00000228       0x40 build/fan_speed_controller.o
+ .debug_frame   0x00000268       0x50 build/pid_controller.o
+ .debug_frame   0x000002b8       0x40 build/low_pass_filter.o
+ .debug_frame   0x000002f8       0x80 build/stm32g0xx_it.o
+ .debug_frame   0x00000378       0xcc build/stm32g0xx_hal_msp.o
+ .debug_frame   0x00000444      0xb18 build/stm32g0xx_hal_tim.o
+ .debug_frame   0x00000f5c      0x4c0 build/stm32g0xx_hal_tim_ex.o
+ .debug_frame   0x0000141c      0x16c build/stm32g0xx_hal_rcc.o
+ .debug_frame   0x00001588       0x90 build/stm32g0xx_hal_rcc_ex.o
+ .debug_frame   0x00001618       0xd0 build/stm32g0xx_hal_gpio.o
+ .debug_frame   0x000016e8      0x120 build/stm32g0xx_hal_pwr_ex.o
+ .debug_frame   0x00001808      0x194 build/stm32g0xx_hal_cortex.o
+ .debug_frame   0x0000199c      0x1fc build/stm32g0xx_hal.o
+ .debug_frame   0x00001b98      0x6e0 build/stm32g0xx_hal_uart.o
+ .debug_frame   0x00002278      0x1e8 build/stm32g0xx_hal_uart_ex.o
+ .debug_frame   0x00002460       0x38 build/system_stm32g0xx.o
+ .debug_frame   0x00002498       0x28 build/sysmem.o
+ .debug_frame   0x000024c0      0x138 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-findfp.o)
+ .debug_frame   0x000025f8       0x4c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-vsnprintf.o)
+ .debug_frame   0x00002644       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memset.o)
+ .debug_frame   0x00002664       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-reent.o)
+ .debug_frame   0x00002690       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-errno.o)
+ .debug_frame   0x000026b0       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-init.o)
+ .debug_frame   0x000026dc       0xb0 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-lock.o)
+ .debug_frame   0x0000278c       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-freer.o)
+ .debug_frame   0x000027b8       0x50 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
+ .debug_frame   0x00002808       0x40 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mlock.o)
+ .debug_frame   0x00002848       0x74 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-svfprintf.o)
+ .debug_frame   0x000028bc       0x54 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_frame   0x00002910       0x28 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memmove.o)
+ .debug_frame   0x00002938       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-sbrkr.o)
+ .debug_frame   0x00002964       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memchr-stub.o)
+ .debug_frame   0x00002984       0x28 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+ .debug_frame   0x000029ac       0x34 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-reallocr.o)
+ .debug_frame   0x000029e0       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-msizer.o)
+ .debug_frame   0x00002a00       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_frame   0x00002a20       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .debug_frame   0x00002a40       0x28 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_fixunssfsi.o)
+ .debug_frame   0x00002a68       0x38 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(addsf3.o)
+ .debug_frame   0x00002aa0       0x38 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(divsf3.o)
+ .debug_frame   0x00002ad8       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(eqsf2.o)
+ .debug_frame   0x00002b04       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(gesf2.o)
+ .debug_frame   0x00002b30       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(lesf2.o)
+ .debug_frame   0x00002b5c       0x38 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(mulsf3.o)
+ .debug_frame   0x00002b94       0x38 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(subsf3.o)
+ .debug_frame   0x00002bcc       0x20 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(fixsfsi.o)
+ .debug_frame   0x00002bec       0x2c /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatsisf.o)
+ .debug_frame   0x00002c18       0x28 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatunsisf.o)
 
 .debug_line_str
-                0x00000000      0x1a2
+                0x00000000      0x1ae
  .debug_line_str
-                0x00000000      0x1a2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-strlen.o)
+                0x00000000      0x1ae /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-strlen.o)
                                  0xe0 (size before relaxing)
  .debug_line_str
-                0x000001a2       0xc2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+                0x000001ae       0xc2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
  .debug_line_str
-                0x000001a2       0xc2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                0x000001ae       0xc2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
  .debug_line_str
-                0x000001a2       0xc2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+                0x000001ae       0xc2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
  .debug_line_str
-                0x000001a2       0xc2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x000001ae       0xc2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line_str
+                0x000001ae       0xc2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .debug_line_str
+                0x000001ae       0xc2 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
 
 Cross Reference Table
 
@@ -2791,6 +2991,36 @@ _ITM_registerTMCloneTable                         /home/achraf/Desktop/Toolchain
 _Min_Stack_Size                                   build/sysmem.o
 __TMC_END__                                       /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtend.o
                                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
+__aeabi_cfcmpeq                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+__aeabi_cfcmple                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+__aeabi_cfrcmple                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+__aeabi_f2iz                                      /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(fixsfsi.o)
+                                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_fixunssfsi.o)
+__aeabi_f2uiz                                     /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_fixunssfsi.o)
+                                                  build/low_pass_filter.o
+                                                  build/pid_controller.o
+                                                  build/main.o
+__aeabi_fadd                                      /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(addsf3.o)
+                                                  build/low_pass_filter.o
+                                                  build/pid_controller.o
+__aeabi_fcmpeq                                    /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+__aeabi_fcmpge                                    /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+                                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_fixunssfsi.o)
+__aeabi_fcmpgt                                    /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+                                                  build/pid_controller.o
+__aeabi_fcmple                                    /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+__aeabi_fcmplt                                    /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
+                                                  build/pid_controller.o
+__aeabi_fdiv                                      /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(divsf3.o)
+                                                  build/pid_controller.o
+__aeabi_fmul                                      /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(mulsf3.o)
+                                                  build/low_pass_filter.o
+                                                  build/pid_controller.o
+__aeabi_fsub                                      /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(subsf3.o)
+                                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_fixunssfsi.o)
+                                                  build/low_pass_filter.o
+__aeabi_i2f                                       /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatsisf.o)
+                                                  build/pid_controller.o
 __aeabi_idiv                                      /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
                                                   build/stm32g0xx_hal_uart_ex.o
                                                   build/fan_speed_controller.o
@@ -2799,6 +3029,9 @@ __aeabi_idiv0                                     /home/achraf/Desktop/Toolchain
                                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
 __aeabi_idivmod                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
 __aeabi_ldiv0                                     /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+__aeabi_ui2f                                      /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatunsisf.o)
+                                                  build/pid_controller.o
+                                                  build/main.o
 __aeabi_uidiv                                     /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
                                                   build/system_stm32g0xx.o
                                                   build/stm32g0xx_hal_uart.o
@@ -2813,21 +3046,36 @@ __aeabi_uidivmod                                  /home/achraf/Desktop/Toolchain
 __bss_end__                                       /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
 __bss_start__                                     /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
 __call_exitprocs                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-exit.o)
+__clzsi2                                          /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+                                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatunsisf.o)
+                                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(floatsisf.o)
+                                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(subsf3.o)
+                                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(mulsf3.o)
+                                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(divsf3.o)
+                                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(addsf3.o)
 __deregister_frame_info                           /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
 __divsi3                                          /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
 __dso_handle                                      /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
 __env                                             build/syscalls.o
+__eqsf2                                           /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(eqsf2.o)
+                                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
 __errno                                           /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-errno.o)
                                                   build/syscalls.o
                                                   build/sysmem.o
+__fixunssfsi                                      /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_fixunssfsi.o)
 __fp_lock_all                                     /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-findfp.o)
 __fp_unlock_all                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-findfp.o)
+__gesf2                                           /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(gesf2.o)
+                                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
 __gnu_thumb1_case_shi                             /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
                                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-nano-vfprintf_i.o)
+__gtsf2                                           /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(gesf2.o)
 __init_array_end                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-init.o)
 __init_array_start                                /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-init.o)
 __io_getchar                                      build/syscalls.o
 __io_putchar                                      build/syscalls.o
+__lesf2                                           /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(lesf2.o)
+                                                  /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(_arm_cmpsf2.o)
 __libc_fini_array                                 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
 __libc_init_array                                 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-init.o)
                                                   build/startup_stm32g070xx.o
@@ -2842,6 +3090,7 @@ __lock___malloc_recursive_mutex                   /home/achraf/Desktop/Toolchain
 __lock___sfp_recursive_mutex                      /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-lock.o)
                                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-findfp.o)
 __lock___tz_mutex                                 /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-lock.o)
+__ltsf2                                           /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(lesf2.o)
 __malloc_free_list                                /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
                                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-freer.o)
 __malloc_lock                                     /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mlock.o)
@@ -2851,6 +3100,7 @@ __malloc_sbrk_start                               /home/achraf/Desktop/Toolchain
 __malloc_unlock                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mlock.o)
                                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-mallocr.o)
                                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-freer.o)
+__nesf2                                           /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/libgcc.a(eqsf2.o)
 __preinit_array_end                               /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-init.o)
 __preinit_array_start                             /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-init.o)
 __register_frame_info                             /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
@@ -3017,6 +3267,10 @@ logging_set_message_frequency                     build/logging.o
                                                   build/main.o
 logging_subsystem_init                            build/logging.o
                                                   build/main.o
+low_pass_filter_init                              build/low_pass_filter.o
+                                                  build/main.o
+low_pass_filter_update                            build/low_pass_filter.o
+                                                  build/main.o
 main                                              build/main.o
                                                   build/startup_stm32g070xx.o
                                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
@@ -3035,6 +3289,10 @@ memset                                            /home/achraf/Desktop/Toolchain
                                                   /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
 pFlash                                            build/stm32g0xx_hal_flash.o
                                                   build/stm32g0xx_hal_flash_ex.o
+pid_controller_init                               build/pid_controller.o
+                                                  build/main.o
+pid_controller_step                               build/pid_controller.o
+                                                  build/main.o
 software_init_hook                                /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
 strlen                                            /home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(libc_a-strlen.o)
                                                   build/logging.o

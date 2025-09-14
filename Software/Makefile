@@ -41,6 +41,8 @@ Core/Src/heartbeat.c \
 Core/Src/logging.c \
 Core/Src/tachometer.c \
 Core/Src/fan_speed_controller.c \
+Core/Src/pid_controller.c \
+Core/Src/low_pass_filter.c \
 Core/Src/stm32g0xx_it.c \
 Core/Src/stm32g0xx_hal_msp.c \
 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c \

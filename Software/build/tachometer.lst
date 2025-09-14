@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccy7YWdN.s 			page 1
+ARM GAS  /tmp/ccnkruh6.s 			page 1
 
 
    1              		.cpu cortex-m0plus
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccy7YWdN.s 			page 1
   34              	.LCFI0:
   35              		.cfi_def_cfa_offset 8
   36              		.cfi_offset 4, -8
-ARM GAS  /tmp/ccy7YWdN.s 			page 2
+ARM GAS  /tmp/ccnkruh6.s 			page 2
 
 
   37              		.cfi_offset 14, -4
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccy7YWdN.s 			page 1
   77 0028 00000000 		.word	captured_value
   78 002c 00000000 		.word	previous_captured_value
   79 0030 00000000 		.word	current_period_us
-ARM GAS  /tmp/ccy7YWdN.s 			page 3
+ARM GAS  /tmp/ccnkruh6.s 			page 3
 
 
   80              		.cfi_endproc
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccy7YWdN.s 			page 1
  126              		@ sp needed
  127 0016 10BD     		pop	{r4, pc}
  128              		.cfi_endproc
-ARM GAS  /tmp/ccy7YWdN.s 			page 4
+ARM GAS  /tmp/ccnkruh6.s 			page 4
 
 
  129              	.LFE311:
@@ -219,28 +219,30 @@ ARM GAS  /tmp/ccy7YWdN.s 			page 1
  161 000a 4268     		ldr	r2, [r0, #4]
  162              		.loc 1 43 7 view .LVU34
  163 000c 9342     		cmp	r3, r2
- 164 000e 0BD3     		bcc	.L7
+ 164 000e 0ED3     		bcc	.L7
  165              	.LBB7:
   44:Core/Src/tachometer.c ****     {
   45:Core/Src/tachometer.c ****         // rpm calculations
-  46:Core/Src/tachometer.c ****         uint32_t period_cpy;
+  46:Core/Src/tachometer.c ****         uint32_t rpm;
  166              		.loc 1 46 9 is_stmt 1 view .LVU35
-  47:Core/Src/tachometer.c ****         __disable_irq();
+  47:Core/Src/tachometer.c ****         uint32_t period_cpy;
  167              		.loc 1 47 9 view .LVU36
- 168              	.LBB8:
- 169              	.LBI8:
- 170              		.file 2 "Drivers/CMSIS/Include/cmsis_gcc.h"
+  48:Core/Src/tachometer.c ****         __disable_irq();
+ 168              		.loc 1 48 9 view .LVU37
+ 169              	.LBB8:
+ 170              	.LBI8:
+ 171              		.file 2 "Drivers/CMSIS/Include/cmsis_gcc.h"
    1:Drivers/CMSIS/Include/cmsis_gcc.h **** /**************************************************************************//**
    2:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @file     cmsis_gcc.h
    3:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @brief    CMSIS compiler GCC header file
    4:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @version  V5.2.0
    5:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @date     08. May 2019
    6:Drivers/CMSIS/Include/cmsis_gcc.h ****  ******************************************************************************/
+ARM GAS  /tmp/ccnkruh6.s 			page 5
+
+
    7:Drivers/CMSIS/Include/cmsis_gcc.h **** /*
    8:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Copyright (c) 2009-2019 Arm Limited. All rights reserved.
-ARM GAS  /tmp/ccy7YWdN.s 			page 5
-
-
    9:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
   10:Drivers/CMSIS/Include/cmsis_gcc.h ****  * SPDX-License-Identifier: Apache-2.0
   11:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
@@ -296,11 +298,11 @@ ARM GAS  /tmp/ccy7YWdN.s 			page 1
   61:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED
   62:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED                               __attribute__((packed, aligned(1)))
   63:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ARM GAS  /tmp/ccnkruh6.s 			page 6
+
+
   64:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED_STRUCT
   65:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_STRUCT                        struct __attribute__((packed, aligned(1)))
-ARM GAS  /tmp/ccy7YWdN.s 			page 6
-
-
   66:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   67:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED_UNION
   68:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_UNION                         union __attribute__((packed, aligned(1)))
@@ -356,11 +358,11 @@ ARM GAS  /tmp/ccy7YWdN.s 			page 1
  118:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  119:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  120:Drivers/CMSIS/Include/cmsis_gcc.h **** /* #########################  Startup and Lowlevel Init  ######################## */
+ARM GAS  /tmp/ccnkruh6.s 			page 7
+
+
  121:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  122:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __PROGRAM_START
-ARM GAS  /tmp/ccy7YWdN.s 			page 7
-
-
  123:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  124:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  125:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Initializes data and bss sections
@@ -416,11 +418,11 @@ ARM GAS  /tmp/ccy7YWdN.s 			page 1
  175:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  176:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  177:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __VECTOR_TABLE
+ARM GAS  /tmp/ccnkruh6.s 			page 8
+
+
  178:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __VECTOR_TABLE            __Vectors
  179:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  /tmp/ccy7YWdN.s 			page 8
-
-
  180:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  181:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __VECTOR_TABLE_ATTRIBUTE
  182:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __VECTOR_TABLE_ATTRIBUTE  __attribute((used, section(".vectors")))
@@ -449,132 +451,142 @@ ARM GAS  /tmp/ccy7YWdN.s 			page 1
  205:Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
  206:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  207:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __disable_irq(void)
- 171              		.loc 2 207 27 view .LVU37
- 172              	.LBB9:
+ 172              		.loc 2 207 27 view .LVU38
+ 173              	.LBB9:
  208:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  209:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsid i" : : : "memory");
- 173              		.loc 2 209 3 view .LVU38
- 174              		.syntax divided
- 175              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 176 0010 72B6     		cpsid i
- 177              	@ 0 "" 2
- 178              		.thumb
- 179              		.syntax unified
- 180              	.LBE9:
- 181              	.LBE8:
-  48:Core/Src/tachometer.c ****         period_cpy = current_period_us;
- 182              		.loc 1 48 9 view .LVU39
- 183              		.loc 1 48 20 is_stmt 0 view .LVU40
- 184 0012 064B     		ldr	r3, .L10
- 185 0014 1968     		ldr	r1, [r3]
- 186              	.LVL9:
-  49:Core/Src/tachometer.c ****         __enable_irq();
- 187              		.loc 1 49 9 is_stmt 1 view .LVU41
- 188              	.LBB10:
- 189              	.LBI10:
+ 174              		.loc 2 209 3 view .LVU39
+ 175              		.syntax divided
+ 176              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 177 0010 72B6     		cpsid i
+ 178              	@ 0 "" 2
+ 179              		.thumb
+ 180              		.syntax unified
+ 181              	.LBE9:
+ 182              	.LBE8:
+  49:Core/Src/tachometer.c ****         period_cpy = current_period_us;
+ 183              		.loc 1 49 9 view .LVU40
+ 184              		.loc 1 49 20 is_stmt 0 view .LVU41
+ 185 0012 074B     		ldr	r3, .L11
+ 186 0014 1968     		ldr	r1, [r3]
+ 187              	.LVL9:
+  50:Core/Src/tachometer.c ****         __enable_irq();
+ 188              		.loc 1 50 9 is_stmt 1 view .LVU42
+ 189              	.LBB10:
+ 190              	.LBI10:
  196:Drivers/CMSIS/Include/cmsis_gcc.h **** {
- 190              		.loc 2 196 27 view .LVU42
- 191              	.LBB11:
+ 191              		.loc 2 196 27 view .LVU43
+ 192              	.LBB11:
  198:Drivers/CMSIS/Include/cmsis_gcc.h **** }
- 192              		.loc 2 198 3 view .LVU43
- 193              		.syntax divided
-ARM GAS  /tmp/ccy7YWdN.s 			page 9
+ARM GAS  /tmp/ccnkruh6.s 			page 9
 
 
- 194              	@ 198 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 195 0016 62B6     		cpsie i
- 196              	@ 0 "" 2
- 197              		.thumb
- 198              		.syntax unified
- 199              	.LBE11:
- 200              	.LBE10:
-  50:Core/Src/tachometer.c **** 
-  51:Core/Src/tachometer.c ****         if(period_cpy > 0)
- 201              		.loc 1 51 9 view .LVU44
- 202              		.loc 1 51 11 is_stmt 0 view .LVU45
- 203 0018 0029     		cmp	r1, #0
- 204 001a 04D0     		beq	.L9
-  52:Core/Src/tachometer.c ****             tach->current_rpm = (60UL * 1000000UL) / (2UL * period_cpy);
- 205              		.loc 1 52 13 is_stmt 1 view .LVU46
- 206              		.loc 1 52 59 is_stmt 0 view .LVU47
- 207 001c 4900     		lsls	r1, r1, #1
- 208              	.LVL10:
- 209              		.loc 1 52 52 view .LVU48
- 210 001e 0448     		ldr	r0, .L10+4
- 211              	.LVL11:
- 212              		.loc 1 52 52 view .LVU49
- 213 0020 FFF7FEFF 		bl	__aeabi_uidiv
- 214              	.LVL12:
- 215              		.loc 1 52 31 view .LVU50
- 216 0024 A060     		str	r0, [r4, #8]
+ 193              		.loc 2 198 3 view .LVU44
+ 194              		.syntax divided
+ 195              	@ 198 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 196 0016 62B6     		cpsie i
+ 197              	@ 0 "" 2
+ 198              		.thumb
+ 199              		.syntax unified
+ 200              	.LBE11:
+ 201              	.LBE10:
+  51:Core/Src/tachometer.c **** 
+  52:Core/Src/tachometer.c ****         if(period_cpy > 0)
+ 202              		.loc 1 52 9 view .LVU45
+ 203              		.loc 1 52 11 is_stmt 0 view .LVU46
+ 204 0018 0029     		cmp	r1, #0
+ 205 001a 04D0     		beq	.L9
+  53:Core/Src/tachometer.c ****             rpm = (60 * 1000000) / (2 * period_cpy);
+ 206              		.loc 1 53 13 is_stmt 1 view .LVU47
+ 207              		.loc 1 53 39 is_stmt 0 view .LVU48
+ 208 001c 4900     		lsls	r1, r1, #1
+ 209              	.LVL10:
+ 210              		.loc 1 53 17 view .LVU49
+ 211 001e 0548     		ldr	r0, .L11+4
+ 212              	.LVL11:
+ 213              		.loc 1 53 17 view .LVU50
+ 214 0020 FFF7FEFF 		bl	__aeabi_uidiv
+ 215              	.LVL12:
+ 216 0024 0600     		movs	r6, r0
  217              	.L9:
-  53:Core/Src/tachometer.c ****         tach->last_execution = current_tick;
- 218              		.loc 1 53 9 is_stmt 1 view .LVU51
- 219              		.loc 1 53 30 is_stmt 0 view .LVU52
- 220 0026 E560     		str	r5, [r4, #12]
- 221              	.LVL13:
- 222              	.L7:
- 223              		.loc 1 53 30 view .LVU53
- 224              	.LBE7:
-  54:Core/Src/tachometer.c ****     }
-  55:Core/Src/tachometer.c **** }...
- 225              		.loc 1 55 1 view .LVU54
- 226              		@ sp needed
- 227              	.LVL14:
- 228              	.LVL15:
- 229              		.loc 1 55 1 view .LVU55
- 230 0028 70BD     		pop	{r4, r5, r6, pc}
- 231              	.L11:
- 232 002a C046     		.align	2
- 233              	.L10:
- 234 002c 00000000 		.word	current_period_us
- 235 0030 00879303 		.word	60000000
- 236              		.cfi_endproc
- 237              	.LFE312:
- 239              		.section	.bss.current_period_us,"aw",%nobits
- 240              		.align	2
- 243              	current_period_us:
- 244 0000 00000000 		.space	4
- 245              		.section	.bss.previous_captured_value,"aw",%nobits
- 246              		.align	2
- 249              	previous_captured_value:
-ARM GAS  /tmp/ccy7YWdN.s 			page 10
+ 218              	.LVL13:
+  54:Core/Src/tachometer.c ****         if(rpm > 0)
+ 219              		.loc 1 54 9 is_stmt 1 view .LVU51
+ 220              		.loc 1 54 11 is_stmt 0 view .LVU52
+ 221 0026 002E     		cmp	r6, #0
+ 222 0028 00D0     		beq	.L10
+  55:Core/Src/tachometer.c ****             tach->current_rpm = rpm;
+ 223              		.loc 1 55 13 is_stmt 1 view .LVU53
+ 224              		.loc 1 55 31 is_stmt 0 view .LVU54
+ 225 002a A660     		str	r6, [r4, #8]
+ 226              	.L10:
+  56:Core/Src/tachometer.c ****         tach->last_execution = current_tick;
+ 227              		.loc 1 56 9 is_stmt 1 view .LVU55
+ 228              		.loc 1 56 30 is_stmt 0 view .LVU56
+ 229 002c E560     		str	r5, [r4, #12]
+ 230              	.LVL14:
+ 231              	.L7:
+ 232              		.loc 1 56 30 view .LVU57
+ 233              	.LBE7:
+  57:Core/Src/tachometer.c ****     }
+  58:Core/Src/tachometer.c **** }...
+ 234              		.loc 1 58 1 view .LVU58
+ 235              		@ sp needed
+ 236              	.LVL15:
+ 237              	.LVL16:
+ 238              		.loc 1 58 1 view .LVU59
+ 239 002e 70BD     		pop	{r4, r5, r6, pc}
+ 240              	.L12:
+ 241              		.align	2
+ARM GAS  /tmp/ccnkruh6.s 			page 10
 
 
- 250 0000 00000000 		.space	4
- 251              		.section	.bss.captured_value,"aw",%nobits
- 252              		.align	2
- 255              	captured_value:
- 256 0000 00000000 		.space	4
- 257              		.text
- 258              	.Letext0:
- 259              		.file 3 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
- 260              		.file 4 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
- 261              		.file 5 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g070xx.h"
- 262              		.file 6 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h"
- 263              		.file 7 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h"
- 264              		.file 8 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h"
- 265              		.file 9 "Core/Inc/tachometer.h"
- 266              		.file 10 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h"
-ARM GAS  /tmp/ccy7YWdN.s 			page 11
+ 242              	.L11:
+ 243 0030 00000000 		.word	current_period_us
+ 244 0034 00879303 		.word	60000000
+ 245              		.cfi_endproc
+ 246              	.LFE312:
+ 248              		.section	.bss.current_period_us,"aw",%nobits
+ 249              		.align	2
+ 252              	current_period_us:
+ 253 0000 00000000 		.space	4
+ 254              		.section	.bss.previous_captured_value,"aw",%nobits
+ 255              		.align	2
+ 258              	previous_captured_value:
+ 259 0000 00000000 		.space	4
+ 260              		.section	.bss.captured_value,"aw",%nobits
+ 261              		.align	2
+ 264              	captured_value:
+ 265 0000 00000000 		.space	4
+ 266              		.text
+ 267              	.Letext0:
+ 268              		.file 3 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
+ 269              		.file 4 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
+ 270              		.file 5 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g070xx.h"
+ 271              		.file 6 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h"
+ 272              		.file 7 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h"
+ 273              		.file 8 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h"
+ 274              		.file 9 "Core/Inc/tachometer.h"
+ 275              		.file 10 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h"
+ARM GAS  /tmp/ccnkruh6.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tachometer.c
-     /tmp/ccy7YWdN.s:19     .text.HAL_TIM_IC_CaptureCallback:00000000 $t
-     /tmp/ccy7YWdN.s:25     .text.HAL_TIM_IC_CaptureCallback:00000000 HAL_TIM_IC_CaptureCallback
-     /tmp/ccy7YWdN.s:77     .text.HAL_TIM_IC_CaptureCallback:00000028 $d
-     /tmp/ccy7YWdN.s:255    .bss.captured_value:00000000 captured_value
-     /tmp/ccy7YWdN.s:249    .bss.previous_captured_value:00000000 previous_captured_value
-     /tmp/ccy7YWdN.s:243    .bss.current_period_us:00000000 current_period_us
-     /tmp/ccy7YWdN.s:84     .text.tachometer_init:00000000 $t
-     /tmp/ccy7YWdN.s:90     .text.tachometer_init:00000000 tachometer_init
-     /tmp/ccy7YWdN.s:132    .text.tachometer_update_rpm:00000000 $t
-     /tmp/ccy7YWdN.s:138    .text.tachometer_update_rpm:00000000 tachometer_update_rpm
-     /tmp/ccy7YWdN.s:234    .text.tachometer_update_rpm:0000002c $d
-     /tmp/ccy7YWdN.s:240    .bss.current_period_us:00000000 $d
-     /tmp/ccy7YWdN.s:246    .bss.previous_captured_value:00000000 $d
-     /tmp/ccy7YWdN.s:252    .bss.captured_value:00000000 $d
+     /tmp/ccnkruh6.s:19     .text.HAL_TIM_IC_CaptureCallback:00000000 $t
+     /tmp/ccnkruh6.s:25     .text.HAL_TIM_IC_CaptureCallback:00000000 HAL_TIM_IC_CaptureCallback
+     /tmp/ccnkruh6.s:77     .text.HAL_TIM_IC_CaptureCallback:00000028 $d
+     /tmp/ccnkruh6.s:264    .bss.captured_value:00000000 captured_value
+     /tmp/ccnkruh6.s:258    .bss.previous_captured_value:00000000 previous_captured_value
+     /tmp/ccnkruh6.s:252    .bss.current_period_us:00000000 current_period_us
+     /tmp/ccnkruh6.s:84     .text.tachometer_init:00000000 $t
+     /tmp/ccnkruh6.s:90     .text.tachometer_init:00000000 tachometer_init
+     /tmp/ccnkruh6.s:132    .text.tachometer_update_rpm:00000000 $t
+     /tmp/ccnkruh6.s:138    .text.tachometer_update_rpm:00000000 tachometer_update_rpm
+     /tmp/ccnkruh6.s:243    .text.tachometer_update_rpm:00000030 $d
+     /tmp/ccnkruh6.s:249    .bss.current_period_us:00000000 $d
+     /tmp/ccnkruh6.s:255    .bss.previous_captured_value:00000000 $d
+     /tmp/ccnkruh6.s:261    .bss.captured_value:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_TIM_ReadCapturedValue

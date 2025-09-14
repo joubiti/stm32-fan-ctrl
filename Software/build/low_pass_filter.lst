@@ -1,0 +1,183 @@
+ARM GAS  /tmp/ccbA68qG.s 			page 1
+
+
+   1              		.cpu cortex-m0plus
+   2              		.arch armv6s-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.file	"low_pass_filter.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.file 1 "Core/Src/low_pass_filter.c"
+  18              		.section	.text.low_pass_filter_init,"ax",%progbits
+  19              		.align	1
+  20              		.global	low_pass_filter_init
+  21              		.syntax unified
+  22              		.code	16
+  23              		.thumb_func
+  25              	low_pass_filter_init:
+  26              	.LVL0:
+  27              	.LFB0:
+   1:Core/Src/low_pass_filter.c **** #include "low_pass_filter.h"
+   2:Core/Src/low_pass_filter.c **** 
+   3:Core/Src/low_pass_filter.c **** void low_pass_filter_init(lp_filter_t* filter, float alpha_cst, uint16_t period_ms)
+   4:Core/Src/low_pass_filter.c **** {
+  28              		.loc 1 4 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+   5:Core/Src/low_pass_filter.c ****     filter->alpha = alpha_cst;
+  33              		.loc 1 5 5 view .LVU1
+  34              		.loc 1 5 19 is_stmt 0 view .LVU2
+  35 0000 0160     		str	r1, [r0]
+   6:Core/Src/low_pass_filter.c ****     filter->last_sample = 0;
+  36              		.loc 1 6 5 is_stmt 1 view .LVU3
+  37              		.loc 1 6 25 is_stmt 0 view .LVU4
+  38 0002 0023     		movs	r3, #0
+  39 0004 4360     		str	r3, [r0, #4]
+   7:Core/Src/low_pass_filter.c ****     filter->period = period_ms;
+  40              		.loc 1 7 5 is_stmt 1 view .LVU5
+  41              		.loc 1 7 20 is_stmt 0 view .LVU6
+  42 0006 0281     		strh	r2, [r0, #8]
+   8:Core/Src/low_pass_filter.c ****     filter->last_execution = 0;
+  43              		.loc 1 8 5 is_stmt 1 view .LVU7
+  44              		.loc 1 8 28 is_stmt 0 view .LVU8
+  45 0008 0023     		movs	r3, #0
+  46 000a C360     		str	r3, [r0, #12]
+   9:Core/Src/low_pass_filter.c **** }
+  47              		.loc 1 9 1 view .LVU9
+  48              		@ sp needed
+  49 000c 7047     		bx	lr
+ARM GAS  /tmp/ccbA68qG.s 			page 2
+
+
+  50              		.cfi_endproc
+  51              	.LFE0:
+  53              		.section	.text.low_pass_filter_update,"ax",%progbits
+  54              		.align	1
+  55              		.global	low_pass_filter_update
+  56              		.syntax unified
+  57              		.code	16
+  58              		.thumb_func
+  60              	low_pass_filter_update:
+  61              	.LVL1:
+  62              	.LFB1:
+  10:Core/Src/low_pass_filter.c **** 
+  11:Core/Src/low_pass_filter.c **** uint16_t low_pass_filter_update(lp_filter_t* filter, float sample, uint32_t current_tick)
+  12:Core/Src/low_pass_filter.c **** {
+  63              		.loc 1 12 1 is_stmt 1 view -0
+  64              		.cfi_startproc
+  65              		@ args = 0, pretend = 0, frame = 0
+  66              		@ frame_needed = 0, uses_anonymous_args = 0
+  67              		.loc 1 12 1 is_stmt 0 view .LVU11
+  68 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+  69              	.LCFI0:
+  70              		.cfi_def_cfa_offset 24
+  71              		.cfi_offset 3, -24
+  72              		.cfi_offset 4, -20
+  73              		.cfi_offset 5, -16
+  74              		.cfi_offset 6, -12
+  75              		.cfi_offset 7, -8
+  76              		.cfi_offset 14, -4
+  77 0002 0400     		movs	r4, r0
+  78 0004 1500     		movs	r5, r2
+  13:Core/Src/low_pass_filter.c ****     // filtered_value = alpha * new_sample + (1 - alpha) * last_sample
+  14:Core/Src/low_pass_filter.c ****     if(current_tick - filter->last_execution >= filter->period)
+  79              		.loc 1 14 5 is_stmt 1 view .LVU12
+  80              		.loc 1 14 29 is_stmt 0 view .LVU13
+  81 0006 C368     		ldr	r3, [r0, #12]
+  82              		.loc 1 14 21 view .LVU14
+  83 0008 D31A     		subs	r3, r2, r3
+  84              		.loc 1 14 55 view .LVU15
+  85 000a 0289     		ldrh	r2, [r0, #8]
+  86              	.LVL2:
+  87              		.loc 1 14 7 view .LVU16
+  88 000c 9342     		cmp	r3, r2
+  89 000e 12D3     		bcc	.L3
+  15:Core/Src/low_pass_filter.c ****     {
+  16:Core/Src/low_pass_filter.c ****         filter->last_sample = (filter->alpha * sample) + (1 - filter->alpha) * filter->last_sample;
+  90              		.loc 1 16 9 is_stmt 1 view .LVU17
+  91              		.loc 1 16 38 is_stmt 0 view .LVU18
+  92 0010 0768     		ldr	r7, [r0]
+  93              		.loc 1 16 46 view .LVU19
+  94 0012 381C     		adds	r0, r7, #0
+  95              	.LVL3:
+  96              		.loc 1 16 46 view .LVU20
+  97 0014 FFF7FEFF 		bl	__aeabi_fmul
+  98              	.LVL4:
+  99              		.loc 1 16 46 view .LVU21
+ 100 0018 061C     		adds	r6, r0, #0
+ 101              		.loc 1 16 61 view .LVU22
+ARM GAS  /tmp/ccbA68qG.s 			page 3
+
+
+ 102 001a 391C     		adds	r1, r7, #0
+ 103 001c FE20     		movs	r0, #254
+ 104 001e 8005     		lsls	r0, r0, #22
+ 105 0020 FFF7FEFF 		bl	__aeabi_fsub
+ 106              	.LVL5:
+ 107              		.loc 1 16 86 view .LVU23
+ 108 0024 6168     		ldr	r1, [r4, #4]
+ 109              		.loc 1 16 78 view .LVU24
+ 110 0026 FFF7FEFF 		bl	__aeabi_fmul
+ 111              	.LVL6:
+ 112 002a 011C     		adds	r1, r0, #0
+ 113              		.loc 1 16 56 view .LVU25
+ 114 002c 301C     		adds	r0, r6, #0
+ 115 002e FFF7FEFF 		bl	__aeabi_fadd
+ 116              	.LVL7:
+ 117              		.loc 1 16 29 view .LVU26
+ 118 0032 6060     		str	r0, [r4, #4]
+  17:Core/Src/low_pass_filter.c ****         filter->last_execution = current_tick;
+ 119              		.loc 1 17 9 is_stmt 1 view .LVU27
+ 120              		.loc 1 17 32 is_stmt 0 view .LVU28
+ 121 0034 E560     		str	r5, [r4, #12]
+ 122              	.L3:
+  18:Core/Src/low_pass_filter.c ****     }
+  19:Core/Src/low_pass_filter.c ****     return filter->last_sample;
+ 123              		.loc 1 19 5 is_stmt 1 view .LVU29
+ 124              		.loc 1 19 18 is_stmt 0 view .LVU30
+ 125 0036 6068     		ldr	r0, [r4, #4]
+ 126 0038 FFF7FEFF 		bl	__aeabi_f2uiz
+ 127              	.LVL8:
+ 128              		.loc 1 19 18 discriminator 1 view .LVU31
+ 129 003c 80B2     		uxth	r0, r0
+  20:Core/Src/low_pass_filter.c **** }...
+ 130              		.loc 1 20 1 view .LVU32
+ 131              		@ sp needed
+ 132              	.LVL9:
+ 133              	.LVL10:
+ 134              		.loc 1 20 1 view .LVU33
+ 135 003e F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 136              		.cfi_endproc
+ 137              	.LFE1:
+ 139              		.text
+ 140              	.Letext0:
+ 141              		.file 2 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
+ 142              		.file 3 "/home/achraf/Desktop/Toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/arm-none-
+ 143              		.file 4 "Core/Inc/low_pass_filter.h"
+ARM GAS  /tmp/ccbA68qG.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 low_pass_filter.c
+     /tmp/ccbA68qG.s:19     .text.low_pass_filter_init:00000000 $t
+     /tmp/ccbA68qG.s:25     .text.low_pass_filter_init:00000000 low_pass_filter_init
+     /tmp/ccbA68qG.s:54     .text.low_pass_filter_update:00000000 $t
+     /tmp/ccbA68qG.s:60     .text.low_pass_filter_update:00000000 low_pass_filter_update
+
+UNDEFINED SYMBOLS
+__aeabi_fmul
+__aeabi_fsub
+__aeabi_fadd
+__aeabi_f2uiz

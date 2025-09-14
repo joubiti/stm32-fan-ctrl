@@ -15,6 +15,7 @@
         "fan_speed_controller.h": "c",
         "cmath": "c",
         "cinttypes": "c",
-        "cstdlib": "c"
+        "cstdlib": "c",
+        "compare": "c"
     }
 }

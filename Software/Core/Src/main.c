@@ -31,7 +31,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define RPM_SETPOINT 5000
+#define CONTROL_LOOP_PERIOD_MS 100
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -64,7 +65,10 @@ static void MX_TIM1_Init(void);
 static heartbeat_led_t heartbeat_led;
 static tachometer_t fan_tachometer;
 static fan_controller_t fan_controller;
+static pid_controller_t pid;
+static lp_filter_t rpm_filter;
 
+static volatile uint8_t command = 0;
 
 
 
@@ -104,25 +108,51 @@ int main(void)
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
   
-  /***************** Fan Speed controller (PWM) **************************/
+
+
+
+
+  /********** Fan Speed controller (PWM) ************/
 
   fan_speed_controller_init(&fan_controller, &htim1);
   fan_set_rpm_percent(&fan_controller, 0);
-
-
-  /*****************   Initialize logging subsystem, mapped to UART1 **************/
+  
+  /************************************************ */
+  /* Initialize logging subsystem, mapped to UART1 */
 
   logging_subsystem_init(&huart1);
   logging_set_message_frequency(2000);
 
-  /*****************    Initialize heartbeat LED (1 Hz)           *****************/
+  /***********************************************/
+  /********* Initialize heartbeat LED (1 Hz)******/
 
   heartbeat_initialize(&heartbeat_led, 1000);
   heartbeat_on(&heartbeat_led);
 
-  /*****************   Fan DC speed sensor (Tachometer)   **********************************************/
+  /**********************************************/
+  /*********** Fan DC speed sensor **************/
 
-  tachometer_init(&fan_tachometer, &htim3, 100);
+  tachometer_init(&fan_tachometer, &htim3, CONTROL_LOOP_PERIOD_MS);
+
+  /******************************************** */
+  /****** First order LP filter for Tachometer **/
+
+  low_pass_filter_init(&rpm_filter, 0.3, CONTROL_LOOP_PERIOD_MS);
+  
+  /******************************************************* */
+  /*****************   PID controller ******************** */
+
+  pid_controller_init(&pid, 0.01, 0.015, 0.001, CONTROL_LOOP_PERIOD_MS);
+
+  /*********************************************************/
+
+
+
+
+
+
+
+
 
   /* USER CODE END 2 */
 
@@ -133,11 +163,28 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    fan_set_rpm_percent(&fan_controller, 0);
 
-    heartbeat_toggle(&heartbeat_led, HAL_GetTick());
+
+
+    /**************************** CONTROL LOOP (10 Hz) ****************** */
     tachometer_update_rpm(&fan_tachometer, HAL_GetTick());
+    low_pass_filter_update(&rpm_filter, fan_tachometer.current_rpm, HAL_GetTick());
+    uint8_t command = pid_controller_step(&pid, (uint32_t)rpm_filter.last_sample, RPM_SETPOINT, HAL_GetTick());
+    if(command != PID_NO_UPDATE)
+    {
+      fan_set_rpm_percent(&fan_controller, command);
+    }
+    /******************************************************************** */
+
+
+
+
+    /************************** HEARTBEAT LED & PERIODIC UART MESSAGES ****** */
+    heartbeat_toggle(&heartbeat_led, HAL_GetTick());
     logging_send_periodic_msg(HAL_GetTick(), "Fan RPM: %d \n", fan_tachometer.current_rpm);
+    /************************************************************************ */
+
+
 
 
   }

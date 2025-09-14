@@ -36,6 +36,8 @@ void fan_speed_controller_init(fan_controller_t* fan, TIM_HandleTypeDef* htim)
 
 void fan_set_rpm_percent(fan_controller_t* fan, uint8_t percent)
 {
+    if(percent > 100)
+        percent = 100;
     uint8_t scaled_percent = 100 - percent;
     __HAL_TIM_SET_COMPARE(fan->htim, FAN_PWM_CHANNEL, get_pwm_compare_value(scaled_percent));
 }

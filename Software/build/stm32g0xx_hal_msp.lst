@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccAPrXDH.s 			page 1
+ARM GAS  /tmp/ccrSaQfF.s 			page 1
 
 
    1              		.cpu cortex-m0plus
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
   30:Core/Src/stm32g0xx_hal_msp.c **** /* USER CODE END TD */
   31:Core/Src/stm32g0xx_hal_msp.c **** 
   32:Core/Src/stm32g0xx_hal_msp.c **** /* Private define ------------------------------------------------------------*/
-ARM GAS  /tmp/ccAPrXDH.s 			page 2
+ARM GAS  /tmp/ccrSaQfF.s 			page 2
 
 
   33:Core/Src/stm32g0xx_hal_msp.c **** /* USER CODE BEGIN Define */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
   41 0006 0122     		movs	r2, #1
   42 0008 1143     		orrs	r1, r2
   43 000a 1964     		str	r1, [r3, #64]
-ARM GAS  /tmp/ccAPrXDH.s 			page 3
+ARM GAS  /tmp/ccrSaQfF.s 			page 3
 
 
   44              		.loc 1 72 3 view .LVU4
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
   83:Core/Src/stm32g0xx_hal_msp.c ****   * @brief TIM_PWM MSP Initialization
   84:Core/Src/stm32g0xx_hal_msp.c ****   * This function configures the hardware resources used in this example
   85:Core/Src/stm32g0xx_hal_msp.c ****   * @param htim_pwm: TIM_PWM handle pointer
-ARM GAS  /tmp/ccAPrXDH.s 			page 4
+ARM GAS  /tmp/ccrSaQfF.s 			page 4
 
 
   86:Core/Src/stm32g0xx_hal_msp.c ****   * @retval None
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  122              		.loc 1 96 5 view .LVU23
  123 001a 1B6C     		ldr	r3, [r3, #64]
  124 001c 0B40     		ands	r3, r1
-ARM GAS  /tmp/ccAPrXDH.s 			page 5
+ARM GAS  /tmp/ccrSaQfF.s 			page 5
 
 
  125 001e 0193     		str	r3, [sp, #4]
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  169              	.LVL2:
  170              		.loc 1 113 20 view .LVU31
  171 000c FFF7FEFF 		bl	memset
-ARM GAS  /tmp/ccAPrXDH.s 			page 6
+ARM GAS  /tmp/ccrSaQfF.s 			page 6
 
 
  172              	.LVL3:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  194 001e DA6B     		ldr	r2, [r3, #60]
  195 0020 0220     		movs	r0, #2
  196 0022 0243     		orrs	r2, r0
-ARM GAS  /tmp/ccAPrXDH.s 			page 7
+ARM GAS  /tmp/ccrSaQfF.s 			page 7
 
 
  197 0024 DA63     		str	r2, [r3, #60]
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  234 0046 7F3B     		subs	r3, r3, #127
  235 0048 0B61     		str	r3, [r1, #16]
  131:Core/Src/stm32g0xx_hal_msp.c **** 
-ARM GAS  /tmp/ccAPrXDH.s 			page 8
+ARM GAS  /tmp/ccrSaQfF.s 			page 8
 
 
  236              		.loc 1 131 5 is_stmt 1 view .LVU57
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  286              		.loc 1 146 20 is_stmt 0 view .LVU64
  287 0006 1422     		movs	r2, #20
  288 0008 0021     		movs	r1, #0
-ARM GAS  /tmp/ccAPrXDH.s 			page 9
+ARM GAS  /tmp/ccrSaQfF.s 			page 9
 
 
  289 000a 01A8     		add	r0, sp, #4
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  317 0022 1943     		orrs	r1, r3
  318 0024 5163     		str	r1, [r2, #52]
  153:Core/Src/stm32g0xx_hal_msp.c ****     /**TIM1 GPIO Configuration
-ARM GAS  /tmp/ccAPrXDH.s 			page 10
+ARM GAS  /tmp/ccrSaQfF.s 			page 10
 
 
  319              		.loc 1 153 5 view .LVU74
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  364              	HAL_TIM_PWM_MspDeInit:
  365              	.LVL15:
  366              	.LFB314:
-ARM GAS  /tmp/ccAPrXDH.s 			page 11
+ARM GAS  /tmp/ccrSaQfF.s 			page 11
 
 
  170:Core/Src/stm32g0xx_hal_msp.c **** /**
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  399              	.LFE314:
  401              		.section	.text.HAL_TIM_IC_MspDeInit,"ax",%progbits
  402              		.align	1
-ARM GAS  /tmp/ccAPrXDH.s 			page 12
+ARM GAS  /tmp/ccrSaQfF.s 			page 12
 
 
  403              		.global	HAL_TIM_IC_MspDeInit
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  219:Core/Src/stm32g0xx_hal_msp.c **** 
  220:Core/Src/stm32g0xx_hal_msp.c **** }
  430              		.loc 1 220 1 view .LVU99
-ARM GAS  /tmp/ccAPrXDH.s 			page 13
+ARM GAS  /tmp/ccrSaQfF.s 			page 13
 
 
  431              		@ sp needed
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  474              		.cfi_startproc
  475              		@ args = 0, pretend = 0, frame = 56
  476              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccAPrXDH.s 			page 14
+ARM GAS  /tmp/ccrSaQfF.s 			page 14
 
 
  477              		.loc 1 229 1 is_stmt 0 view .LVU106
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  250:Core/Src/stm32g0xx_hal_msp.c ****     __HAL_RCC_GPIOC_CLK_ENABLE();
  251:Core/Src/stm32g0xx_hal_msp.c ****     /**USART1 GPIO Configuration
  252:Core/Src/stm32g0xx_hal_msp.c ****     PC4     ------> USART1_TX
-ARM GAS  /tmp/ccAPrXDH.s 			page 15
+ARM GAS  /tmp/ccrSaQfF.s 			page 15
 
 
  253:Core/Src/stm32g0xx_hal_msp.c ****     PC5     ------> USART1_RX
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  540 003a C901     		lsls	r1, r1, #7
  541 003c 0A43     		orrs	r2, r1
  542 003e 1A64     		str	r2, [r3, #64]
-ARM GAS  /tmp/ccAPrXDH.s 			page 16
+ARM GAS  /tmp/ccrSaQfF.s 			page 16
 
 
  248:Core/Src/stm32g0xx_hal_msp.c **** 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  258:Core/Src/stm32g0xx_hal_msp.c ****     GPIO_InitStruct.Alternate = GPIO_AF1_USART1;
  581              		.loc 1 258 27 is_stmt 0 view .LVU142
  582 0066 CB60     		str	r3, [r1, #12]
-ARM GAS  /tmp/ccAPrXDH.s 			page 17
+ARM GAS  /tmp/ccrSaQfF.s 			page 17
 
 
  259:Core/Src/stm32g0xx_hal_msp.c ****     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  626              		.cfi_offset 14, -4
  278:Core/Src/stm32g0xx_hal_msp.c ****   if(huart->Instance==USART1)
  627              		.loc 1 278 3 is_stmt 1 view .LVU150
-ARM GAS  /tmp/ccAPrXDH.s 			page 18
+ARM GAS  /tmp/ccrSaQfF.s 			page 18
 
 
  628              		.loc 1 278 11 is_stmt 0 view .LVU151
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  660 0024 00100240 		.word	1073876992
  661 0028 FFBFFFFF 		.word	-16385
  662 002c 00080050 		.word	1342179328
-ARM GAS  /tmp/ccAPrXDH.s 			page 19
+ARM GAS  /tmp/ccrSaQfF.s 			page 19
 
 
  663              		.cfi_endproc
@@ -1098,35 +1098,35 @@ ARM GAS  /tmp/ccAPrXDH.s 			page 1
  678              		.file 12 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h"
  679              		.file 13 "Core/Inc/main.h"
  680              		.file 14 "<built-in>"
-ARM GAS  /tmp/ccAPrXDH.s 			page 20
+ARM GAS  /tmp/ccrSaQfF.s 			page 20
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32g0xx_hal_msp.c
-     /tmp/ccAPrXDH.s:19     .text.HAL_MspInit:00000000 $t
-     /tmp/ccAPrXDH.s:25     .text.HAL_MspInit:00000000 HAL_MspInit
-     /tmp/ccAPrXDH.s:76     .text.HAL_MspInit:0000002c $d
-     /tmp/ccAPrXDH.s:81     .text.HAL_TIM_PWM_MspInit:00000000 $t
-     /tmp/ccAPrXDH.s:87     .text.HAL_TIM_PWM_MspInit:00000000 HAL_TIM_PWM_MspInit
-     /tmp/ccAPrXDH.s:135    .text.HAL_TIM_PWM_MspInit:00000024 $d
-     /tmp/ccAPrXDH.s:141    .text.HAL_TIM_IC_MspInit:00000000 $t
-     /tmp/ccAPrXDH.s:147    .text.HAL_TIM_IC_MspInit:00000000 HAL_TIM_IC_MspInit
-     /tmp/ccAPrXDH.s:255    .text.HAL_TIM_IC_MspInit:00000064 $d
-     /tmp/ccAPrXDH.s:262    .text.HAL_TIM_MspPostInit:00000000 $t
-     /tmp/ccAPrXDH.s:268    .text.HAL_TIM_MspPostInit:00000000 HAL_TIM_MspPostInit
-     /tmp/ccAPrXDH.s:352    .text.HAL_TIM_MspPostInit:00000048 $d
-     /tmp/ccAPrXDH.s:358    .text.HAL_TIM_PWM_MspDeInit:00000000 $t
-     /tmp/ccAPrXDH.s:364    .text.HAL_TIM_PWM_MspDeInit:00000000 HAL_TIM_PWM_MspDeInit
-     /tmp/ccAPrXDH.s:395    .text.HAL_TIM_PWM_MspDeInit:00000018 $d
-     /tmp/ccAPrXDH.s:402    .text.HAL_TIM_IC_MspDeInit:00000000 $t
-     /tmp/ccAPrXDH.s:408    .text.HAL_TIM_IC_MspDeInit:00000000 HAL_TIM_IC_MspDeInit
-     /tmp/ccAPrXDH.s:457    .text.HAL_TIM_IC_MspDeInit:00000028 $d
-     /tmp/ccAPrXDH.s:464    .text.HAL_UART_MspInit:00000000 $t
-     /tmp/ccAPrXDH.s:470    .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
-     /tmp/ccAPrXDH.s:601    .text.HAL_UART_MspInit:0000007c $d
-     /tmp/ccAPrXDH.s:608    .text.HAL_UART_MspDeInit:00000000 $t
-     /tmp/ccAPrXDH.s:614    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
-     /tmp/ccAPrXDH.s:659    .text.HAL_UART_MspDeInit:00000020 $d
+     /tmp/ccrSaQfF.s:19     .text.HAL_MspInit:00000000 $t
+     /tmp/ccrSaQfF.s:25     .text.HAL_MspInit:00000000 HAL_MspInit
+     /tmp/ccrSaQfF.s:76     .text.HAL_MspInit:0000002c $d
+     /tmp/ccrSaQfF.s:81     .text.HAL_TIM_PWM_MspInit:00000000 $t
+     /tmp/ccrSaQfF.s:87     .text.HAL_TIM_PWM_MspInit:00000000 HAL_TIM_PWM_MspInit
+     /tmp/ccrSaQfF.s:135    .text.HAL_TIM_PWM_MspInit:00000024 $d
+     /tmp/ccrSaQfF.s:141    .text.HAL_TIM_IC_MspInit:00000000 $t
+     /tmp/ccrSaQfF.s:147    .text.HAL_TIM_IC_MspInit:00000000 HAL_TIM_IC_MspInit
+     /tmp/ccrSaQfF.s:255    .text.HAL_TIM_IC_MspInit:00000064 $d
+     /tmp/ccrSaQfF.s:262    .text.HAL_TIM_MspPostInit:00000000 $t
+     /tmp/ccrSaQfF.s:268    .text.HAL_TIM_MspPostInit:00000000 HAL_TIM_MspPostInit
+     /tmp/ccrSaQfF.s:352    .text.HAL_TIM_MspPostInit:00000048 $d
+     /tmp/ccrSaQfF.s:358    .text.HAL_TIM_PWM_MspDeInit:00000000 $t
+     /tmp/ccrSaQfF.s:364    .text.HAL_TIM_PWM_MspDeInit:00000000 HAL_TIM_PWM_MspDeInit
+     /tmp/ccrSaQfF.s:395    .text.HAL_TIM_PWM_MspDeInit:00000018 $d
+     /tmp/ccrSaQfF.s:402    .text.HAL_TIM_IC_MspDeInit:00000000 $t
+     /tmp/ccrSaQfF.s:408    .text.HAL_TIM_IC_MspDeInit:00000000 HAL_TIM_IC_MspDeInit
+     /tmp/ccrSaQfF.s:457    .text.HAL_TIM_IC_MspDeInit:00000028 $d
+     /tmp/ccrSaQfF.s:464    .text.HAL_UART_MspInit:00000000 $t
+     /tmp/ccrSaQfF.s:470    .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
+     /tmp/ccrSaQfF.s:601    .text.HAL_UART_MspInit:0000007c $d
+     /tmp/ccrSaQfF.s:608    .text.HAL_UART_MspDeInit:00000000 $t
+     /tmp/ccrSaQfF.s:614    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
+     /tmp/ccrSaQfF.s:659    .text.HAL_UART_MspDeInit:00000020 $d
 
 UNDEFINED SYMBOLS
 memset

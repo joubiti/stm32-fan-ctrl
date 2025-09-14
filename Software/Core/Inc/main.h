@@ -35,6 +35,8 @@ extern "C" {
 #include "logging.h"
 #include "tachometer.h"
 #include "fan_speed_controller.h"
+#include "pid_controller.h"
+#include "low_pass_filter.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
